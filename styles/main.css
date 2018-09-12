@@ -1,0 +1,321 @@
+/****************GENERAL PG SETUP****************/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: cabin;
+}
+
+/******NAVBAR******/
+nav {
+  display: grid;      /******MOBILE******/
+  font-family: Raleway;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav img {
+  display: inline-block;
+  float: left;
+  padding: 1rem;
+  width: 8rem;
+}
+
+nav ul {                  /******MOBILE******/
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  font-family: Raleway;
+  font-size: 1.6rem;
+  font-weight: 900;           /******MOBILE******/
+  list-style: none;
+  padding: 2.2rem;
+}
+
+nav ul li a:hover, .side-nav a:hover {
+  color: #ED2F80;
+}
+
+.open-slide {
+  float: right;
+  margin: 2rem 0;
+}
+
+.side-nav {
+  background-color: #111;
+  height: 30%;
+  opacity: .9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  width: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.side-nav a {
+  color: #fff;
+  display: block;
+  font-size: 1.8rem;
+  margin-right: 2.5rem;
+  padding:  1rem 1rem 2rem 3rem;
+  text-align: right;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.side-nav .btn-close {
+  font-size: 5.6rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.portfolio {
+  margin-top: 2rem;
+}
+
+@media(max-width: 568px){
+  .nav-bar ul {
+    display: none;
+  }
+}
+@media(min-width: 568px){
+  .open-slide, .side-nav {
+    display: none;
+  }
+}
+
+}
+/******HERO******/
+.hero {
+                          /******MOBILE******/
+  padding-top: 8rem;
+}
+
+.hero div {
+  display: block;   /******MOBILE******/
+}
+
+.bold {
+  color: #2F80ED;
+  font-weight: 900; /******MOBILE******/
+}
+
+h1 {
+  font-size: 3.8rem;
+  font-family: Montserrat;  /******MOBILE******/
+  margin-bottom: 2.2rem;
+}
+
+.introduction {
+  margin: 4.3rem auto 0 0;
+}
+
+@media screen and (min-width: 500px) {
+  .introduction {
+    margin: 6.3rem auto 0 4.3rem;
+  }
+}
+
+h2 {
+  font-family: alice;
+  font-size: 4rem;
+  margin-bottom: 2.2rem;
+}
+
+h3 {
+  color: #616161;
+  font-size: 2rem;
+  line-height: .6cm;
+}
+
+.down-arrow {
+  margin: 12rem 0 2rem 0;    /******MOBILE******/
+  text-align: center;
+}
+
+/******FOR ALL PROJECTS MOBILE*****/
+.container p {
+  font-size: 1.6rem;
+}
+
+.project1 {
+  background: linear-gradient(to left, #3B58FC, #6d83fd);
+  padding: 7rem 0;
+}
+
+nav, .grid1, .grid2 {
+  display: grid;
+  grid-template-columns: 1fr; /******MOBILE******/
+  list-style: none;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.scr {
+background-repeat: no-repeat; /******MOBILE******/
+width: 100%;
+}
+
+.description-content {
+  color: #fff;
+  margin: 0 auto 0 auto;    /******MOBILE******/
+  text-align: center;
+  width: 22rem;
+}
+
+.description-content p {
+  font-size: 1.8rem;
+  margin-bottom: 4.2rem;
+}
+
+.button {
+  background-color: #ED2F80;    /******MOBILE******/
+  border-radius: 5rem;
+  color: inherit;
+  font-size: 1.6rem;
+  padding: 1.45rem 3rem;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #fff;
+  border: 2px solid #ED2F80;
+  color: #ED2F80;
+}
+
+
+/******FOOTER******/
+footer {
+  background-color: #212121;
+  color: #FFFFFF;
+  font-family: Raleway;   /******MOBILE******/
+  padding: 2rem;
+}
+
+.footer-content {
+  margin: auto;
+  padding: 0;
+  text-align: center; /******MOBILE******/
+  text-decoration: none;
+}
+
+.footer-content div {
+  display: inline-block;    /******MOBILE******/
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+footer ul {
+  margin-bottom: 1rem;    /******MOBILE******/
+  padding: .5rem;
+}
+
+footer ul li {
+  display: inline;    /******MOBILE******/
+  padding: 1rem;
+}
+
+footer ul li a{
+  text-decoration: none;
+}
+
+.credit {
+  font-size: 1.3rem;    /******MOBILE******/
+}
+/****************TABLET SIZE****************/
+@media screen and (min-width: 768px) {
+  /******NAVBAR******/
+  .nav-bar {
+    width: 80%;
+  }
+
+  .nav-bar ul li {
+    font-size: 1.8rem;     /******TABLET******/
+  }
+
+  /******HERO******/
+
+  .grid1 {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 6.5rem;    /******TABLET******/
+  }
+
+  .introduction {
+    margin: 12rem auto 0 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    line-height: .8cm;
+  }
+
+  .down-arrow {
+    margin: 22rem 0 2rem 0;   /******TABLET******/
+  }
+
+  /******FOR ALL PROJECTS*****/
+  h2 {
+    font-size: 4.8rem;
+  }
+
+  .container p {
+  font-size: 2rem;
+  }
+
+  .grid2 {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+ .description-content {
+    width: 32rem;
+  }
+
+  .description-content p {
+    margin-bottom: 5.35rem;
+  }
+
+  .button {
+    font-size: 2rem;  /******TABLET******/
+    padding: 1.5rem 3rem;
+    width: 26rem;
+  }
+  /******FOOTER******/
+  .footer-content {
+    display: block;       /******TABLET******/
+  }
+
+  .footer-content div {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1285px) {
+  .grid2 {
+    grid-template-columns: 5fr 3fr;  /******DESKTOP******/
+    padding: 3em 0;
+  }
+
+  .description-content {
+    margin: auto;
+    width: 28.8rem;
+   }
+}

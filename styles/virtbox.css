@@ -1,0 +1,1227 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #FFF;
+  font-family: Cabin;           /******MOBILE******/
+  font-size: 1.6rem;
+}
+
+main {
+  margin-bottom: 8rem;
+}
+
+.grid-bg {
+  background-color: #F9F9F9;
+  width: 100%;
+  z-index: 0;
+}
+
+.nav-bar, .grid1, .grid2, .hover-box, .grid4, .styleGuide, .probsol {
+  /******border: 1px solid black; ****/
+  display: grid;              /******MOBILE******/
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  width: 90%;
+}
+
+
+.grid2, .grid4 {
+  line-height: .7cm;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+section {
+  /*****margin: 5.6rem auto;              *MOBILE******/
+  /***border: 1px solid black;****/
+  padding-bottom: 2.2rem;
+  padding-top: 2.2rem;
+}
+
+.probsol, .competitors, .personas, .takeaway1, .userStories, .visualDesign, .styleGuide, .v2, .v3, .finish, .added, .slideShow {
+ padding: 0;
+}
+
+.competitors, .personas, .userStories {
+  padding-top: 2.2rem;
+}
+
+.probsol, .phases, .takeaway1, .grid4-content, .download-style, .book {
+  padding-bottom: 2.2rem;
+}
+
+h2, h3, h4 {
+  font-family: Montserrat;
+  font-weight: bold;
+  line-height: .8cm;
+  text-align: center;
+}
+
+h2 {
+  color: #2F80ED;
+  font-size: 2.6rem;            /******MOBILE******/
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  color: #2D9CDB;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 0rem;            /******MOBILE******/
+}
+
+h6 {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.bold, .bold-prob, .bold-sol {
+  font-weight: 900;
+}
+
+.link a, .download a, .download-style a {
+  color: #ED2F80;
+  font-weight: 900;           /******MOBILE******/
+}
+
+.link, .download, .download-style {
+  margin: 2.2rem auto 0 auto;
+  text-align: center;
+}
+
+.discRe p, .survey, .competitors, .userStories, .usabilityTests,
+.brandingID, .style, .hifi, .secondIteration, .usabilityTests2, .lesson {
+  text-align: left;           /******MOBILE******/
+}
+
+hr {
+  border: .2rem solid #2F80ED;    /******MOBILE******/
+  margin-bottom: 2.2rem;
+  width: 10rem;
+}
+
+.last, .competitors, .personas, .col, footer, .theProcess, .visualDesign, .mindMapping, .final-title h3 {
+  padding-bottom: 0;
+}
+/******NAVBAR******/
+nav {
+  display: inline-block;      /******MOBILE******/
+  font-family: Raleway;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav img {
+  display: inline-block;
+  float: left;
+  padding: 1rem;
+  width: 8rem;
+}
+
+nav ul {                  /******MOBILE******/
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  font-family: Raleway;
+  font-size: 1.6rem;
+  font-weight: 900;           /******MOBILE******/
+  list-style: none;
+  padding: 2.2rem;
+}
+
+nav ul li a:hover, .side-nav a:hover {
+  color: #ED2F80;
+}
+
+.open-slide {
+  float: right;
+  margin: 2rem 0;
+}
+
+.side-nav {
+  background-color: #111;
+  height: 30%;
+  opacity: .9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  width: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.side-nav a {
+  color: #fff;
+  display: block;
+  font-size: 1.8rem;
+  margin-right: 2.5rem;
+  padding:  1rem 1rem 2rem 3rem;
+  text-align: right;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.side-nav .btn-close {
+  font-size: 5.6rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.portfolio {
+  margin-top: 2rem;
+}
+
+@media(max-width: 568px){
+  .nav-bar ul {
+    display: none;
+  }
+}
+@media(min-width: 568px){
+  .open-slide, .side-nav {
+    display: none;
+  }
+}
+
+/******HERO******/
+.hero-background {
+  background: linear-gradient(rgba(	33, 212, 253, 0.6),rgba(59, 88, 252, 0.6)),
+  url(../imagesUpdated/cloud.jpg);
+  background-repeat: no-repeat;           /******MOBILE******/
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  padding: 0;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr;   /******MOBILE******/
+  padding-bottom: 9.2rem;
+  padding-top: 3.2rem;
+  z-index: 1;
+}
+
+.left-content {
+  background-repeat: no-repeat;   /******MOBILE******/
+  height: 100%;
+  width: 100%;
+}
+
+.right-content {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.summary {
+  line-height: 1.2cm;
+  margin-bottom: 3rem;
+}
+
+.button {
+  background-color: #ED2F80;    /******MOBILE******/
+  border-radius: 5rem;
+  color: inherit;
+  font-size: 1.6rem;
+  padding: 1.45rem;
+  text-decoration: none;
+  width: 22rem;
+}
+
+#myBtn {
+  background-color: #ED2F80;
+  border: none;
+  border-radius: .5rem;
+  bottom: .3rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+  font-size: 1.6rem;
+  outline: none;
+  padding: 1.5rem;
+  position: fixed;
+  right: 30px;
+  z-index: 1;
+}
+
+.button:hover, #myBtn:hover {
+  background-color: #fff;
+  border: 2px solid #ED2F80;
+  color: #ED2F80;
+}
+
+/******what is virtBox******/
+
+.rolesTools {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 2.2rem auto 0;
+}
+
+.title1, .title2 {
+  font-weight: 900;             /******MOBILE******/
+  margin-bottom: 2rem;
+}
+
+.roles {
+  border-right: 1px solid black;
+}
+
+/******overview******/
+.probsol {
+  display: grid;                   /******MOBILE******/
+  grid-template-columns: 1fr;
+}
+
+.probsol ul {
+  margin: auto 0;
+}
+
+.solscr, .solscr2 {
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.solscr2 {
+  margin: 7rem 0;
+}
+
+.probsol ul li {
+  line-height: .6cm;
+  margin: auto auto auto 0;
+}
+
+.probsol1, .probsol2, .probsol3{          /******MOBILE******/
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 11fr;
+  list-style-type: none;
+  text-align: left;
+}
+
+
+.probsol2 {
+  margin-top: 4rem;
+}
+
+.small {
+  padding-bottom: 0;
+}
+
+.lg {
+  display: none;            /******MOBILE******/
+}
+
+.scr2 {
+  margin-bottom: 4rem;
+}
+
+.sm {
+  margin-bottom: 4rem;
+}
+
+.prob {
+  margin: auto auto auto 0;
+}
+
+.sad, .happy {
+  height: 3.6rem;
+  margin-bottom: .3rem;
+  vertical-align: middle;     /******MOBILE******/
+  width: 3.6rem;
+}
+
+.bold-prob {
+  color: #EB5757;       /******MOBILE******/
+}
+
+.bold-sol {
+  color: #2D9CDB;
+}
+/******PHASES PROCESS******/
+.phases {
+  background-color: #F9F9F9;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr;   /******MOBILE******/
+  margin: 0 auto;
+  padding-top: 0;
+  width: 90%;
+}
+
+.phases ul li {
+  list-style-type: disc;
+  text-align: left;           /******MOBILE******/
+}
+
+.phase1, .phase2, .phase3, .phase4 {
+  background-color: white;
+  border-radius: 1rem;
+  padding-top: 4rem;
+}
+
+.phase1 ul, .phase2 ul, .phase3 ul, .phase4 ul {
+  margin: auto 4rem 6rem;
+}
+
+.phase1 {
+  border: .3rem solid #F2994A;
+}
+
+.phase2 {
+  border: .3rem solid #F2C94C;      /******MOBILE******/
+}
+
+.phase3 {
+  border: .3rem solid #27AE60;
+}
+
+.phase4 {
+  border: .3rem solid #2F80ED;    /******MOBILE******/
+}
+
+.title {
+  height: 5rem;           /******MOBILE******/
+  margin: 2rem auto;
+}
+
+/******USER SURVEY******/
+.break {
+  margin-top: 2.2rem;
+}
+
+.data {
+  background-color: #D9DFFE;        /******MOBILE******/
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 2.2rem auto;
+  padding: 3rem 3rem 0 3rem;
+}
+
+.data ul li {
+  margin-bottom: 4.3rem;
+}
+
+.data ul li p{
+       /******MOBILE******/
+  text-align: center;
+}
+
+.data-content {
+  height: 8.5rem;               /******MOBILE******/
+}
+
+.survey {                   /******MOBILE******/
+  list-style-type: disc;
+}
+
+.survey .bold {
+  list-style-type: none;
+}
+
+
+/******COMPETITORS******/
+.analysis {
+  display: grid;
+  grid-gap: 3rem;         /******MOBILE******/
+  grid-template-columns: 1fr;
+}
+
+.logo-container {
+  margin-bottom: 1rem;
+  text-align: center;     /******MOBILE******/
+}
+
+.logo-container img {
+  height: 15rem;
+  width: auto;          /******MOBILE******/
+}
+
+.takeaway1 {
+  margin: 2.2rem auto 0 auto;
+  padding-top: 0;       /******MOBILE******/
+  text-align: left;
+}
+
+.takeaway1 p, .takeaway1 ul {
+  padding-top: 1.1rem;      /******MOBILE******/
+}
+
+.takeaway1 ul li, .hifi ul li, .col ul li, .usabilityTests ul, .secondIteration ul, .usabilityTests2 ul {
+  list-style: disc outside;
+}
+
+.button {
+  font-size: 1.8rem;  /******MOBILE******/
+  padding: 1.5rem 3rem;
+}
+/******PERSONAS******/
+.col {
+  display: grid;
+  grid-template-columns: 1fr;
+  line-height: .7cm;
+  margin: 2.2rem auto 0 auto;        /******MOBILE******/
+  padding-top: 0;
+  text-align: left;
+  width: 90%;
+}
+
+.persona1, .persona2, .persona3 {
+  padding: 4.3rem;          /******MOBILE******/
+}
+
+.persona1, .persona3 {
+  background-color: #FAFBFB;
+}
+
+.col, .persona1, .persona2, .persona3, .hover-content {
+  box-shadow: .2rem .5rem .5rem #D5D5D5;
+}
+
+.avatar {
+  text-align: center;
+}
+
+.avatar1, .avatar2, .avatar3 {
+    border-radius: 50%;
+    height: 13rem;
+    margin: 0 auto;
+    width: 13rem;
+  }
+
+.name, .quote {
+  font-weight: 900;           /******MOBILE******/
+  text-align: center;
+}
+
+.name {
+  font-size: 2.4rem;        /******MOBILE******/
+  margin-top: 2rem;
+}
+
+.quote {
+  color: #00C853;         /******MOBILE******/
+  margin: 1rem auto;
+}
+
+.takeaway2 {
+  line-height: .7cm;
+  margin: 2.2rem auto;
+  padding: 0;
+  text-align: center;
+  width: 90%;
+}
+
+.takeaway2 h6 {
+  margin-bottom: 2.2rem;
+}
+/******USER FLOWS******/
+.extend {
+  background: url('../imagesUpdated/sharing.png');
+  margin-bottom: 2.2rem;
+  padding: 12rem 0;
+}
+
+.hover-content {
+  background-color: #fff;
+  border-radius: .5rem;
+  padding: 2.2rem 3.8rem;   /******MOBILE*****/
+}
+
+/******SKETCHES******/
+.mockupSketches {         /******MOBILE*****/
+  background: url('../imagesUpdated/pencilSketches.jpg');
+}
+
+.digitalSketches {                /******MOBILE*****/
+  background: url('../imagesUpdated/digitalSketches.png');
+}
+
+.mockupSketches, .digitalSketches {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15rem 0;     /******MOBILE*****/
+}
+
+/******USABILITY TESTS******/
+.usabilityTests h6, .hifi ul, .secondIteration ul, .usabilityTests2 h6{
+  margin-top: 2.2rem;
+}
+
+
+/******LOGO SKETCHES MINDMAPPING******/
+.mindMapping {
+  background: url('../imagesUpdated/ideate.jpg') no-repeat;
+  background-size: cover;
+  padding: 17.3rem 0;     /******MOBILE*****/
+}
+
+/******STYLE GUIDE******/
+.style a {
+  color: #ED2F80;
+}
+
+
+.styleGuide img, .v2 img, .slides img{
+  height: auto;            /******MOBILE******/
+  width: 100%;
+}
+
+/******HIFI1******/
+.hifi1 {
+  background: url('../imagesUpdated/hifiv1.png') no-repeat;
+  background-size: cover;       /******MOBILE******/
+  padding: 17.3rem 0;
+}
+
+.slides h4 {
+  margin-top: 2.2rem;
+}
+
+.slides .bold {
+  margin: 2.2rem 0;           /******MOBILE******/
+  text-align: center;
+}
+
+.slides li p, .mySlides p {
+  line-height: .7cm;
+  margin: 2.2rem auto;
+  width: 60%;
+}
+
+.w3-content {           /******MOBILE******/
+  display: none;
+}
+
+/******2nd ITERATION******/
+
+.v2, .v3, .finish, .added, .slideShow {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.v2 img, .v3 img, .v2, .v3, .finish, .added, .slideShow img {
+  width: 100%;
+}
+
+.v2 img, .slideShow img {
+  height: auto;            /******MOBILE******/
+}
+
+.final {
+  padding-top: 0;
+}
+
+.finish img, .added img, .finish {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.added {
+  width: 100%;
+}
+
+.book {
+  text-align: center;
+}
+
+/******FOOTER******/
+footer {
+  background-color: #212121;
+  color: #FFFFFF;
+  font-family: Raleway;   /******MOBILE******/
+  padding: 2rem;
+}
+
+.footer-content {
+  margin: auto;
+  padding: 0;
+  text-align: center; /******MOBILE******/
+  text-decoration: none;
+}
+
+.footer-content div {
+  display: inline-block;    /******MOBILE******/
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+footer ul {
+  margin-bottom: 1rem;    /******MOBILE******/
+  padding: .5rem;
+}
+
+footer ul li {
+  display: inline;    /******MOBILE******/
+  padding: 1rem;
+}
+
+footer ul li a{
+  text-decoration: none;
+}
+
+.credit {
+  font-size: 1.3rem;    /******MOBILE******/
+}
+
+@media(min-width: 393px){
+  .data ul li {
+    margin-bottom: 0;
+  }
+
+  .data {
+    padding-bottom: 3rem;
+  }
+}
+
+@media(min-width: 450px){
+
+  .right-content {
+    width: 60%;
+  }
+
+  .phases {
+    width: 70%;
+  }
+
+  .data {
+    padding: 3rem;
+  }
+
+  .probsol1 ul li, .probsol2 ul li, .probsol3 ul li{
+    line-height: .2cm;
+  }
+
+  .col ul {
+    margin-left: 3rem;
+  }
+}
+
+@media(min-width: 555px){
+  .right-content {
+    width: 45%;
+  }
+
+  .data {
+    padding-bottom: 0;
+  }
+
+  .takeaway2 {
+    width: 60%;
+  }
+}
+
+@media(min-width: 610px){
+  .phases {
+    width: 50%;
+  }
+
+  .col {
+    width: 70%;
+  }
+}
+
+@media(min-width: 792px){
+  .data ul li {
+    margin-bottom: 0;
+  }
+}
+/****************TABLET SIZE****************/
+@media screen and (min-width: 768px) {
+  body {
+  font-size: 1.8rem;
+  }
+
+  .nav-bar, .grid1, .grid2, .hover-box, .grid4 {
+    width: 90%;
+  }
+
+  hr {                                    /******TABLET******/
+    margin-bottom: 5.35rem;
+  }
+
+   .grid2, .hover-box, .grid4 {
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;  /******TABLET******/
+  }
+
+    .grid2 {
+    grid-template-areas:
+    ".                nav-bar           ."
+    ".                whatIs            ."
+    ".                overview          ."
+    "probsol          probsol           probsol"
+    "theProcess       theProcess        theProcess"
+    "phases           phases            phases"
+    ".                discRe            ."
+    "competitors      competitors       competitors"
+    ".                takeaway1         ."
+    "personas         personas          personas"   /******TABLET******/
+    ".                takeaway2         ."
+    ".                userStories       ."        /******TABLET******/
+    "mockups          mockups           mockups"
+    ".                usabilityTests    ."
+    ".                logoSketches      ."
+    "mindMapping      mindMapping       mingMapping"
+    ".                brandingID        ."
+    ".                style             ."
+    ".                hifi              ."
+    ".                TESTINGS          ."
+    "figma            figma             figma"
+    ".                testings          ."
+    ".                secondIteration   ."
+    ".                thirdIteration    ."
+    ".                usabilityTests2   ."
+    "final-title     final-title        final-title"
+    ".                final             ."
+    ".                added             ."
+    ".                lesson            .";
+     padding: 0;
+  }
+
+  section {
+    padding-bottom: 5.35rem;
+    padding-top: 5.35rem;                   /******TABLET******/
+  }
+
+  .competitors, .personas, .userStories {
+    padding-top: 5.35rem;
+  }
+
+  .probsol, .takeaway1, .download-style {
+    padding-bottom: 5.35rem;
+  }
+
+
+  h2 {
+    font-size: 3rem;    /******TABLET******/
+    margin-bottom: 4.4rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;    /******TABLET******/
+    margin-bottom: 1.5rem;
+  }
+
+  h4 {
+     font-size: 2.4rem;
+   }
+
+  h6 {
+    font-size: 1.8rem;
+  }
+/******NAVBAR******/
+.nav-bar {
+  grid-area: nav-bar;
+}
+
+nav ul li {
+  font-size: 1.8rem;     /******TABLET******/
+}
+
+
+  /******HERO******/
+  .right-content {
+    width: 35%;
+  }
+
+  .button {
+    font-size: 2rem;  /******TABLET******/
+    padding: 1.5rem 3rem;
+    width: 26rem;
+  }
+
+   /******WHAT IS SECTION*****/
+    .whatIs {
+      grid-area: whatIs;    /******TABLET******/
+    }
+
+    .rolesTools {
+      margin: 4.3rem auto 0 auto;
+    }
+
+/******overview******/
+    .overview {
+    grid-area: overview;
+    padding-bottom: 2.2rem;
+  }
+
+  .probsol {
+    width: 60%;
+  }
+
+  /******PHASES PROCESS******/
+  .theProcess {
+    grid-area: theProcess;      /******TABLET******/
+  }
+
+  .phases {
+    grid-area: phases;
+    grid-template-columns: 1fr 1fr ;
+    margin-bottom: 5.35rem;
+    padding-top: 0;
+    width: 70%;
+  }
+
+  .phase1 ul, .phase2 ul, .phase3 ul, .phase4 ul {
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  /******USER SURVEY******/
+  .discRe {
+    grid-area: discRe;
+  }
+
+  .data ul li {
+    margin-bottom: 2rem;
+  }
+
+  .last {
+    height: 8.5rem;
+
+  }
+
+  .competitors {
+    grid-area: competitors;     /******TABLET******/
+  }
+
+  /******COMPETITORS******/
+  .analysis {
+    grid-gap: 2.2rem;             /******TABLET******/
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+  }
+
+  .logo-container{
+    margin-bottom: 2rem;
+  }
+
+  .takeaway1 {
+    grid-area: takeaway1;         /******TABLET******/
+  }
+  /******PERSONAS******/
+  .personas {
+    grid-area: personas;
+  }
+
+  .col {
+    width: 60%;
+  }
+
+  .persona1, .persona2, .persona3 {
+    padding: 4.3rem;
+  }
+
+  .avatar1, .avatar2, .avatar3 {
+    height: 15rem;
+    width: 15rem;
+    }
+
+  .name {
+    font-size: 2.4rem;
+    margin-top: 3rem;
+  }
+
+  .quote {
+    margin: 2rem auto;
+  }
+
+  .takeaway2 {
+    grid-area: takeaway2;
+    margin: 2.2rem auto 5.35rem auto;
+    text-align: center;
+    width: 50%;
+  }
+
+  .userStories {
+    grid-area: userStories;     /******TABLET******/
+  }
+
+  /******USER FLOWS******/
+  .extend, .mockupSketches, .digitalSketches, .mindMapping, .hifi1 {
+    padding: 22rem 0;                     /******TABLET******/
+  }
+
+    .extend {
+      margin-bottom: 5.35rem;
+    }
+
+   .hover-box {
+     grid-template-areas: ".      hoverContent      .";
+   }
+
+   .hover-content {
+     padding: 4rem 3.8rem;          /******TABLET******/
+     grid-area: hoverContent;
+     text-align: center;
+   }
+
+/******VISUAL DESIGN******/
+  .grid4 {
+    grid-template-areas: ".      grid4Content      .";
+  }
+
+  .grid4-content {
+    grid-area: grid4Content;
+  }
+
+  .usabilityTests {
+    grid-area: usabilityTests;    /******TABLET******/
+  }
+
+  .logoSketches {
+    grid-area: logoSketches;
+    padding-bottom: 2.2rem;
+  }
+
+  .mindMapping {
+    grid-area: mingMapping;   /******TABLET******/
+  }
+
+  .brandingID {
+    grid-area: brandingID;
+  }
+
+  /******STYLE GUIDE******/
+  .style {
+    grid-area: style;       /******TABLET******/
+    padding-bottom: 2.2rem;
+  }
+
+  .styleGuide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+  }
+
+  .hifi {
+    grid-area: hifi;    /******TABLET******/
+    padding-bottom: 2.2rem;
+  }
+
+  .slideShow{
+    display: none;  /******TABLET******/
+  }
+
+  .w3-content {
+    display: block; /******TABLET******/
+  }
+
+  .testings {
+    grid-area: testings;
+    padding-bottom: 2.2rem;
+  }
+
+  .mySlides {
+    background-color: #f9f9f9;
+    padding-bottom: 13rem;
+  }
+
+  .mySlides img {
+    width: 100%;
+  }
+
+  .mySlides h6 {
+    padding: 2.5rem 0;
+    text-align: center;
+  }
+
+  .mySlides p {
+    margin: 2.2rem auto;
+    width: 50%;
+  }
+
+  .testings {
+    grid-area: testings;
+  }
+
+  .secondIteration {
+    grid-area: secondIteration; /******TABLET******/
+    padding-bottom: 2.2rem;
+  }
+
+  .v2, .slideShow {
+    margin: 0 auto;
+  }
+
+  .thirdIteration {
+    grid-area: thirdIteration;
+    padding-bottom: 2.2rem;
+  }
+
+   /******3rd ITERATION******/
+  .v3, .finish {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .usabilityTests2 {
+    grid-area: usabilityTests2; /******TABLET******/
+  }
+
+  .final {
+    grid-area: final;
+    padding-bottom: 2.2rem;
+  }
+
+  .finish {
+    grid-area: finish;    /******TABLET******/
+  }
+
+  .added {
+    grid-area: added;
+    margin: 0 auto;     /******TABLET******/
+    width: 80%;
+  }
+
+  .lesson {
+    grid-area: lesson;
+  }
+
+  .final-title {
+    grid-area: final-title;
+    padding-bottom: 0;
+  }
+
+  .book img {
+  }
+
+  /******FOOTER******/
+  .footer-content {     /******TABLET******/
+    display: block;
+  }
+
+  .footer-content div {
+    font-size: 2.4rem;
+  }
+
+ }
+
+@media screen and (min-width: 900px) {
+  .grid1 {
+    display: grid;            /******TABLET******/
+    grid-gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 8.5rem;
+  }
+
+  .right-content {            /******TABLET******/
+    font-size: 4rem;
+    margin-left: 3rem;
+    width: 100%;
+  }
+
+  .summary {
+    line-height: 1.7cm;
+  }
+
+  .col {
+    width: 50%;
+  }
+}
+
+/****************DESKTOP****************/
+@media screen and (min-width: 1000px) {
+  /****************HERO****************/
+
+  .nav-bar, .grid1, .grid2, .hover-box, .grid4, .probsol {
+    width: 80%;
+  }
+
+  .probsol {
+    display: grid;               /******DESKTOP******/
+    grid-area: probsol;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .small {
+    display: none;            /******DESKTOP******/
+  }
+
+  .lg {
+    display: grid;
+  }
+
+  .scr2 {
+  }
+
+  .prob{
+    margin-top: 2rem;     /******DESKTOP******/
+  }
+
+  .sol {
+    margin-bottom: 2rem;
+  }
+
+  /******PHASES PROCESS******/
+
+  .last {
+    margin-bottom: 0;
+  }
+
+  /******PERSONAS******/
+  .personas {
+    grid-area: personas;
+  }
+
+  .col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+  }
+
+  .col ul {
+    margin-left: 1rem;
+  }
+
+  .takeaway2 {
+    width: 35%;
+  }
+
+  .styleGuide {
+    width: 70%;
+  }
+
+  /******2nd ITERATION******/
+  .v2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+/****************DESKTOP****************/
+@media screen and (min-width: 1285px) {
+/******PHASES PROCESS******/
+  .phases {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+  }
+
+  .last {
+    height: 6rem;
+  }
+
+}
