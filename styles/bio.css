@@ -253,7 +253,7 @@ footer ul li a{
   /******JOURNEY STORY******/
   .grid1 {
     grid-template-columns: 1fr;
-    margin: 5rem auto 20rem auto;
+    margin: 5rem auto 0 auto;
     width: 50%;                         /******TABLET******/
   }
 
