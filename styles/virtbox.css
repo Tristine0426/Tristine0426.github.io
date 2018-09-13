@@ -212,6 +212,11 @@ nav ul li a:hover, .side-nav a:hover {
   padding: 0;
 }
 
+.reverse {
+  margin-top: -8.5rem;
+  padding-top: 8rem;
+}
+
 .grid1 {
   display: grid;
   grid-template-columns: 1fr;   /******MOBILE******/
@@ -857,6 +862,10 @@ nav ul li {
    /******WHAT IS SECTION*****/
     .whatIs {
       grid-area: whatIs;    /******TABLET******/
+    }
+
+    .reverse {
+      padding-top: 10.7rem;
     }
 
     .rolesTools {
