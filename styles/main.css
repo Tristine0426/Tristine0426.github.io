@@ -173,6 +173,7 @@ width: 100%;
 
 .description-content {
   color: #fff;
+  line-height: 2.3rem;
   margin: 0 auto 0 auto;    /******MOBILE******/
   text-align: center;
   width: 22rem;
@@ -190,6 +191,10 @@ width: 100%;
   font-size: 1.6rem;
   padding: 1.45rem 3rem;
   text-decoration: none;
+  -webkit-transition: background-color .4s ease-out;
+  -moz-transition: background-color .4s ease-out;
+  -o-transition: background-color .4s ease-out;
+  transition: background-color .4s ease-out;
 }
 
 .button:hover {
@@ -269,6 +274,7 @@ footer ul li a{
 
   .down-arrow {
     margin: 22rem 0 2rem 0;   /******TABLET******/
+    text-decoration: none;
   }
 
   /******FOR ALL PROJECTS*****/

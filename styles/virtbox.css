@@ -251,6 +251,10 @@ nav ul li a:hover, .side-nav a:hover {
   font-size: 1.6rem;
   padding: 1.45rem;
   text-decoration: none;
+  -webkit-transition: background-color .4s ease-out;
+  -moz-transition: background-color .4s ease-out;
+  -o-transition: background-color .4s ease-out;
+  transition: background-color .4s ease-out;
   width: 22rem;
 }
 
