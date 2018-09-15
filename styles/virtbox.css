@@ -704,6 +704,14 @@ footer ul li a{
   .data {
     padding-bottom: 3rem;
   }
+
+  .data-content {
+    height: 11rem;
+  }
+
+  .last {
+    height: 8rem;
+  }
 }
 
 @media(min-width: 450px){
@@ -1154,8 +1162,13 @@ nav ul li {
   .col {
     width: 50%;
   }
-}
 
+
+@media screen and (min-width: 909px) {
+  .data-content {
+    height: 8.6rem;
+  }
+}
 /****************DESKTOP****************/
 @media screen and (min-width: 1000px) {
   /****************HERO****************/
@@ -1224,6 +1237,12 @@ nav ul li {
     grid-template-columns: 1fr 1fr;
   }
 
+}
+
+@media screen and (min-width: 1020px) {
+  .data-content {
+    height: 8.3rem;
+  }
 }
 /****************DESKTOP****************/
 @media screen and (min-width: 1285px) {
