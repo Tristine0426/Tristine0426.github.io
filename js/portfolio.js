@@ -59,6 +59,7 @@ window.onload = function() {
 // Hamburger
 function openSlideMenu() {
   document.getElementById('side-menu').style.width = '100%';
+  document.getElementById('side-menu').style.height = 'auto%';
 }
 
 function closeSlideMenu() {

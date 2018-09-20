@@ -56,7 +56,7 @@ section {
   padding-bottom: 2.2rem;
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
   font-family: Montserrat;
   font-weight: bold;
   line-height: .8cm;
@@ -77,8 +77,11 @@ h3 {
 
 h4 {
   font-size: 2.2rem;
-  font-weight: 900;
   margin-bottom: 0rem;            /******MOBILE******/
+}
+
+h5 {
+  font-size: 2rem;
 }
 
 h6 {
@@ -566,7 +569,7 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .digitalSketches {                /******MOBILE*****/
-  background: url('../imagesUpdated/digitalSketches.png');
+  background: url('../imagesUpdated/mobileDigital.jpg');
 }
 
 .mockupSketches, .digitalSketches {
@@ -607,18 +610,29 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .slides h4 {
-  margin-top: 2.2rem;
+  background-color: #f9f9f9;
+  font-family: cabin;
+  margin: 2.2rem auto 0 auto;
+  padding-top: 2rem;
 }
 
-.slides .bold {
-  margin: 2.2rem 0;           /******MOBILE******/
-  text-align: center;
+.slides h5 {
+  margin-top: 1rem;
+  opacity: 0.6;
 }
 
 .slides li p, .mySlides p {
-  line-height: .7cm;
-  margin: 2.2rem auto;
+  line-height: .6cm;
+  margin: 1rem auto;
   width: 60%;
+}
+
+.top-g2 {
+  padding-top: 5rem;
+}
+
+.bottom-g2 {
+  margin-bottom: 5rem;
 }
 
 .w3-content {           /******MOBILE******/
@@ -662,7 +676,7 @@ footer {
   background-color: #212121;
   color: #FFFFFF;
   font-family: Raleway;   /******MOBILE******/
-  padding: 2rem;
+  padding: 5rem;
 }
 
 .footer-content {
@@ -999,6 +1013,11 @@ nav ul li {
      padding: 4rem 3.8rem;          /******TABLET******/
      grid-area: hoverContent;
      text-align: center;
+   }
+
+   .digitalSketches {                /******MOBILE*****/
+     background: url('../imagesUpdated/digital.jpg');
+     background-size: cover;
    }
 
 /******VISUAL DESIGN******/

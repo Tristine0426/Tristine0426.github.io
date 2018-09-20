@@ -27,8 +27,8 @@ nav a {
 nav img {
   display: inline-block;
   float: left;
-  padding: 1rem;
-  width: 8rem;
+  margin-top: 1rem;
+  width: 6rem;
 }
 
 nav ul {                  /******MOBILE******/
@@ -144,7 +144,7 @@ h3 {
 }
 
 .down-arrow {
-  margin: 12rem 0 2rem 0;    /******MOBILE******/
+  margin: 18rem 0 2rem 0;    /******MOBILE******/
   text-align: center;
 }
 
@@ -167,14 +167,14 @@ nav, .grid1, .grid2 {
 }
 
 .scr {
-background-repeat: no-repeat; /******MOBILE******/
-width: 100%;
+  background-repeat: no-repeat; /******MOBILE******/
+  width: 100%;
 }
 
 .description-content {
   color: #fff;
   line-height: 2.3rem;
-  margin: 0 auto 0 auto;    /******MOBILE******/
+  margin: 3rem auto 0 auto;    /******MOBILE******/
   text-align: center;
   width: 22rem;
 }
@@ -209,7 +209,7 @@ footer {
   background-color: #212121;
   color: #FFFFFF;
   font-family: Raleway;   /******MOBILE******/
-  padding: 2rem;
+  padding: 5rem;
 }
 
 .footer-content {
