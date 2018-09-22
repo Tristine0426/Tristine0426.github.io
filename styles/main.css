@@ -158,6 +158,10 @@ h3 {
   text-align: center;
 }
 
+.down-arrow a {
+  color: black;
+}
+
 /******FOR ALL PROJECTS MOBILE*****/
 .container p {
   font-size: 1.6rem;
