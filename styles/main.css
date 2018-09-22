@@ -97,6 +97,16 @@ nav ul li a:hover, .side-nav a:hover {
   .open-slide, .side-nav {
     display: none;
   }
+
+  .screen img{
+    display: none;
+  }
+
+  .grid2 .bigScreen img {
+    display: grid;
+    width: 100%;
+  }
+
 }
 
 }
@@ -166,9 +176,13 @@ nav, .grid1, .grid2 {
   width: 90%;
 }
 
-.scr {
+.screen img {
   background-repeat: no-repeat; /******MOBILE******/
   width: 100%;
+}
+
+.bigScreen img {
+  display: none;
 }
 
 .description-content {

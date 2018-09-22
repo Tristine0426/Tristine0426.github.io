@@ -114,7 +114,7 @@ hr {
   width: 10rem;
 }
 
-.last, .competitors, .personas, .col, footer, .theProcess, .visualDesign, .mindMapping, .final-title h3 {
+.last, .competitors, .personas, .col, footer, .theProcess, .visualDesign, .mindMapping, .testings, .final-title h3 {
   padding-bottom: 0;
 }
 /******NAVBAR******/
@@ -223,22 +223,25 @@ nav ul li a:hover, .side-nav a:hover {
 .grid1 {
   display: grid;
   grid-template-columns: 1fr;   /******MOBILE******/
-  padding-bottom: 9.2rem;
+  padding-bottom: 10.2rem;
   padding-top: 3.2rem;
   z-index: 1;
 }
 
-.left-content {
-  background-repeat: no-repeat;   /******MOBILE******/
-  height: 100%;
+.grid1 .left-content img{
+  display: grid;
   width: 100%;
+}
+
+.left-contentBig img{
+  display: none;
 }
 
 .right-content {
   color: white;
   font-size: 2.8rem;
   font-weight: 900;
-  margin: 0 auto;
+  margin: 3rem auto 0 auto;
   width: 80%;
 }
 
@@ -604,7 +607,7 @@ nav ul li a:hover, .side-nav a:hover {
 
 /******HIFI1******/
 .hifi1 {
-  background: url('../imagesUpdated/hifiv1.png') no-repeat;
+  background: url('../imagesUpdated/hifiv1Mobile.png') no-repeat;
   background-size: cover;       /******MOBILE******/
   padding: 17.3rem 0;
 }
@@ -628,11 +631,11 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .top-g2 {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 .bottom-g2 {
-  margin-bottom: 5rem;
+  margin-bottom: 3em;
 }
 
 .w3-content {           /******MOBILE******/
@@ -794,6 +797,26 @@ footer ul li a{
     margin-bottom: 5.35rem;
   }
 
+  .grid1 {
+    display: grid;            /******TABLET******/
+    grid-gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 8.5rem;
+  }
+
+  .left-content {
+    display: none;
+  }
+
+  .left-contentBig img{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+
    .grid2, .hover-box, .grid4 {
     display: grid;
     grid-template-columns: 3fr 6fr 3fr;  /******TABLET******/
@@ -875,9 +898,6 @@ nav ul li {
 
 
   /******HERO******/
-  .right-content {
-    width: 35%;
-  }
 
   .button {
     font-size: 2rem;  /******TABLET******/
@@ -1063,6 +1083,11 @@ nav ul li {
     padding-bottom: 2.2rem;
   }
 
+  .hifi1 {
+    background: url('../imagesUpdated/hifiv1.png');
+    background-size: cover;
+  }
+
   .slideShow{
     display: none;  /******TABLET******/
   }
@@ -1161,17 +1186,9 @@ nav ul li {
  }
 
 @media screen and (min-width: 900px) {
-  .grid1 {
-    display: grid;            /******TABLET******/
-    grid-gap: 2rem;
-    grid-template-columns: 2fr 1fr;
-    padding-top: 8.5rem;
-  }
-
   .right-content {            /******TABLET******/
     font-size: 4rem;
     margin-left: 3rem;
-    width: 100%;
   }
 
   .summary {
@@ -1181,7 +1198,6 @@ nav ul li {
   .col {
     width: 50%;
   }
-
 
 @media screen and (min-width: 909px) {
   .data-content {
