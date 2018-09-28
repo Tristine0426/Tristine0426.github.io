@@ -17,32 +17,31 @@ p {
 }
 
 /******NAVBAR******/
-.nav-bar {
-        /******MOBILE******/
+nav {
+  display: grid;      /******MOBILE******/
   font-family: Raleway;
-  height: 8rem;
   margin: 0 auto;
   padding: 1rem 0;
   width: 90%;
 }
 
-.nav-bar a {
+nav a {
   color: black;
   text-decoration: none;
 }
 
-.nav-bar img {
+nav img {
   display: inline-block;
   float: left;
-  padding: 1rem;
-  width: 8rem;
+  margin-top: 1rem;
+  width: 6rem;
 }
 
-.nav-bar ul {                  /******MOBILE******/
+nav ul {                  /******MOBILE******/
   float: right;
 }
 
-.nav-bar ul li {
+nav ul li {
   display: inline-block;
   font-family: Raleway;
   font-size: 1.6rem;
@@ -51,7 +50,7 @@ p {
   padding: 2.2rem;
 }
 
-.nav-bar ul li a:hover, .side-nav a:hover {
+nav ul li a:hover, .side-nav a:hover {
   color: #ED2F80;
 }
 
@@ -77,6 +76,7 @@ p {
   color: #fff;
   display: block;
   font-size: 1.8rem;
+  margin-right: 2.5rem;
   padding:  1rem 1rem 2rem 3rem;
   text-align: right;
   text-decoration: none;
@@ -86,7 +86,7 @@ p {
 .side-nav .btn-close {
   font-size: 5.6rem;
   position: absolute;
-  right: 2.2rem;
+  right: 0;
   top: 0;
 }
 
