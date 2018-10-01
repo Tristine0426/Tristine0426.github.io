@@ -56,7 +56,7 @@ nav ul li a:hover, .side-nav a:hover {
 .side-nav {
   background-color: #111;
   opacity: .9;
-  overflow-x: hidden;
+  overflow: hidden;
   padding-top: 60px;
   width: 0;
   position: fixed;
