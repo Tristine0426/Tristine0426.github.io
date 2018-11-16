@@ -144,6 +144,10 @@ h2 {
   margin-bottom: 2.2rem;
 }
 
+.grid3 h2 {
+  font-family: Fredoka One;
+}
+
 h3 {
   color: #616161;
   font-size: 2rem;
@@ -169,7 +173,12 @@ h3 {
   padding: 7rem 0;
 }
 
-nav, .grid1, .grid2 {
+.project2 {
+  background: linear-gradient(to left, #FB3258, #F48FB1);
+  padding: 7rem 0;
+}
+
+nav, .grid1, .grid2, .grid3 {
   display: grid;
   grid-template-columns: 1fr; /******MOBILE******/
   list-style: none;
@@ -301,7 +310,7 @@ footer ul li a{
   font-size: 2rem;
   }
 
-  .grid2 {
+  .grid2, .grid3 {
     margin: 0 auto;
     width: 80%;
   }
@@ -332,6 +341,11 @@ footer ul li a{
 @media screen and (min-width: 1285px) {
   .grid2 {
     grid-template-columns: 5fr 3fr;  /******DESKTOP******/
+    padding: 3em 0;
+  }
+
+  .grid3 {
+    grid-template-columns: 3fr 5fr;  /******DESKTOP******/
     padding: 3em 0;
   }
 
