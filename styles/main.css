@@ -97,11 +97,11 @@ nav ul li a:hover, .side-nav a:hover {
     display: none;
   }
 
-  .screen img{
+  .screen, .grid3 .miniScreen {
     display: none;
   }
 
-  .grid2 .bigScreen img {
+  .grid2 .bigScreen img, .grid3 .bigScreen img {
     display: grid;
     width: 100%;
   }
@@ -186,7 +186,7 @@ nav, .grid1, .grid2, .grid3 {
   width: 90%;
 }
 
-.screen img {
+.screen img, .miniScreen img{
   background-repeat: no-repeat; /******MOBILE******/
   width: 100%;
 }
@@ -341,16 +341,20 @@ footer ul li a{
 @media screen and (min-width: 1285px) {
   .grid2 {
     grid-template-columns: 5fr 3fr;  /******DESKTOP******/
-    padding: 3em 0;
+    padding: 3rem 0;
+    border: 1px solid black;
+
   }
 
   .grid3 {
     grid-template-columns: 3fr 5fr;  /******DESKTOP******/
-    padding: 3em 0;
+    padding: 3rem 0;
+    border: 1px solid black;
   }
 
   .description-content {
+    border: 1px solid black;
     margin: auto;
-    width: 28.8rem;
+    width: 80%;
    }
 }
