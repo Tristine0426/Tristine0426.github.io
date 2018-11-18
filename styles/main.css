@@ -20,7 +20,7 @@ nav {
 }
 
 nav a {
-  color: black;
+  color: ;
   text-decoration: none;
 }
 
@@ -195,7 +195,7 @@ nav, .grid1, .grid2, .grid3 {
   display: none;
 }
 
-.description-content {
+.description-content1, .description-content2 {
   color: #fff;
   line-height: 2.3rem;
   margin: 3rem auto 0 auto;    /******MOBILE******/
@@ -203,7 +203,7 @@ nav, .grid1, .grid2, .grid3 {
   width: 22rem;
 }
 
-.description-content p {
+.description-content1 p, .description-content2 p {
   font-size: 1.8rem;
   margin-bottom: 4.2rem;
 }
@@ -315,11 +315,11 @@ footer ul li a{
     width: 80%;
   }
 
- .description-content {
+ .description-content1, .description-content2 {
     width: 32rem;
   }
 
-  .description-content p {
+  .description-content1 p, .description-content2 p {
     margin-bottom: 5.35rem;
   }
 
@@ -342,19 +342,23 @@ footer ul li a{
   .grid2 {
     grid-template-columns: 5fr 3fr;  /******DESKTOP******/
     padding: 3rem 0;
-    border: 1px solid black;
-
   }
 
   .grid3 {
     grid-template-columns: 3fr 5fr;  /******DESKTOP******/
     padding: 3rem 0;
-    border: 1px solid black;
   }
 
-  .description-content {
-    border: 1px solid black;
+  .description-content1, .description-content2 {
     margin: auto;
     width: 80%;
    }
+
+   .description-content1 {
+     margin: auto 0 auto auto;
+    }
+
+   .description-content2 {
+      margin: auto auto auto 0;
+     }
 }
