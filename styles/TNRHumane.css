@@ -1,6 +1,6 @@
 /******HERO******/
 .hero-background {
-  background: linear-gradient(rgba(0, 147, 233, 0.7),rgba(149, 153, 226, 0.7)),
+  background: linear-gradient(rgba(0, 147, 233, 0.7),rgba(149, 153, 226, 0.9)),
   url(../imagesUpdated/TNRProject/strays.jpg);
   background-repeat: no-repeat;           /******MOBILE******/
   background-size: cover;
@@ -8,4 +8,8 @@
 
 .abbreviation {
   color: #FE4180;
+}
+
+@media screen and (min-width: 768px) {
+
 }
