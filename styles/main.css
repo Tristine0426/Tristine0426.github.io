@@ -97,11 +97,11 @@ nav ul li a:hover, .side-nav a:hover {
     display: none;
   }
 
-  .screen, .grid3 .miniScreen {
+  .screen {
     display: none;
   }
 
-  .grid2 .bigScreen img, .grid3 .bigScreen img {
+  .grid2 .bigScreen img {
     display: grid;
     width: 100%;
   }
@@ -120,6 +120,13 @@ nav ul li a:hover, .side-nav a:hover {
 .bold {
   color: #2F80ED;
   font-weight: 900; /******MOBILE******/
+}
+
+.abbreviation {
+  color: yellow;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 h1 {
@@ -347,6 +354,15 @@ footer ul li a{
   .grid3 {
     grid-template-columns: 3fr 5fr;  /******DESKTOP******/
     padding: 3rem 0;
+  }
+
+  .miniScreen {
+    display: none;
+  }
+
+  .grid3 .bigScreen img {
+    display: grid;
+    width: 100%;
   }
 
   .description-content1, .description-content2 {
