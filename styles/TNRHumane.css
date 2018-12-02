@@ -1,6 +1,6 @@
 /******HERO******/
 .hero-background {
-  background: linear-gradient(rgba(255, 96, 149, 0.7),rgba(47, 0, 117, 0.7)),
+  background: linear-gradient(rgba(251, 50, 88, 0.2),rgba(251, 50, 88, 0.5)),
   url(../imagesUpdated/TNRProject/strays.jpg);
   background-repeat: no-repeat;           /******MOBILE******/
   background-size: cover;
@@ -16,6 +16,16 @@
 
 .solscr2 {
   margin: 0 auto;
+}
+
+.quote {
+  color: #FE4180;
+}
+
+.extend {
+  background-image: url('../imagesUpdated/TNRProject/TNRworkflow.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
