@@ -1,6 +1,6 @@
 /******HERO******/
 .hero-background {
-  background: linear-gradient(rgba(251, 50, 88, 0.2),rgba(251, 50, 88, 0.5)),
+  background: linear-gradient(rgba(51, 51, 51, 0.7),rgba(51, 51, 51, 0.6)),
   url(../imagesUpdated/TNRProject/strays.jpg);
   background-repeat: no-repeat;           /******MOBILE******/
   background-size: cover;
@@ -18,6 +18,12 @@
   margin: 0 auto;
 }
 
+.data {
+  background-color: white;
+  border: dashed 3px #D9DFFE;        /******MOBILE******/
+  border-radius: 1em;
+}
+
 .quote {
   color: #FE4180;
 }
@@ -28,8 +34,35 @@
   background-size: cover;
 }
 
+.digitalSketches {
+  background: url('../imagesUpdated/TNRProject/digitalWireframes.jpg');
+  background-size: cover;
+}
+
+.hifi1 {
+  background: url('../imagesUpdated/TNRProject/hifi.jpg') no-repeat;
+  background-size: cover;
+}
+
 @media screen and (min-width: 768px) {
   .solscr, .solscr2 {
     width: 70%;
+  }
+
+  .digitalSketches {
+    background: url('../imagesUpdated/TNRProject/wireframeTab.png');
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .digitalSketches {
+    background: url('../imagesUpdated/TNRProject/wireframeDesk.jpg');
+    background-size: cover;
+  }
+
+  .hifi1 {
+    background: url('../imagesUpdated/TNRProject/hifiDesk.jpg') no-repeat;
+    background-size: cover;
   }
 }
