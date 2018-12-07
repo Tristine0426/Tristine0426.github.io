@@ -22,7 +22,7 @@
 }
 
 .quote {
-  color: #FE4180;
+  color: orange;
 }
 
 .extend {
@@ -41,6 +41,16 @@
   background-size: cover;
 }
 
+.mindMapping {
+  background: url('../imagesUpdated/TNRProject/sketches.png') no-repeat;
+  background-size: cover;
+  padding: 17.3rem 0;     /******MOBILE*****/
+}
+
+.mockupSketches {         /******MOBILE*****/
+  background-image: url('../imagesUpdated/TNRProject/brainstormDesign.jpg');
+}
+
 .slides-bg h4 {
   background-color: #333333;
   color: white;
@@ -56,6 +66,10 @@
   display: none;
 }
 
+.final-title, .finish, .added {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .solscr, .solscr2 {
     width: 70%;
@@ -64,6 +78,10 @@
   .digitalSketches {
     background: url('../imagesUpdated/TNRProject/wireframeTab.png');
     background-size: cover;
+  }
+
+  .mindMapping {
+    padding: 30rem 0;
   }
 
   .mySlides h6 {
