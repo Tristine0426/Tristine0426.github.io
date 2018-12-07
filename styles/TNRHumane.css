@@ -10,12 +10,9 @@
   color: yellow;
 }
 
-.solscr, .solscr2 {
+.solscr, .solscr2, .probsol2 {
+  margin: 2.2rem auto;
   width: 80%;
-}
-
-.solscr2 {
-  margin: 0 auto;
 }
 
 .data {
@@ -44,6 +41,21 @@
   background-size: cover;
 }
 
+.slides-bg h4 {
+  background-color: #333333;
+  color: white;
+}
+
+.mySlides {
+  background-color: #333333;
+  color: white;
+  height: 50%;
+}
+
+.v2Tab img, .v3Tab img {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .solscr, .solscr2 {
     width: 70%;
@@ -54,11 +66,16 @@
     background-size: cover;
   }
 
+  .mySlides h6 {
+    font-size: 3rem;
+    padding-bottom: 2.2rem;
+  }
+
   .v2, .v3 {
     display: none;
   }
 
-  .v2Tab, .v3Tab {
+  .v2Tab, .v3Tab{
     display: grid;
     grid-gap: 0;
     grid-template-columns: 1fr 1fr;
@@ -66,8 +83,10 @@
   }
 
   .v2Tab img, .v3Tab img {
+    display: grid;
     width: 100%;
   }
+
 }
 
 @media screen and (min-width: 900px) {
