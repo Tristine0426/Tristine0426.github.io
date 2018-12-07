@@ -53,6 +53,21 @@
     background: url('../imagesUpdated/TNRProject/wireframeTab.png');
     background-size: cover;
   }
+
+  .v2, .v3 {
+    display: none;
+  }
+
+  .v2Tab, .v3Tab {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+
+  .v2Tab img, .v3Tab img {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 900px) {
