@@ -10,9 +10,16 @@
   color: yellow;
 }
 
+.probsol {
+  width: 60%;
+}
+
+.probsol3 {
+  padding-top: 2.2rem;
+}
+
 .solscr, .solscr2, .probsol2 {
   margin: 2.2rem auto;
-  width: 80%;
 }
 
 .data {
@@ -46,11 +53,22 @@
   background-size: cover;
 }
 
-.mindMapping {
-  background: url('../imagesUpdated/TNRProject/sketches.png') no-repeat;
-  background-size: cover;
-  padding: 17.3rem 0;     /******MOBILE*****/
+.Logo {
+  grid-area: "Logo";
+
 }
+
+.pencilLogo {
+  border: 1px solid black;
+grid-template-columns: 1fr 1fr;
+  background-image: url('../imagesUpdated/TNRProject/sketches.png');
+}
+
+.digitalLogo {
+  border: 1px solid black;
+
+}
+
 
 .mockupSketches {         /******MOBILE*****/
   background-image: url('../imagesUpdated/TNRProject/brainstormDesign.jpg');
@@ -77,9 +95,47 @@
   display: none;
 }
 
+
 @media screen and (min-width: 768px) {
-  .solscr, .solscr2 {
-    width: 70%;
+  .grid2 {
+  grid-template-areas:
+  ".                nav-bar           ."
+  ".                whatIs            ."
+  ".                overview          ."
+  "probsol          probsol           probsol"
+  "theProcess       theProcess        theProcess"
+  "phases           phases            phases"
+  ".                discRe            ."
+  "competitors      competitors       competitors"
+  ".                takeaway1         ."
+  "personas         personas          personas"   /******TABLET******/
+  ".                takeaway2         ."
+  ".                userStories       ."        /******TABLET******/
+  "mockups          mockups           mockups"
+  ".                usabilityTests    ."
+  ".                logoSketches      ."
+  "Logo             Logo              Logo"
+  ".                brandingID        ."
+  ".                style             ."
+  ".                hifi              ."
+  ".                TESTINGS          ."
+  "figma            figma             figma"
+  ".                testings          ."
+  ".                secondIteration   ."
+  ".                thirdIteration    ."
+  ".                usabilityTests2   ."
+  "final-title     final-title        final-title"
+  ".                final             ."
+  ".                added             ."
+  ".                lesson            .";
+}
+
+  .probsol {
+    width: 40%;
+  }
+
+  .probsol3 {
+      padding-top: 5.35rem;
   }
 
   .digitalSketches {
@@ -119,6 +175,10 @@
 }
 
 @media screen and (min-width: 900px) {
+  .probsol {
+    width: 50%;
+  }
+
   .digitalSketches {
     background: url('../imagesUpdated/TNRProject/digitalwireframeDesk.png');
     background-size: cover;
@@ -131,6 +191,10 @@
 }
 
 @media screen and (min-width: 1285px) {
+  .probsol {
+      width: 60%;
+  }
+
   .last {
     height: 9rem;
   }
