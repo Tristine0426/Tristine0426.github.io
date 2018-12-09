@@ -21,6 +21,11 @@
   border-radius: 1em;
 }
 
+.model {
+  margin: 0 auto;
+  width: 20%;
+}
+
 .quote {
   color: orange;
 }
@@ -51,14 +56,16 @@
   background-image: url('../imagesUpdated/TNRProject/brainstormDesign.jpg');
 }
 
-.slides-bg h4 {
+.slides-bg, .slides-bg h4, .mySlides {
   background-color: #333333;
   color: white;
 }
 
+.slides-bg {
+  padding-bottom: 2.2rem;
+}
+
 .mySlides {
-  background-color: #333333;
-  color: white;
   height: 50%;
 }
 
@@ -105,16 +112,26 @@
     width: 100%;
   }
 
+  .usabilityTests2 {
+    padding-bottom: 0;
+  }
+
 }
 
 @media screen and (min-width: 900px) {
   .digitalSketches {
-    background: url('../imagesUpdated/TNRProject/digitalwireframeDesk.jpg');
+    background: url('../imagesUpdated/TNRProject/digitalwireframeDesk.png');
     background-size: cover;
   }
 
   .hifi1 {
-    background: url('../imagesUpdated/TNRProject/hifiDesk.jpg') no-repeat;
+    background: url('../imagesUpdated/TNRProject/hifiDesk.png') no-repeat;
     background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1285px) {
+  .last {
+    height: 9rem;
   }
 }
