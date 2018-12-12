@@ -10,6 +10,16 @@
   color: yellow;
 }
 
+.overview {
+  text-align: left;
+}
+
+.overview ul {
+  list-style: disc;
+  list-style-position: inside;
+  padding: 2.2rem 0;
+}
+
 .probsol {
   width: 60%;
 }
@@ -171,5 +181,15 @@
 
   .last {
     height: 9rem;
+  }
+
+  .mockupSketches {
+    padding: 32rem 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .mockupSketches {
+    padding: 38rem 0;
   }
 }
