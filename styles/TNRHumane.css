@@ -54,21 +54,14 @@
 }
 
 .Logo {
-  grid-area: "Logo";
-
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.pencilLogo {
-  border: 1px solid black;
-grid-template-columns: 1fr 1fr;
-  background-image: url('../imagesUpdated/TNRProject/sketches.png');
+.Logo img {
+  height: auto;
+  width: 90%;
 }
-
-.digitalLogo {
-  border: 1px solid black;
-
-}
-
 
 .mockupSketches {         /******MOBILE*****/
   background-image: url('../imagesUpdated/TNRProject/brainstormDesign.jpg');
@@ -97,39 +90,6 @@ grid-template-columns: 1fr 1fr;
 
 
 @media screen and (min-width: 768px) {
-  .grid2 {
-  grid-template-areas:
-  ".                nav-bar           ."
-  ".                whatIs            ."
-  ".                overview          ."
-  "probsol          probsol           probsol"
-  "theProcess       theProcess        theProcess"
-  "phases           phases            phases"
-  ".                discRe            ."
-  "competitors      competitors       competitors"
-  ".                takeaway1         ."
-  "personas         personas          personas"   /******TABLET******/
-  ".                takeaway2         ."
-  ".                userStories       ."        /******TABLET******/
-  "mockups          mockups           mockups"
-  ".                usabilityTests    ."
-  ".                logoSketches      ."
-  "Logo             Logo              Logo"
-  ".                brandingID        ."
-  ".                style             ."
-  ".                hifi              ."
-  ".                TESTINGS          ."
-  "figma            figma             figma"
-  ".                testings          ."
-  ".                secondIteration   ."
-  ".                thirdIteration    ."
-  ".                usabilityTests2   ."
-  "final-title     final-title        final-title"
-  ".                final             ."
-  ".                added             ."
-  ".                lesson            .";
-}
-
   .probsol {
     width: 40%;
   }
@@ -141,6 +101,16 @@ grid-template-columns: 1fr 1fr;
   .digitalSketches {
     background: url('../imagesUpdated/TNRProject/wireframeTab.png');
     background-size: cover;
+  }
+
+  .Logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Logo img {
+    height: auto;
+    width: 90%;
   }
 
   .mindMapping {
@@ -177,6 +147,10 @@ grid-template-columns: 1fr 1fr;
 @media screen and (min-width: 900px) {
   .probsol {
     width: 50%;
+  }
+
+  .mockupSketches {
+    padding: 28rem 0;
   }
 
   .digitalSketches {
