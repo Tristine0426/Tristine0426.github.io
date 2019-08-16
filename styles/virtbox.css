@@ -32,8 +32,8 @@ main {
 
 
 .grid2, .grid4 {
-  line-height: .7cm;
-  text-align: center;
+  line-height: .9cm;
+  text-align: left;
   padding: 0 1rem;
 }
 
@@ -59,7 +59,7 @@ section {
 h2, h3, h4, h5 {
   font-family: Montserrat;
   font-weight: bold;
-  line-height: .8cm;
+  line-height: .9cm;
   text-align: center;
 }
 
@@ -292,6 +292,7 @@ nav ul li a:hover, .side-nav a:hover {
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
   margin: 2.2rem auto 0;
+  text-align: center;
 }
 
 .title1, .title2 {
@@ -323,7 +324,7 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .probsol ul li {
-  line-height: .6cm;
+  line-height: .9cm;
   margin: auto auto auto 0;
 }
 
@@ -382,6 +383,7 @@ nav ul li a:hover, .side-nav a:hover {
   grid-template-columns: 1fr;   /******MOBILE******/
   margin: 0 auto;
   padding-top: 0;
+  text-align: center;
   width: 90%;
 }
 
@@ -419,6 +421,7 @@ nav ul li a:hover, .side-nav a:hover {
 .title {
   height: 5rem;           /******MOBILE******/
   margin: 2rem auto;
+  text-align: center;
 }
 
 /******USER SURVEY******/
@@ -493,10 +496,14 @@ nav ul li a:hover, .side-nav a:hover {
   padding: 1.5rem 3rem;
 }
 /******PERSONAS******/
+.personas p {
+    text-align: center;
+}
+
 .col {
   display: grid;
   grid-template-columns: 1fr;
-  line-height: .7cm;
+  line-height: .9cm;
   margin: 2.2rem auto 0 auto;        /******MOBILE******/
   padding-top: 0;
   text-align: left;
@@ -542,15 +549,16 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .takeaway2 {
-  line-height: .7cm;
+  line-height: .9cm;
   margin: 2.2rem auto;
   padding: 0;
-  text-align: center;
+  text-align: left;
   width: 90%;
 }
 
 .takeaway2 h6 {
   margin-bottom: 2.2rem;
+  text-align: center;
 }
 /******USER FLOWS******/
 .extend {
@@ -563,6 +571,7 @@ nav ul li a:hover, .side-nav a:hover {
 .hover-content {
   background-color: #fff;
   border-radius: .5rem;
+  line-height: 0.9;
   padding: 2.2rem 3.8rem;   /******MOBILE*****/
 }
 
@@ -626,7 +635,7 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .slides li p, .slides h4, .mySlides p {
-  line-height: .6cm;
+  line-height: .9cm;
   margin: 1rem auto;
   width: 80%;
 }
@@ -1027,7 +1036,6 @@ nav ul li {
   .takeaway2 {
     grid-area: takeaway2;
     margin: 2.2rem auto 5.35rem auto;
-    text-align: center;
     width: 50%;
   }
 
@@ -1051,6 +1059,7 @@ nav ul li {
    .hover-content {
      padding: 4rem 3.8rem;          /******TABLET******/
      grid-area: hoverContent;
+     line-height: 0.9cm;
      text-align: center;
    }
 

@@ -176,12 +176,12 @@ h3 {
 }
 
 .project1 {
-  background: linear-gradient(to left, #3B58FC, #8698fd);
+  background-color: #8698fd;
   padding: 7rem 0;
 }
 
 .project2 {
-  background: linear-gradient(to left, #ed5975, #F48FB1);
+  background-color: #F48FB1;
   padding: 7rem 0;
 }
 
@@ -204,9 +204,9 @@ nav, .grid1, .grid2, .grid3 {
 
 .description-content1, .description-content2 {
   color: #fff;
-  line-height: 2.3rem;
+  line-height: 2.8rem;
   margin: 3rem auto 0 auto;    /******MOBILE******/
-  text-align: center;
+  text-align: left;
   width: 22rem;
 }
 
