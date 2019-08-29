@@ -8,7 +8,7 @@ html {
 
 body {
   background-color: #FFF;
-  font-family: Cabin;           /******MOBILE******/
+  font-family: Cabin, sans-serif;           /******MOBILE******/
   font-size: 1.6rem;
 }
 
@@ -57,7 +57,7 @@ section {
 }
 
 h2, h3, h4, h5 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   line-height: .9cm;
   text-align: center;
@@ -120,7 +120,7 @@ hr {
 /******NAVBAR******/
 nav {
   display: grid;      /******MOBILE******/
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   margin: 0 auto;
   padding: 1rem 0;
 }
@@ -143,7 +143,7 @@ nav ul {                  /******MOBILE******/
 
 nav ul li {
   display: inline-block;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 1.6rem;
   font-weight: 900;           /******MOBILE******/
   list-style: none;
@@ -281,7 +281,6 @@ nav ul li a:hover, .side-nav a:hover {
 
 .button:hover, #myBtn:hover {
   background-color: #fff;
-  border: 2px solid #ED2F80;
   color: #ED2F80;
 }
 
@@ -624,7 +623,7 @@ nav ul li a:hover, .side-nav a:hover {
 
 .slides h4 {
   background-color: #f9f9f9;
-  font-family: cabin;
+  font-family: cabin, sans-serif;
   margin: 2.2rem auto 0 auto;
   padding-top: 2rem;
 }
@@ -697,7 +696,7 @@ nav ul li a:hover, .side-nav a:hover {
 footer {
   background-color: #212121;
   color: #FFFFFF;
-  font-family: Raleway;   /******MOBILE******/
+  font-family: Raleway, sans-serif;   /******MOBILE******/
   padding: 5rem;
 }
 
@@ -823,7 +822,7 @@ footer ul li a{
   .grid1 {
     display: grid;            /******TABLET******/
     grid-gap: 2rem;
-    grid-template-columns: 2fr 1fr;
+  /***  grid-template-columns: 2fr 1fr; ***/
     padding-top: 8.5rem;
   }
 
@@ -1214,6 +1213,7 @@ nav ul li {
  }
 
 @media screen and (min-width: 900px) {
+
   .right-content {            /******TABLET******/
     font-size: 4rem;
     margin-left: 3rem;
@@ -1235,6 +1235,9 @@ nav ul li {
 /****************DESKTOP****************/
 @media screen and (min-width: 1000px) {
   /****************HERO****************/
+  .grid1 {
+    grid-template-columns: 2fr 1fr;
+  }
 
   .nav-bar, .grid1, .grid2, .hover-box, .grid4, .probsol {
     width: 80%;

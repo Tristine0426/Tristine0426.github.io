@@ -8,13 +8,14 @@ html {
 }
 
 body {
-  font-family: cabin;
+  color: black;
+  font-family: cabin, sans-serif;
 }
 
 /******NAVBAR******/
 nav {
   display: grid;      /******MOBILE******/
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   margin: 0 auto;
   padding: 1rem 0;
 }
@@ -37,7 +38,7 @@ nav ul {                  /******MOBILE******/
 
 nav ul li {
   display: inline-block;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 1.6rem;
   font-weight: 900;           /******MOBILE******/
   list-style: none;
@@ -123,7 +124,6 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .abbreviation {
-  color: yellow;
   font-style: italic;
   font-weight: 700;
   text-decoration: underline;
@@ -131,7 +131,7 @@ nav ul li a:hover, .side-nav a:hover {
 
 h1 {
   font-size: 3.8rem;
-  font-family: Montserrat;  /******MOBILE******/
+  font-family: Montserrat, sans-serif;;  /******MOBILE******/
   margin-bottom: 2.2rem;
 }
 
@@ -146,13 +146,14 @@ h1 {
 }
 
 h2 {
-  font-family: alice;
+  color: black;
+  font-family: alice, sans-serif;
   font-size: 4rem;
   margin-bottom: 2.2rem;
 }
 
 .grid3 h2 {
-  font-family: Fredoka One;
+  font-family: Fredoka One, sans-serif;
 }
 
 h3 {
@@ -172,17 +173,28 @@ h3 {
 
 /******FOR ALL PROJECTS MOBILE*****/
 .container p {
+  color: black;
   font-size: 1.6rem;
+}
+
+.project1, .project2, .project3 {
+  padding: 7rem 0;
 }
 
 .project1 {
   background-color: #8698fd;
-  padding: 7rem 0;
 }
 
 .project2 {
-  background-color: #F48FB1;
-  padding: 7rem 0;
+  background-color: #f48fc2;
+}
+
+.project3 {
+  background-color: #98DC8F;
+}
+
+.varela h2 {
+  font-family: 'Varela Round', sans-serif;
 }
 
 nav, .grid1, .grid2, .grid3 {
@@ -195,7 +207,7 @@ nav, .grid1, .grid2, .grid3 {
 
 .screen img, .miniScreen img{
   background-repeat: no-repeat; /******MOBILE******/
-  width: 100%;
+  width: 90%;
 }
 
 .bigScreen img {
@@ -207,7 +219,7 @@ nav, .grid1, .grid2, .grid3 {
   line-height: 2.8rem;
   margin: 3rem auto 0 auto;    /******MOBILE******/
   text-align: left;
-  width: 22rem;
+  width: 90%;
 }
 
 .description-content1 p, .description-content2 p {
@@ -230,7 +242,6 @@ nav, .grid1, .grid2, .grid3 {
 
 .button:hover {
   background-color: #fff;
-  border: 2px solid #ED2F80;
   color: #ED2F80;
 }
 
@@ -239,7 +250,7 @@ nav, .grid1, .grid2, .grid3 {
 footer {
   background-color: #212121;
   color: #FFFFFF;
-  font-family: Raleway;   /******MOBILE******/
+  font-family: 'Raleway', sans-serif;   /******MOBILE******/
   padding: 5rem;
 }
 
@@ -320,10 +331,6 @@ footer ul li a{
   .grid2, .grid3 {
     margin: 0 auto;
     width: 80%;
-  }
-
- .description-content1, .description-content2 {
-    width: 32rem;
   }
 
   .description-content1 p, .description-content2 p {
