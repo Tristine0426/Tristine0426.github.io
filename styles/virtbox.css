@@ -807,6 +807,10 @@ footer ul li a{
   font-size: 1.8rem;
   }
 
+.nav-bar, .grid1 {
+  width: 80%;
+}
+
  .grid2, .hover-box, .grid4 {
     width: 90%;
   }
@@ -1213,6 +1217,9 @@ nav ul li {
  }
 
 @media screen and (min-width: 900px) {
+  .nav-bar, .grid1 {
+    width: 70%;
+  }
 
   .right-content {            /******TABLET******/
     font-size: 4rem;
@@ -1239,7 +1246,7 @@ nav ul li {
     grid-template-columns: 2fr 1fr;
   }
 
-  .nav-bar, .grid1, .grid2, .hover-box, .grid4, .probsol {
+  .grid2, .hover-box, .grid4, .probsol {
     width: 80%;
   }
 

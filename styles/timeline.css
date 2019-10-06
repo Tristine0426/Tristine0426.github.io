@@ -1,0 +1,31 @@
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  width: 50%;
+}
+.timeline {
+  width: 100%;
+  margin: auto;
+}
+
+.timeline {
+  margin-top: 0;
+}
+
+@media(max-width: 768px){
+  .nav-bar, .grid2 {
+    width: 80%;
+  }
+
+  .timeline {
+    margin-top: 4.4rem;
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  .nav-bar, .grid2 {
+    width: 70%;
+  }
+}

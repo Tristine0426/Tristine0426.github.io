@@ -12,6 +12,16 @@ body {
   font-family: cabin, sans-serif;
 }
 
+h2 {
+  color: black;
+  font-family: Montserrat, sans-serif;
+  font-size: 4rem;
+  margin-bottom: 2.2rem;
+}
+
+.longTitle {
+  line-height: 5rem;
+}
 /******NAVBAR******/
 nav {
   display: grid;      /******MOBILE******/
@@ -145,17 +155,6 @@ h1 {
   }
 }
 
-h2 {
-  color: black;
-  font-family: alice, sans-serif;
-  font-size: 4rem;
-  margin-bottom: 2.2rem;
-}
-
-.grid3 h2 {
-  font-family: Fredoka One, sans-serif;
-}
-
 h3 {
   color: #616161;
   font-size: 2rem;
@@ -177,8 +176,8 @@ h3 {
   font-size: 1.6rem;
 }
 
-.project1, .project2, .project3 {
-  padding: 7rem 0;
+.project1, .project2, .project3, .project4 {
+  padding: 4rem 0;
 }
 
 .project1 {
@@ -190,11 +189,11 @@ h3 {
 }
 
 .project3 {
-  background-color: #98DC8F;
+  background-color: #4ab5ab;
 }
 
-.varela h2 {
-  font-family: 'Varela Round', sans-serif;
+.project4 {
+  background-color: #98DC8F;
 }
 
 nav, .grid1, .grid2, .grid3 {
@@ -286,7 +285,6 @@ footer ul li a{
 }
 /****************TABLET SIZE****************/
 @media screen and (min-width: 768px) {
-  /******NAVBAR******/
   .nav-bar {
     width: 80%;
   }
@@ -320,9 +318,6 @@ footer ul li a{
   }
 
   /******FOR ALL PROJECTS*****/
-  h2 {
-    font-size: 4.8rem;
-  }
 
   .container p {
   font-size: 2rem;
@@ -349,6 +344,12 @@ footer ul li a{
 
   .footer-content div {
     font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .nav-bar, nav, .grid1, .grid2, .grid3 {
+    width: 70%;
   }
 }
 

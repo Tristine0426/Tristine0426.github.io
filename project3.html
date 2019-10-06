@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Tristine Nguyen</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/virtbox.css">
+  <link rel="stylesheet" href="styles/TNRHumane.css">
+  <link rel="stylesheet" href="styles/timeline.css">
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+  <body>
+    <header>
+        <!-- nav bar -->
+        <nav class="nav-bar"><!-- background -->
+          <div>
+            <a href="index.html"><img src="imagesUpdated/personalBrand.png" alt="personal logo"></a>
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                      <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                      <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                      <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+
+                <ul>
+                  <li><a href="index.html#projects">PROJECTS</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/resume.pdf" target="_blank">RESUME</a></li>
+                </ul>
+          </div>
+        </nav>
+
+          <div id="side-menu" class="side-nav">
+              <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+              <li><a href="index.html#projects" class="portfolio">PROJECTS</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/resume.pdf" target="_blank">RESUME</a></li>
+          </div>
+    </header>
+    <main>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <div class="grid2">
+           <!-- OVERVIEW -->
+           <section class ="overview">
+              <h2>OVERVIEW</h2>
+              <p>This is one of the project I worked on during my internship at GreenSky, LLC. I had a chance to work with a SharePoint
+                developer to help with the redesign their intranet site.
+                I was tasked to create a responsive timeline for their "History" page. The project was designed using the company's style guide to enfored
+                the ADA compliance guideline. It is currently still under production.
+              </section>
+           </div>
+           <div class="grid2">
+             <img class="timeline" src="imagesUpdated/timelineProject/timeline.png" alt="timeline screenshot">
+           </div>
+
+      </main>
+      <footer> <!-- background -->
+          <section class="footer-content"> <!-- to center content later -->
+            <div>Like what you see?</div>
+            <div>Connect with me here!</div>
+            <ul>
+              <li>
+                <a href="http://www.linkedin.com/in/tristine-nguyen" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/linkedinlogo.svg" alt="linkedin icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Tristine0426" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/githublogo.svg" alt="github icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="mailto:tristine@mail.usf.edu" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/email.svg" alt="email icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/gurengazette26/" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/instalogo.svg" alt="instagram icon" width="24" height="24">
+                </a>
+              </li>
+            </ul>
+            <p class="credit">Code and Design by Tristine Nguyen</p>
+          </section>
+        </footer>
+        <script src="js/portfolio.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125811108-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-125811108-1');
+        </script>
+
+    </body>
+   </html>
