@@ -22,6 +22,7 @@ h2 {
 .longTitle {
   line-height: 5rem;
 }
+
 /******NAVBAR******/
 nav {
   display: grid;      /******MOBILE******/
@@ -96,6 +97,10 @@ nav ul li a:hover, .side-nav a:hover {
 
 .portfolio {
   margin-top: 2rem;
+}
+
+.UIChallenge {
+  background-color: orange;
 }
 
 @media(max-width: 568px){
@@ -206,7 +211,7 @@ nav, .grid1, .grid2, .grid3 {
 
 .screen img, .miniScreen img{
   background-repeat: no-repeat; /******MOBILE******/
-  width: 90%;
+  width: 100%;
 }
 
 .bigScreen img {
@@ -353,6 +358,12 @@ footer ul li a{
   }
 }
 
+@media screen and (min-width: 1050px) {
+  .grid2, .grid3 {
+    width: 60%;
+  }
+}
+
 @media screen and (min-width: 1285px) {
   .grid2 {
     grid-template-columns: 5fr 3fr;  /******DESKTOP******/
@@ -362,6 +373,10 @@ footer ul li a{
   .grid3 {
     grid-template-columns: 3fr 5fr;  /******DESKTOP******/
     padding: 3rem 0;
+  }
+
+  .grid2, .grid3 {
+    width: 70%
   }
 
   .miniScreen {
