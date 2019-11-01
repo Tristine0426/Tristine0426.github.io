@@ -15,7 +15,7 @@
   .grid2 {
     width: 80%
   }
-  
+
   .timeline {
     margin-top: 4.4rem;
   }
@@ -23,9 +23,7 @@
 
 
 @media screen and (min-width: 900px) {
-  .nav-bar, .grid2{
-    width: 70%;
-  }
+
 }
 
 @media screen and (min-width: 1200px) {

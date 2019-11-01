@@ -13,14 +13,10 @@ body {
 }
 
 h2 {
-  color: black;
+  color: white;
   font-family: Montserrat, sans-serif;
   font-size: 4rem;
   margin-bottom: 2.2rem;
-}
-
-.longTitle {
-  line-height: 5rem;
 }
 
 /******NAVBAR******/
@@ -103,6 +99,46 @@ nav ul li a:hover, .side-nav a:hover {
   background-color: orange;
 }
 
+.project1, .project2, .project3, .project4, .project5, .project6 {
+  position: relative;
+  width: 100%;
+}
+
+.photo{
+  display: block;
+  width: 100%;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+
+}
+
+.project1:hover .overlay, .project2:hover .overlay, .project3:hover .overlay, .project4:hover .overlay, .project5:hover .overlay, .project6:hover .overlay {
+  opacity: 1;
+}
+
+.overlay_description{
+  font-size: 2rem;
+  color: white;
+  line-height: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+
+}
+
 @media(max-width: 568px){
   .nav-bar ul {
     display: none;
@@ -111,15 +147,6 @@ nav ul li a:hover, .side-nav a:hover {
 @media(min-width: 568px){
   .open-slide, .side-nav {
     display: none;
-  }
-
-  .screen {
-    display: none;
-  }
-
-  .grid2 .bigScreen img {
-    display: grid;
-    width: 100%;
   }
 }
 
@@ -181,74 +208,13 @@ h3 {
   font-size: 1.6rem;
 }
 
-.project1, .project2, .project3, .project4 {
-  padding: 4rem 0;
-}
-
-.project1 {
-  background-color: #8698fd;
-}
-
-.project2 {
-  background-color: #f48fc2;
-}
-
-.project3 {
-  background-color: #4ab5ab;
-}
-
-.project4 {
-  background-color: #98DC8F;
-}
-
-nav, .grid1, .grid2, .grid3 {
+nav, .grid1, .container {
   display: grid;
   grid-template-columns: 1fr; /******MOBILE******/
   list-style: none;
   margin: 0 auto;
   width: 90%;
 }
-
-.screen img, .miniScreen img{
-  background-repeat: no-repeat; /******MOBILE******/
-  width: 100%;
-}
-
-.bigScreen img {
-  display: none;
-}
-
-.description-content1, .description-content2 {
-  color: #fff;
-  line-height: 2.8rem;
-  margin: 3rem auto 0 auto;    /******MOBILE******/
-  text-align: left;
-  width: 90%;
-}
-
-.description-content1 p, .description-content2 p {
-  font-size: 1.8rem;
-  margin-bottom: 4.2rem;
-}
-
-.button {
-  background-color: #ED2F80;    /******MOBILE******/
-  border-radius: 5rem;
-  color: inherit;
-  font-size: 1.6rem;
-  padding: 1.45rem 3rem;
-  text-decoration: none;
-  -webkit-transition: background-color .4s ease-out;
-  -moz-transition: background-color .4s ease-out;
-  -o-transition: background-color .4s ease-out;
-  transition: background-color .4s ease-out;
-}
-
-.button:hover {
-  background-color: #fff;
-  color: #ED2F80;
-}
-
 
 /******FOOTER******/
 footer {
@@ -291,7 +257,7 @@ footer ul li a{
 /****************TABLET SIZE****************/
 @media screen and (min-width: 768px) {
   .nav-bar {
-    width: 80%;
+    width: 90%;
   }
 
   .nav-bar ul li {
@@ -300,8 +266,8 @@ footer ul li a{
 
   /******HERO******/
 
-  .grid1 {
-    width: 80%;
+  .grid1, .container {
+    width: 90%;
   }
 
   h1 {
@@ -322,26 +288,14 @@ footer ul li a{
     text-decoration: none;
   }
 
-  /******FOR ALL PROJECTS*****/
-
-  .container p {
-  font-size: 2rem;
+  .container {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    margin-bottom: 2rem;
   }
 
-  .grid2, .grid3 {
-    margin: 0 auto;
-    width: 80%;
-  }
-
-  .description-content1 p, .description-content2 p {
-    margin-bottom: 5.35rem;
-  }
-
-  .button {
-    font-size: 2rem;  /******TABLET******/
-    padding: 1.5rem 3rem;
-    width: 26rem;
-  }
   /******FOOTER******/
   .footer-content {
     display: block;       /******TABLET******/
@@ -353,51 +307,5 @@ footer ul li a{
 }
 
 @media screen and (min-width: 900px) {
-  .nav-bar, nav, .grid1, .grid2, .grid3 {
-    width: 70%;
-  }
-}
 
-@media screen and (min-width: 1050px) {
-  .grid2, .grid3 {
-    width: 60%;
-  }
-}
-
-@media screen and (min-width: 1285px) {
-  .grid2 {
-    grid-template-columns: 5fr 3fr;  /******DESKTOP******/
-    padding: 3rem 0;
-  }
-
-  .grid3 {
-    grid-template-columns: 3fr 5fr;  /******DESKTOP******/
-    padding: 3rem 0;
-  }
-
-  .grid2, .grid3 {
-    width: 70%
-  }
-
-  .miniScreen {
-    display: none;
-  }
-
-  .grid3 .bigScreen img {
-    display: grid;
-    width: 100%;
-  }
-
-  .description-content1, .description-content2 {
-    margin: auto;
-    width: 80%;
-   }
-
-   .description-content1 {
-     margin: auto 0 auto auto;
-    }
-
-   .description-content2 {
-      margin: auto auto auto 0;
-     }
 }

@@ -1,0 +1,15 @@
+.phases ul li {
+    margin: auto;
+}
+
+.analysis ul li, .takeaway1 ul li {
+  list-style: circle;
+  list-style-position: inside;
+}
+
+@media screen and (min-width: 768px) {
+/******PHASES PROCESS******/
+  .phases {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }

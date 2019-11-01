@@ -387,7 +387,7 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .phases ul li {
-  list-style-type: disc;
+  list-style-type: circle;
   text-align: left;           /******MOBILE******/
 }
 
@@ -451,7 +451,7 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .survey {                   /******MOBILE******/
-  list-style-type: disc;
+  list-style-type: circle;
 }
 
 .survey .bold {
@@ -487,7 +487,7 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .takeaway1 ul li, .hifi ul li, .col ul li, .usabilityTests ul, .secondIteration ul, .usabilityTests2 ul {
-  list-style: disc outside;
+  list-style: circle outside;
 }
 
 .button {
@@ -807,9 +807,6 @@ footer ul li a{
   font-size: 1.8rem;
   }
 
-.nav-bar, .grid1 {
-  width: 80%;
-}
 
  .grid2, .hover-box, .grid4 {
     width: 90%;
@@ -920,7 +917,6 @@ footer ul li a{
 /******NAVBAR******/
 .nav-bar {
   grid-area: nav-bar;
-  width: 80%;
 }
 
 nav ul li {
@@ -1218,7 +1214,6 @@ nav ul li {
 
 @media screen and (min-width: 900px) {
   .nav-bar, .grid1 {
-    width: 70%;
   }
 
   .right-content {            /******TABLET******/

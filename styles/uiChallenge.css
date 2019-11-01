@@ -1,0 +1,24 @@
+section {
+  margin-top: 3rem;
+  padding: 0;
+}
+
+.challenge h3 {
+  color: black;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.challenge p {
+  margin-bottom: 3rem;
+}
+
+.challenge img {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.bold {
+  text-decoration: underline;
+}

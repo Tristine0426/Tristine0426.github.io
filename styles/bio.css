@@ -223,19 +223,12 @@ footer ul li a{
     font-size: 1.8rem;
   }
   /******NAVBAR******/
-  .nav-bar {
-    width: 80%;
-  }
 
   .nav-bar ul li {
     font-size: 1.8rem;     /******TABLET******/
   }
 
   /******General info******/
-  .grid {
-    width: 80%;
-  }
-
   h1 {
   font-size: 3.6rem;
   }
@@ -258,7 +251,6 @@ footer ul li a{
 
   .grid1 img {
     margin: 0 auto;
-    width: 70%;
   }
 
   /******FOOTER******/
