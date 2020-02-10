@@ -6,6 +6,10 @@ html {
   font-size: 10px;
 }
 
+.w3-container {
+    width: 100%;
+  }
+
 body {
   background-color: #FFF;
   font-family: Cabin, sans-serif;           /******MOBILE******/
@@ -806,7 +810,6 @@ footer ul li a{
   body {
   font-size: 1.8rem;
   }
-
 
  .grid2, .hover-box, .grid4 {
     width: 90%;

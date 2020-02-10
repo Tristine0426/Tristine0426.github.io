@@ -1,0 +1,63 @@
+/**********************************************************UI CHALLENGE*************************************************/
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  width: 90%;
+  }
+
+a {
+  color: #ED2F80;
+}
+
+.bold {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section {
+  margin-top: 3rem;
+  padding: 0;
+}
+
+.challenge h3, h3 {
+  color: black;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.challenge p {
+  margin-bottom: 3rem;
+}
+
+.challenge img, .email, .timeline, .ost {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.ost {
+  margin-top: 1.5rem;
+}
+
+ul li {
+  list-style: circle;
+}
+
+@media screen and (min-width: 1024px) {
+/******PHASES PROCESS******/
+  .grid2 {
+    width: 60%;
+  }
+
+
+  /**********************************************************EMAIL TEMPLATE LAYOUT*************************************************/
+
+  @media(min-width: 768px){
+    .email, .timeline {
+      margin-top: 6rem;
+    }
+  }
+
+}
