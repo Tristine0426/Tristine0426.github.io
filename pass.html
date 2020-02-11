@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Tristine Nguyen</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/virtbox.css">
+  <link rel="stylesheet" href="styles/TNRHumane.css">
+  <link rel="stylesheet" href="styles/OneGridLayout.css">
+
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+  <body>
+    <header>
+        <!-- nav bar -->
+        <nav class="nav-bar"><!-- background -->
+          <div>
+            <a href="index.html"><img src="imagesUpdated/personalBrand.png" alt="personal logo"></a>
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                      <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                      <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                      <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+
+                <ul>
+                  <li><a href="index.html#projects">PROJECTS</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine-Nguyen-Resume.pdf" target="_blank">RESUME</a></li>
+                </ul>
+          </div>
+        </nav>
+
+          <div id="side-menu" class="side-nav">
+              <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+              <li><a href="index.html#projects" class="portfolio">PROJECTS</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine-Nguyen-Resume.pdf" target="_blank">RESUME</a></li>
+          </div>
+
+          <script type="text/javascript">
+              var password = "rocketeers";
+              var x = prompt("Please enter a password ","");
+
+              if (x.toLowerCase() == password) {
+                window.location = "https://www.tristine.design/answerRocket.html"
+              }
+
+              else {
+                alert("Oops...Wrong password :(  \n \n Contact Tristine at:   tristinenguyen147@gmail.com");
+                window.location="https://www.tristine.design";
+              }
+</script>
+    </header>
+    <main>
+
+
+      </main>
+
+        <script src="js/portfolio.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125811108-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-125811108-1');
+        </script>
+
+    </body>
+   </html>

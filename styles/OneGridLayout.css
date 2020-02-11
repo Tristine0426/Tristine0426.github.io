@@ -31,13 +31,13 @@ section {
   margin-bottom: 3rem;
 }
 
-.challenge img, .email, .timeline, .ost {
+.challenge img, .email, .timeline, .ost, .audit, .suggestion {
   margin-top: 3rem;
   margin-bottom: 3rem;
   width: 100%;
 }
 
-.ost {
+.ost, .audit {
   margin-top: 1.5rem;
 }
 
@@ -57,6 +57,10 @@ ul li {
   @media(min-width: 768px){
     .email, .timeline {
       margin-top: 6rem;
+    }
+
+    .suggestion {
+      margin-top: 0;
     }
   }
 
