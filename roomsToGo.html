@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Tristine Nguyen</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/virtbox.css">
+  <link rel="stylesheet" href="styles/TNRHumane.css">
+  <link rel="stylesheet" href="styles/OneGridLayout.css">
+
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+  <body>
+    <header>
+        <!-- nav bar -->
+        <nav class="nav-bar"><!-- background -->
+          <div>
+            <a href="index.html"><img src="imagesUpdated/personalBrand.png" alt="personal logo"></a>
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                      <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                      <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                      <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+
+                <ul>
+                  <li><a href="index.html#projects">PROJECTS</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine-Nguyen-Resume.pdf" target="_blank">RESUME</a></li>
+                </ul>
+          </div>
+        </nav>
+
+          <div id="side-menu" class="side-nav">
+              <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+              <li><a href="index.html#projects" class="portfolio">PROJECTS</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine-Nguyen-Resume.pdf" target="_blank">RESUME</a></li>
+          </div>
+    </header>
+    <main>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <div class="grid2">
+           <!-- OVERVIEW -->
+           <section class ="overview">
+              <h3>Hi There!</h3>
+              <p>I had a pleasant time learning about Rooms To Go and your company's future plan for the UX division.
+                During our conversation, Denise mentioned some problems with the Rooms To Go current mobile app.
+                I decided to check it out and dissect it further to provide an improved user experience based on the reviews on Google Play and competitive analysis.
+                I'm very excited and would love to discuss this in person on how we can take this further.
+              </p>
+                <br>
+
+                <p><span class="bold">DISCLAIMER:</span> The improved version suggestions do not take into account of Rooms To Go's business strategy and
+                  may change should there be access to the business internal data analysis and business goals. </p>
+
+
+                <br>
+                  <h3>PROCESS</h3>
+                    <p class="bold">1. DISCOVERY & RESEARCH</p>
+                      <p><span class="underline">User research:</span> I started the process with the user research, reading comments from the Google Play store and App Store. Here are some of my findings:</p>
+
+                        <ul><p class="bold">Problems</p>
+                          <li>Most options link to website</li>
+                          <li>Slow to load</li>
+                          <li>Search option has no filter and sort by options</li>
+                          <li>The word coupons and sales used interchangeable. When click on coupons, it links customer to sale items.</li>
+                          <li>Coupon page is hard to navigate</li>
+                          <li>Mobile app send sales notification but takes customers to the home page options (Where is the item that is on sale?)</li>
+                        </ul>
+
+
+                      <p><span class="underline">Competitive analysis:</span> I narrowed down to three competitors (Wayfair, Ashley Homestore, and Joybird), analyzed their site maps, and how they played to their strength. For example, Wayfair has abundant products but has constant sales. Most of their mobile pages feature sale items. Ashley Homestore, on the other hand, has fewer products, but their app is very easy to navigate. It is simple, easy to find items, and scannable. Joybird is specifically known for catering to pet owners and family lifestyle with easy to clean collections.</p>
+
+                      <img class="rtg" src="imagesUpdated/roomsToGo/workflow.jpg" alt="workflow screenshot">
+
+
+                      <ul ><p class="bold">Goal</p>
+                        <li>Create a mobile enveronment that is website independent</li>
+                        <li>Create a global nagvigation menu for the mobile app</li>
+                        <li>Create a search experience with filter and sort by options, along with saving favorite items and cart</li>
+                        <li>Create coupon pages with specific code so customers can scan in-store for credit</li>
+                        <li>Allow customers to save coupons</li>
+                      </ul>
+
+                      <ul><p class="bold">Assumptions</p>
+                        <li>It seems like the app started off as a coupon platform but now wants to turn it to a shopping platform</li>
+                        <li>Assuming coupons is different from sales. Coupons provide a code to scan in store for credit</li>
+                        <li>Only redesigning pages that address the customer's concerns such as the search page, coupon page, and navigation options.</li>
+                      </ul>
+
+                    <br>
+
+                    <p class="bold">2. DESIGN</p>
+                      <p><span class="underline">Sketches:</span> After the research. I decided to focus on 4 main workflows that will help with the user problems. A global component screen to show the apps' flexibility and to pull away from the website. A "Favorite" screen where users can save items and coupons. A shopping workflow to show the "filter" and "sort" options for search results. Lastly, a coupon workflow to quickly navigate to coupons and provide the ability to scan the code in-store.</p>
+                      <img class="rtg" src="imagesUpdated/roomsToGo/sketches.jpg" alt="sketchess screenshot">
+
+                      <br></br>
+
+                      <p><span class="underline">Low fidelity wireframes:</span> I took the sketches and refined it further to low fidelity wireframes. This includes the contents to be included,
+                      spacing, or any imagery.</p>
+                      <img class="rtg" src="imagesUpdated/roomsToGo/globalComponents.png" alt="glocal components screenshot">
+                      <img class="rtg" src="imagesUpdated/roomsToGo/shop.png" alt="shopping workflow screenshot">
+                      <img class="rtg" src="imagesUpdated/roomsToGo/coupons.png" alt="coupon workflow screenshot">
+
+                      <br></br>
+
+                      <p><span class="underline">High fidelity wireframes:</span> In this process, I utilized Rooms To Go's brand colors and typography. </p>
+                      <img class="rtg" src="imagesUpdated/roomsToGo/globalComponents_hifi.png" alt="hifi glocal components screenshot">
+                      <img class="rtg" src="imagesUpdated/roomsToGo/saved_hifi.png" alt="hifi saved items screenshot">
+                      <img class="rtg" src="imagesUpdated/roomsToGo/shop_hifi.png" alt="hifi shopping workflow screenshot">
+                      <img class="rtg" src="imagesUpdated/roomsToGo/coupons_hifi.png" alt="hifi coupon workflow screenshot">
+
+                      <p class="bold">3. FEEDBACK & ITERATIONS:</p>
+                      <p>In this next step, I'd love to hear your thoughts. I want to verify assumptions and this design concept with data.
+                        I would then perform usability tests, then iterate more based on feedback and results.
+                        If given more time, I would expand further to create more workflows, expending the design process for the "Home", "Sales", and "Account" screens.</p>
+              </section>
+           </div>
+
+      </main>
+      <footer> <!-- background -->
+          <section class="footer-content"> <!-- to center content later -->
+            <div>Like what you see?</div>
+            <div>Connect with me here!</div>
+            <ul>
+              <li>
+                <a href="http://www.linkedin.com/in/tristine-nguyen" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/linkedinlogo.svg" alt="linkedin icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Tristine0426" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/githublogo.svg" alt="github icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="mailto:tristine@mail.usf.edu" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/email.svg" alt="email icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/gurengazette26/" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/instalogo.svg" alt="instagram icon" width="24" height="24">
+                </a>
+              </li>
+            </ul>
+            <p class="credit">Code and Design by Tristine Nguyen</p>
+          </section>
+        </footer>
+        <script src="js/portfolio.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125811108-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-125811108-1');
+        </script>
+
+    </body>
+   </html>

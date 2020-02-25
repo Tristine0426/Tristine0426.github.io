@@ -16,6 +16,12 @@ a {
   text-decoration: none;
 }
 
+.underline {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+
 section {
   margin-top: 3rem;
   padding: 0;
@@ -31,14 +37,18 @@ section {
   margin-bottom: 3rem;
 }
 
-.challenge img, .email, .timeline, .ost, .audit, .suggestion {
+.challenge img, .email, .timeline, .ost, .audit, .suggestion, .rtg {
   margin-top: 3rem;
   margin-bottom: 3rem;
   width: 100%;
 }
 
-.ost, .audit {
+.ost, .audit, .rtg {
   margin-top: 1.5rem;
+}
+
+.rtg {
+  margin-bottom: 0;
 }
 
 ul li {
