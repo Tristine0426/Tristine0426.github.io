@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Tristine Nguyen</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/virtbox.css">
+  <link rel="stylesheet" href="styles/TNRHumane.css">
+  <link rel="stylesheet" href="styles/OneGridLayout.css">
+
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+  <body>
+    <header>
+        <!-- nav bar -->
+        <nav class="nav-bar"><!-- background -->
+          <div>
+            <a href="index.html"><img src="imagesUpdated/personalBrand.png" alt="personal logo"></a>
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                      <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                      <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                      <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+
+                <ul>
+                  <li><a href="index.html#projects">PROJECTS</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine-Nguyen-Resume.pdf" target="_blank">RESUME</a></li>
+                </ul>
+          </div>
+        </nav>
+
+          <div id="side-menu" class="side-nav">
+              <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+              <li><a href="index.html#projects" class="portfolio">PROJECTS</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine-Nguyen-Resume.pdf" target="_blank">RESUME</a></li>
+          </div>
+    </header>
+    <main>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <div class="grid2">
+           <!-- OVERVIEW -->
+           <section class ="overview">
+              <h3>Rooms To Go Mobile Navigation Process</h3>
+              <p>This is a take-home assignment from Rooms To Go and my most recent work. I wanted to feature this project because I learned a lot from
+                feedbback and failure while presenting this project to the stakeholders. Simply, a reminder to myself to not make the same mistake again.
+              </p>
+                <br>
+
+                <p>Duration: 1 week</p>
+                  <br>
+
+                  <p><span class="bold">TASK:</span> Rooms To Go currently just list all of the different categories and sub-categories on their mobile navigation (Hamburger menu).
+                      Take <span class="highlight">Furniture > Living Room & Living Room Pieces </span>section and provide an enhanced
+                      merchandising experience for this portion of the navigation. The enhancement should provide a better way to
+                      promote Living Rooms and Living Room pieces, along with their corresponding sub-categories.</p>
+
+                    <img class="rtg" src="imagesUpdated/roomsToGo/currentNav.jpg" alt="current navigation screenshot">
+
+                <br>
+                  <h3>PROCESS</h3>
+                    <p class="bold">1. USER RESEARCH</p>
+                      <p>I started off with a user survey and wanted to understand the user's behaviors and their furniture searching process. The goal is to find:</p>
+                        <br>
+                          <p><span class="highlight">Who:</span> General demographics</p>
+                          <p><span class="highlight">What:</span> Current competitors</p>
+                          <p><span class="highlight">When:</span> When & how often users look for furnitures</p>
+                          <p><span class="highlight">Where:</span> Online, in-store, or both</p>
+                          <p><span class="highlight">Why:</span> Brand loyalty (likes and dislikes)</p>
+                        <br>
+
+                        <p><span class="bold">Results: </span>The survey was actived for 3 days. There were 25 participants. Here are my finding: </p>
+                          <br>
+                            <p><span class="highlight">Likes:</span> Ability to look at variety of products, reviews, ratings, sort and filter options on the vendor's website</p>
+                            <p><span class="highlight">Dislikes:</span> Too many choices and unrelated products cause overwhelmingess</p>
+                            <p><span class="highlight">Main competitors:</span> Ikea, Westelm, Ashley Homestore, Pottery Barn</p>
+                            <p><span class="highlight">Top 5 qualities:</span> Price, Review, Color, and material</p>
+                          <br>
+
+                        <p class="bold">2. COMPETITIVE ANALYSIS</p>
+                          <p>How did competitors approached this?</p>
+                          <img class="rtgNav" src="imagesUpdated/roomsToGo/competitors.jpg" alt="competitors screenshot">
+
+                          <p><span class="bold">Pattern Takeaways: </span>Most competitor's navigation pattern allow users land on the results page after 3 clicks.
+                            Any sub-categories or feature that further narrow down the search were either shows on top of the results page or inside the filter option.</p>
+
+                          <br>
+
+                          <p>What is Rooms To Go's position among competitors?</p>
+                            <ul><p class="bold">Pros</p>
+                              <li>Good deals when buying in sets</li>
+                              <li>Multiple collections to choose from</li>
+                            </ul>
+
+                            <ul><p class="bold">Cons</p>
+                              <li>Too many options to choose, takes longer to digest information, more work on the users' side</li>
+                              <li>No guidance as to white category to checkout first</li>
+                              <li>No reviews, comments, or feedback from the buyer about the items</li>
+                            </ul>
+
+                    <br>
+
+                    <p class="bold">3. INFORMATION ARCHITECTURE</p>
+                      <p>I wanted to work on the information architecture of the navigation process to see if I can break down the process further to improve the amount of information being present at once.</p>
+                        <img class="rtgNav" src="imagesUpdated/roomsToGo/idea.png" alt="idea screenshot">
+
+                      <p>Why have a suggestion area?</p>
+                      <ul>
+                        <li>Less decision taking time</li>
+                        <li>Build trust in the product because others have bought it and love it</li>
+                        <li>They trust the product will be durable</li>
+                        <li>They trust the product will worth the price</li>
+                        <li>Easy to find products that aligned with users’ vision and lifestyle</li>
+                        <li>Build trust in products and company in the long-term</li>
+                      </ul>
+
+                      <p class="bold">4. DESIGN</p>
+                        <p>I moved on to creating sketches to see how the suggestion area would look like.</p>
+                          <img class="rtg" src="imagesUpdated/roomsToGo/navSketches.jpg" alt="sketchesscreenshot">
+                          <p><span class="bold">Mistake: </span> I realized I was creating sketches for the <span class="highlight">mobile application</span> rather than
+                            the <span class="highlight">mobile view of the website</span>. This limited the layout drastically as the hamburger navigation layout should be
+                            consistent with the website.</p>
+
+                          <br>
+                            <span class="underline"><p>High Fidelity</p></span>
+                              <p>I narrowed down to a couple ideas. I decided to eliminate version 1 because it would not look consistent in the default website format.</p>
+                                <img class="rtgNav" src="imagesUpdated/roomsToGo/navVersions.jpg" alt="idea versions screenshot">
+
+                                <span class="underline"><p>Default Desktop & Mobile Heights</p></span>
+                                  <p>I decided to see these versions in the default desktop height (900px) and mobile height (640px).
+                                    This helps to see how much the user can view when the page load before having to scroll down.
+                                    I eliminated version 2 because users will have to scroll to the most. If we deploy a new layout, users are so used to seeing the old version they will get confused as to where the old contents are on the page.
+                                    I’m looking to keep a version where it is intuitive to locate the old contents (furniture pieces).</p>
+                                    <img class="rtgNav" src="imagesUpdated/roomsToGo/cutOff.jpg" alt="round 2 screenshot">
+
+                                    <span class="underline"><p>Final Version</p></span>
+                                      <p>I picked version 4 because I feel that at this navigation level,
+                                        users are more concerns with shopping by furniture pieces. The color and material options can be included in the filter option in the results page.</p>
+                                        <img class="rtgNav" src="imagesUpdated/roomsToGo/finalFlow.png" alt="final flow screenshot">
+                <p class="bold">5. KPI</p>
+                  <p>In order to know if the suggested design is an improvement version of the current process. Some key performance indicators can be measured as follow:</p>
+                    <ul>
+                      <li>How long did it takes for the user to go through the navigation process compare to the current process. (Did we save time or wasted more?)</li>
+                      <li>Increase/decrease in use of search button right after using the menu navigation. (Did users get lost and resort to use the search button instead?)</li>
+                      <li>Are there any increase or decrease in sales of living room sets & pieces?</li>
+                    </ul>
+
+                    <p class="bold">6. Post-Presentation Iteration</p>
+                      <p>After the presentation. I learned the main concern was whether the <span class="highlight">shop by style</span> will show the results in furniture pieces or furniture sets. I realized showing both in the result page is contradicting to making the page less overwhelming.
+                        As a result, I decided to move the <span class="highlight">shop by style</span> inside the shop by pieces. This will now only show the furniture pieces instead of showing both sets and pieces.</p>
+                        <img class="rtgNav" src="imagesUpdated/roomsToGo/iteration.png" alt="iteration screenshot">
+
+
+
+              </section>
+           </div>
+
+      </main>
+      <footer> <!-- background -->
+          <section class="footer-content"> <!-- to center content later -->
+            <div>Like what you see?</div>
+            <div>Connect with me here!</div>
+            <ul>
+              <li>
+                <a href="http://www.linkedin.com/in/tristine-nguyen" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/linkedinlogo.svg" alt="linkedin icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Tristine0426" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/githublogo.svg" alt="github icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="mailto:tristine@mail.usf.edu" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/email.svg" alt="email icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/gurengazette26/" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/instalogo.svg" alt="instagram icon" width="24" height="24">
+                </a>
+              </li>
+            </ul>
+            <p class="credit">Code and Design by Tristine Nguyen</p>
+          </section>
+        </footer>
+        <script src="js/portfolio.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125811108-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-125811108-1');
+        </script>
+
+    </body>
+   </html>

@@ -21,6 +21,10 @@ a {
   text-decoration: underline;
 }
 
+.highlight {
+  color: #ED2F80;  
+}
+
 
 section {
   margin-top: 3rem;
@@ -37,13 +41,13 @@ section {
   margin-bottom: 3rem;
 }
 
-.challenge img, .email, .timeline, .ost, .audit, .suggestion, .rtg {
+.challenge img, .email, .timeline, .ost, .audit, .suggestion, .rtg, .rtgNav {
   margin-top: 3rem;
   margin-bottom: 3rem;
   width: 100%;
 }
 
-.ost, .audit, .rtg {
+.ost, .audit, .rtg., .rtgNav {
   margin-top: 1.5rem;
 }
 
@@ -65,7 +69,7 @@ ul li {
   /**********************************************************EMAIL TEMPLATE LAYOUT*************************************************/
 
   @media(min-width: 768px){
-    .email, .timeline {
+    .email, .timeline, .rtgNav {
       margin-top: 6rem;
     }
 
