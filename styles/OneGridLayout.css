@@ -22,7 +22,7 @@ a {
 }
 
 .highlight {
-  color: #ED2F80;  
+  color: #ED2F80;
 }
 
 
@@ -31,9 +31,13 @@ section {
   padding: 0;
 }
 
+.phases {
+  background: white;
+  line-height: 0.9cm;
+}
+
 .challenge h3, h3 {
-  color: black;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-align: left;
 }
 
@@ -63,6 +67,11 @@ ul li {
 /******PHASES PROCESS******/
   .grid2 {
     width: 60%;
+  }
+
+  .grid3 {
+    margin: auto;
+    width: 90%;
   }
 
 

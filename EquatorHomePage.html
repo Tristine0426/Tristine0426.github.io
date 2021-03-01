@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Tristine Nguyen</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/virtbox.css">
+  <link rel="stylesheet" href="styles/TNRHumane.css">
+  <link rel="stylesheet" href="styles/uiChallenge.css">
+  <link rel="stylesheet" href="styles/OneGridLayout.css">
+  <link rel="stylesheet" href="styles/Altisource.css">
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+  <body>
+    <header>
+        <!-- nav bar -->
+        <nav class="nav-bar"><!-- background -->
+          <div>
+            <a href="index.html"><img src="imagesUpdated/personalBrand.png" alt="personal logo"></a>
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                      <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                      <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                      <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+
+                <ul>
+                  <li><a href="index.html">PROJECTS</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine-Nguyen-Resume.pdf" target="_blank">RESUME</a></li>
+                </ul>
+          </div>
+        </nav>
+
+          <div id="side-menu" class="side-nav">
+              <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+              <li><a href="index.html#projects" class="portfolio">PROJECTS</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine-Nguyen-Resume.pdf" target="_blank">RESUME</a></li>
+          </div>
+    </header>
+    <main>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <div class="grid2">
+           <!-- OVERVIEW -->
+           <section class ="overview">
+            <h1>Equator Home Page Redesign</h1>
+              <p>During my time at Altisource, I was assigned as the main UX/UI designer for one of our sub-unit called <a href="https://www.equator.com/" target="_blank">Equator.com</a>.
+                Equator is a property marketing platform that allows investors to find auction, foreclosure, and short sale houses.
+                My responsibility was to redesign and rebrand Equator's home page, search results page, and property details page.</p>
+                <br>
+                  <p><em class="bold">In the fall of 2020, I took the first step and worked with our Design Director and Product team to
+                    redesign Equator.com home page to update the website's aesthetic and promote Equator's new feature of return on
+                    property investment to better serve our investors.</em></p>
+          </section>
+        </div>
+
+        <div class="grid2">
+          <section>
+            <h3>Research</h3>
+              <p>After setting up meetings with the Design Director and Product Manager, I was able to grasp the scope of the project.
+                Some of my findings are as follows:</p>
+
+                <ul><p class="bold">Requirements</p>
+                  <li>Must have an investment filter in the property search process</li>
+                  <li>Must use the blue color as the main brand color</li>
+                  <li>Must keep the existing contents, but can be rearranged and add creativity to it</li>
+                </ul>
+
+              <ul><p class="bold">Constraints</p>
+                <li>Due to the pandemic, we'll have no budget or participants for user testings</li>
+              </ul>
+
+              <ul><p class="bold">Problems</p>
+                <li>There's currently no filter for investors to narrow down their search based on estimated monthly cash flow, estimated gross yield, and estimated net yield</li>
+                <li>There's no established style guide, thus, creating a lot of consistency issues</li>
+                <li>Since we won't have participants for user testings, I'll have to rely on past data from older projects, feedback, and user behavior analysts from the CRM team</li>
+              </ul>
+
+              <ul><p class="bold">Solutions</p>
+                <li>Create a filter feature for investors to narrow their search results</li>
+                <li>Create a style guide for consistency, but must keep the main blue color. Having an established style guide will make the design process easier, more consistent, and less time consuming in the next phases.</li>
+
+              </ul>
+          </section>
+        </div>
+
+        <div class="grid2">
+          <section>
+            <h3>Ideation</h3>
+              <p>Since most of the home page requires more of an aesthetic redesign, I decided to focus on tackling the investment filter.
+                The team wants to present the filter feature within the fold. I experimented with different ideas, prioritizing ideas that are more mobile-friendly.</p>
+                <br>
+                  <img class="ost" src="imagesUpdated/EquatorHomePage/HmPgFilterSketches.jpg" alt="sketches hifi">
+          </section>
+        </div>
+
+        <div class="grid2">
+          <section>
+            <h3>Design</h3>
+              <p>After the ideation process, I moved on to creating a global design system, which keeps the current main blue color but implemented clean lines, light shadows, and a secondary color that highlights primary CTA buttons.
+                I aimed to keep the design language consistent throughout the website. I also created icon and illustration sets that feature slightly rounded corners. Having an established style guide will make the design process easier, more consistent, and less time consuming in the next phases.</p>
+              <br>
+              <p>Under the fold, I included a recommended listings section to boost investor's interest in browsing our inventory follows by an introductory/benefits section to prove how Equator can add value to our investor's journey. The rest of the contents were designed in a more exciting way to browse different services and a better way to display blog posts.</p>
+                  <img class="ost" src="imagesUpdated/EquatorHomePage/search.png" alt="search hifi">
+                  <img class="ost" src="imagesUpdated/EquatorHomePage/filter.png" alt="filter hifi">
+                  <img class="ost" src="imagesUpdated/EquatorHomePage/finalHomePage.png" alt="final home page hifi">
+          </section>
+        </div>
+
+      </main>
+
+      <footer> <!-- background -->
+          <section class="footer-content"> <!-- to center content later -->
+            <div>Like what you see?</div>
+            <div>Connect with me here!</div>
+            <ul>
+              <li>
+                <a href="http://www.linkedin.com/in/tristine-nguyen" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/linkedinlogo.svg" alt="linkedin icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Tristine0426" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/githublogo.svg" alt="github icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="mailto:tristine@mail.usf.edu" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/email.svg" alt="email icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/gurengazette26/" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/instalogo.svg" alt="instagram icon" width="24" height="24">
+                </a>
+              </li>
+            </ul>
+            <p class="credit">Code and Design by Tristine Nguyen</p>
+          </section>
+        </footer>
+        <script src="js/portfolio.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125811108-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-125811108-1');
+        </script>
+
+    </body>
+   </html>

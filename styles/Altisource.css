@@ -1,0 +1,19 @@
+ul {
+  margin-top: 2rem;
+}
+
+h1 {
+  color: #2D9CDB;
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 4.8rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  line-height: 2.8rem;
+}
+
+.ost {
+  margin: 0rem;
+}
