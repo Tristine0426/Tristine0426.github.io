@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Tristine Nguyen</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/virtbox.css">
+  <link rel="stylesheet" href="styles/TNRHumane.css">
+  <link rel="stylesheet" href="styles/uiChallenge.css">
+  <link rel="stylesheet" href="styles/OneGridLayout.css">
+  <link rel="stylesheet" href="styles/Altisource.css">
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+  <body>
+    <header>
+        <!-- nav bar -->
+        <nav class="nav-bar"><!-- background -->
+          <div>
+            <a href="index.html"><img src="imagesUpdated/personalBrand.png" alt="personal logo"></a>
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                      <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                      <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                      <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+
+                <ul>
+                  <li><a href="index.html">PROJECTS</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine-Nguyen-Resume.pdf" target="_blank">RESUME</a></li>
+                </ul>
+          </div>
+        </nav>
+
+          <div id="side-menu" class="side-nav">
+              <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+              <li><a href="index.html#projects" class="portfolio">PROJECTS</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine-Nguyen-Resume.pdf" target="_blank">RESUME</a></li>
+          </div>
+    </header>
+    <main>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <div class="grid2">
+           <!-- OVERVIEW -->
+           <section class ="overview">
+            <h1>Hubzu Signature Seller</h1>
+              <p>Hubzu Signature Seller is a program that helps homeowners market their homes to potential buyers across the U.S. Hubzu Signature Seller was created as a solution to help deal with the real estate market during the COVID pandemic.</p>
+                <em class="bold">For this project, I worked with two other designers to help create a dashboard for our Hubzu admins, agents, and sellers to work together to market a property on our platform. Our goals were to:
+                  identify our users from the point of sign up (agent or seller),
+                  guide them through the process of uploading property information,
+                  see their property go live, see bids coming in,
+                  and ultimately sell their house to selected bidders.
+                </em>
+          </section>
+        </div>
+
+        <div class="grid2">
+          <section>
+            <h3>Research</h3>
+              <p>We kicked off the project by setting up meetings with our Design Director and Product team. We received a PowerPoint file detailing the current process, problems, and goals. We were also given a <em class="bold">timeline of 2 weeks</em> to come up with a high-fidelity mockup (yikes). Below is a break down of our project overall:</p>
+
+                  <p class="bold subtitle">PROBLEMS</p>
+                    <p><em class="bold">Our current user flow creates a high dropout rate.</em> Users first sign up, wait for an email with a form to fill out, then email it back and wait for verification before being able to login to fill out their property information. Once they finish filling out their property information, they have to wait for their property to be verified before being able to see their property go live. Also, when filling out their property, they often have to refer to their realtor to fill out certain information they may not know, such as the MLS number, Tax ID, Subdivision name, etc. </p>
+
+                        <p><img class="ost" src="imagesUpdated/HubzuSigSeller/SigSellerProblems.jpg" alt="signature seller problem sketches"></p>
+
+                  <p class="bold subtitle">GOALS/SOLUTIONS</p>
+                    <p><em class="bold">Our goals were to decrease the dropout rate </em>by instantly verifying the user credentials instead of waiting for a form to email to them. Then they can fill out the property information and get notified when their property is live so they can log in and see bids on their property.</p>
+                        <p><img class="ost" src="imagesUpdated/HubzuSigSeller/SigSellerProcess.jpg" alt="signature seller process sketches"></p>
+
+                  <p class="bold subtitle">CONSTRAINTS</p>
+                    <p>Due to the pandemic, we'll have no budget and little time for user testings. We also don't have access to a mockup account to login and audit the current platform.</p>
+
+          </section>
+        </div>
+
+        <div class="grid2">
+          <section>
+            <h3>User Study</h3>
+              <p><em class="bold">After discussing with the team, we identified three types of users: admin (our Hubzu employees who will facilitate the process), agent, and seller. </em>
+                Due to the pandemic, we only have access to study our admin users.</p>
+                    <p>We began interviewing some of our admins. We asked them to describe how they use the platform daily to discover common pain points and learn more about the process.
+                      <em class="bold">We discovered that each seller is required to have an agent. When sellers signup and don't have an agent, the seller has to find an agent. Then the agent will have to fill out their information. The admin then will verify both users before even granting them access to the dashboard to start filling out the property information. </em>
+                      This process is quite time-consuming. Many sellers often drop out and look elsewhere to sell.</p>
+
+                        <p><em class="bold">As a solution, we provide a user flow to instantly verify the user credentials instead of waiting for a form to email to them. </em>
+                        This process will eliminate wait time and loss of interest. Then, they fill out their agent information or have the ability to send an invite to their agent to sign up with us. Once either one of the sellers or agent signup, they can start filling out property information.</p>
+
+                        <p><img class="ost" src="imagesUpdated/HubzuSigSeller/SigSellerIdeate.jpg" alt="user flows ideate"></p>
+
+                        <p>Realizing the complication at hand, <em class="bold">we decided to divide the project into two phases. Phase one is to redesign the signup process, and phase two is the redesign of the dashboard.</em>
+                         We won't be designing the signup process for the admin since they already have an account.</p>
+          </section>
+        </div>
+
+        <div class="grid2">
+          <section>
+            <h3>Information Architecture</h3>
+              <p>We began exploring different ways to structure the onboarding experience. <em class="bold">For the signup process, our goal was to identify whether the user is a seller or agent. Their user flow will divert depending on their role.</em>
+                Since our admin already has an account, we focus solely on how agents and sellers journey.</p>
+                <em class="bold">We made a holistic user flow where we can see agent and seller interact together. Each one of us was responsible for one user type. </em>
+                  For instance, I was responsible for the seller user flow and had to think of ways a seller interacts with their agent, what they can and cannot do. At the end of the day, we combined our user flows together to discuss. <em class="bold">
+                  This process helped us thoroughly dissect each of our user's capabilities with the platform. </em>The designer that was responsible for the admin will join us more often once both agent and seller are more involved in the property selling process.</p>
+                  <p><img class="ost" src="imagesUpdated/HubzuSigSeller/SigSellerFlow.jpg" alt="user flows"></p>
+
+                  <p>We set up a meeting with our product and Design Director to go over the user flow. <em class="bold">We decided to add an option to allow the seller to live in the house 12 months after the house was sold as a tenant.</em></p>
+
+          </section>
+        </div>
+
+        <div class="grid2">
+          <section>
+            <h3>Wireframing</h3>
+              <p>When creating wireframes, we brainstormed the main navigation features for each of our users. The ideation went through multiple iterations before proceeding to the final layout.
+                <em class="bold">Wireframing helped us dug deeper into the content of each screen. We worked with content writers to help refine our tone. Our Design Director ensured what information should request from each user. </em></p>
+                  <p><img class="ost" src="imagesUpdated/HubzuSigSeller/dashboardLayout.jpg" alt="dashboard layout sketches"></p>
+          </section>
+        </div>
+
+        <div class="grid2">
+          <section>
+            <h3>Design</h3>
+              <p>When creating the high-fidelity designs, we applied our existing Hubzu design system and heavily relied on our design library to keep our interfaces consistent. <em class="bold"></em>
+                <em class="bold">Each of us designed the high-fidelity for our assigned user type. </em>Since I was responsible for the seller, I created a high-fidelity dashboard for our sellers.</p>
+
+                <p>The high-fidelity design then went on a few more rounds of iterations before spending a month going through our legal department. This project is currently under development.<em class="bold"></em>
+
+                <p><img class="ost" src="imagesUpdated/HubzuSigSeller/SigSellerHifi.png" alt="signature seller process sketches"></p>
+          </section>
+        </div>
+
+      </main>
+
+      <footer> <!-- background -->
+          <section class="footer-content"> <!-- to center content later -->
+          <div>Like what you see?</div>
+          <div>Connect with me here!</div>
+            <ul>
+              <li>
+                <a href="http://www.linkedin.com/in/tristine-nguyen" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/linkedinlogo.svg" alt="linkedin icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Tristine0426" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/githublogo.svg" alt="github icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="mailto:tristine@mail.usf.edu" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/email.svg" alt="email icon" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/gurengazette26/" target="_blank">
+                  <img src="imagesUpdated/iconsLogos/instalogo.svg" alt="instagram icon" width="24" height="24">
+                </a>
+              </li>
+            </ul>
+              <p class="credit">Code and Design by Tristine Nguyen</p>
+            </section>
+        </footer>
+
+      <script src="js/portfolio.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125811108-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-125811108-1');
+        </script>
+
+    </body>
+   </html>
