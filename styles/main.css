@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  color: black;
+  color: #1f2938;
   font-family: cabin, sans-serif;
 }
 
@@ -28,7 +28,7 @@ nav {
 }
 
 nav a {
-  color: black;
+  color: #1f2938;
   text-decoration: none;
 }
 
@@ -111,14 +111,15 @@ nav ul li a:hover, .side-nav a:hover {
 
 .project-title {
   font-size: 1.25rem;
-  margin-top: 12px;
+  margin-top: 48px;
   font-weight: 600;
 }
 
 .project-description {
-  color: #555;
+  color: #1f2938;
   font-size: 1rem;
-  margin-top: 4px;
+  margin-top: 18px;
+  margin-bottom: 48px;
 }
 
 .project:hover .overlay, .secretProject:hover .overlay {
@@ -187,7 +188,7 @@ h1 {
 }
 
 h3 {
-  color: #616161;
+  color: #10141C;
   font-size: 2rem;
   line-height: .6cm;
 }
@@ -198,13 +199,13 @@ h3 {
 }
 
 .down-arrow a {
-  color: black;
+  color: #1f2938;
 }
 
 /******FOR ALL PROJECTS MOBILE*****/
 
 .container p {
-  color: black;
+  color: #1f2938;
   font-size: 1.6rem;
 }
 
