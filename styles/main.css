@@ -110,7 +110,6 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .project-title {
-  font-size: 1.25rem;
   margin-top: 48px;
   font-weight: 600;
 }
@@ -124,19 +123,6 @@ nav ul li a:hover, .side-nav a:hover {
 
 .project:hover .overlay, .secretProject:hover .overlay {
   opacity: 1;
-}
-
-.overlay_description{
-  font-size: 2rem;
-  color: white;
-  line-height: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: left;
-  transform: translate(-50%, -50%);
- -ms-transform: translate(-50%, -50%);
-
 }
 
 @media(max-width: 568px){
@@ -207,6 +193,7 @@ h3 {
 .container p {
   color: #1f2938;
   font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 nav, .grid1, .container {
