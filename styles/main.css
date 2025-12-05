@@ -109,18 +109,16 @@ nav ul li a:hover, .side-nav a:hover {
   width: 100%;
 }
 
-.overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.8);
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: .5s ease;
+.project-title {
+  font-size: 1.25rem;
+  margin-top: 12px;
+  font-weight: 600;
+}
 
+.project-description {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 4px;
 }
 
 .project:hover .overlay, .secretProject:hover .overlay {
