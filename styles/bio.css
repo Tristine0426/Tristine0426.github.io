@@ -247,6 +247,7 @@ footer ul li a{
     grid-template-columns: 1fr;
     margin: 5rem auto 0 auto;
     width: 50%;                         /******TABLET******/
+    min-height: 100vh;
   }
 
   .grid1 img {
