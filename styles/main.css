@@ -198,15 +198,6 @@ h3 {
   line-height: .6cm;
 }
 
-.down-arrow {
-  margin: 18rem 0 2rem 0;    /******MOBILE******/
-  text-align: center;
-}
-
-.down-arrow a {
-  color: #1f2938;
-}
-
 /******FOR ALL PROJECTS MOBILE*****/
 
 .container p {
@@ -316,11 +307,6 @@ footer ul li a{
     line-height: .8cm;
   }
 
-  .down-arrow {
-    margin: 22rem 0 2rem 0;   /******TABLET******/
-    text-decoration: none;
-  }
-
   .container {
     display: grid;
     grid-gap: 2rem;
@@ -339,6 +325,3 @@ footer ul li a{
   }
 }
 
-@media screen and (min-width: 900px) {
-
-}
