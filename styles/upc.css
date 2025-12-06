@@ -248,11 +248,6 @@ footer ul li {
 }
 
 /* --- Desktop --- */
-@media (min-width: 1200px) {
-  .grid1 {
-    width: 40%;
-  }
-}
 
 @media (ax-width: 767px) {
   .grid1 {
