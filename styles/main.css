@@ -209,6 +209,11 @@ nav, .grid1, .container {
   width: 90%;
 }
 
+.grid1 {
+  display: block;
+}
+
+
 /******SLIDES******/
 iframe {
   display: block;
