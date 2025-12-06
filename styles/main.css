@@ -10,7 +10,21 @@ html {
 body {
   color: #1f2938;
   font-family: cabin, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ensures body is at least full viewport height */
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex: 1; /* fills remaining vertical space, pushing footer down */
+}
+
 
 h2 {
   color: white;
@@ -240,6 +254,7 @@ footer {
   color: #FFFFFF;
   font-family: 'Raleway', sans-serif;   /******MOBILE******/
   padding: 5rem;
+  margin: 0;
 }
 
 .footer-content {
