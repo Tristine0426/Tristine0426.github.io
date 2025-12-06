@@ -210,3 +210,9 @@ footer ul li {
     width: 40%;
   }
 }
+
+@media (ax-width: 767px) {
+  .grid1 {
+      width: 90%;
+    }
+}
