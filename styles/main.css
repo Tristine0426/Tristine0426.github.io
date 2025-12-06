@@ -201,18 +201,13 @@ h3 {
   line-height: 1.5;
 }
 
-nav, .grid1, .container {
+nav, .container {
   display: grid;
   grid-template-columns: 1fr; /******MOBILE******/
   list-style: none;
   margin: 0 auto;
   width: 90%;
 }
-
-.grid1 {
-  display: block;
-}
-
 
 /******SLIDES******/
 iframe {
