@@ -217,12 +217,12 @@ iframe {
 
 .slide-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  margin: 84px 0;
-  padding-bottom: 56.25%;
+  margin: 40px 0; 
 }
+
 
 .slide-container iframe {
   position: absolute;
