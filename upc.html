@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Tristine Nguyen</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/bio.css">
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+  <body>
+    <header>
+      <!-- nav bar -->
+      <nav class="nav-bar">
+        <div>
+          <a href="index.html"><img src="imagesUpdated/personalBrand.png" alt="personal logo"></a>
+              <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                  <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                  </svg>
+                </a>
+              </span>
+
+              <ul>
+                <li><a href="index.html#projects">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine_Nguyen_Resume.pdf" target="_blank">RESUME</a></li>
+              </ul>
+        </div>
+      </nav>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <li><a href="index.html" class="portfolio">PROJECTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine_Nguyen_Resume.pdf" target="_blank">RESUME</a></li>
+        </div>
+
+        <!-- hero unit -->
+        <section class="intro">
+          <div class="grid">
+            <div class="whoIAm">
+                <h1>Tristine Nguyen</h1>
+                  <hr>
+                    <h3>Self-learner | cat advocate | food enthusiast.</h3>
+                      <p>I’m a designer with a background in Management Information Systems.
+                        My background helped me learn to code and nurtured my goal to create user-centered design.
+                        I care for homeless cats in the community.
+                        My passion to help animals enhances my ability to empathize with my users.</p>
+            </div>
+           </div>
+          </section>
+      </header>
+      <main>
+        <!-- FULL BIO -->
+        <iframe 
+          src="https://docs.google.com/presentation/d/e/2PACX-1vQvvh2G4tPk4Hly80JbxZuVFAtzwTi5--Wgj7fwKecrYWDKy1kc8ZvwVk4sV2LhCDFzvd_8vrmvYzmD/pubembed?start=false&loop=false&delayms=3000" 
+          frameborder="0" 
+          width="960" 
+          height="569" 
+          allowfullscreen="true" 
+          mozallowfullscreen="true" 
+          webkitallowfullscreen="true">
+        </iframe>
+
+        </main>
+        <footer> <!-- background -->
+            <section class="footer-content">
+              <div>Like what you see?</div>
+              <div>Connect with me here!</div>
+              <ul>
+                <li>
+                  <a href="http://www.linkedin.com/in/tristine-nguyen" target="_blank">
+                    <img src="imagesUpdated/iconsLogos/linkedinlogo.svg" alt="linkedin icon" width="24" height="24">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/Tristine0426" target="_blank">
+                    <img src="imagesUpdated/iconsLogos/githublogo.svg" alt="github icon" width="24" height="24">
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:tristinenguyen147@gmail.com" target="_blank">
+                    <img src="imagesUpdated/iconsLogos/email.svg" alt="email icon" width="24" height="24">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/gurengazette26/" target="_blank">
+                    <img src="imagesUpdated/iconsLogos/instalogo.svg" alt="instagram icon" width="24" height="24">
+                  </a>
+                </li>
+              </ul>
+              <p class="credit">Code and Design by Tristine Nguyen</p>
+            </section>
+          </footer>
+          <script src="js/portfolio.js"></script>
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125811108-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-125811108-1');
+          </script>
+
+       </body>
+     </html>
