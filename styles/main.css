@@ -220,7 +220,8 @@ iframe {
   padding-bottom: 56.25%; /* 16:9 ratio */
   height: 0;
   overflow: hidden;
-  margin: 20px 0;
+  margin: 84px 0;
+  padding-bottom: 56.25%;
 }
 
 .slide-container iframe {
