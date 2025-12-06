@@ -26,38 +26,76 @@ p {
 }
 
 /* ---------- NAVBAR ---------- */
+/******NAVBAR******/
 nav {
-  width: 90%;
-  margin: 0 auto;
-  padding: 1.2rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;      /******MOBILE******/
   font-family: Raleway, sans-serif;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 
 nav a {
-  color: black;
+  color: #1f2938;
   text-decoration: none;
 }
 
 nav img {
+  display: inline-block;
+  float: left;
+  margin-top: 1rem;
   width: 6rem;
 }
 
-nav ul {
-  display: flex;
-  gap: 2rem;
+nav ul {                  /******MOBILE******/
+  float: right;
 }
 
 nav ul li {
-  list-style: none;
+  display: inline-block;
+  font-family: Raleway, sans-serif;
   font-size: 1.6rem;
-  font-weight: 900;
+  font-weight: 900;           /******MOBILE******/
+  list-style: none;
+  padding: 2.2rem;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, .side-nav a:hover {
   color: #ED2F80;
+}
+
+.open-slide {
+  float: right;
+  margin: 2rem 0;
+}
+
+.side-nav {
+  background-color: #111;
+  opacity: .9;
+  overflow: hidden;
+  padding-top: 60px;
+  width: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.side-nav a {
+  color: #fff;
+  display: block;
+  font-size: 1.8rem;
+  margin-right: 2.5rem;
+  padding:  1rem 1rem 2rem 3rem;
+  text-align: right;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.side-nav .btn-close {
+  font-size: 5.6rem;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /* ---------- MOBILE MENU ---------- */
@@ -155,6 +193,10 @@ footer ul li {
 /* --- Small screens (phones) --- */
 @media (max-width: 568px) {
   nav ul {
+    display: none;
+  }
+  
+ .nav-bar ul {
     display: none;
   }
 
