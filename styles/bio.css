@@ -93,6 +93,30 @@ nav ul li a:hover, .side-nav a:hover {
   margin-top: 2rem;
 }
 
+/******SLIDES******/
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.slide-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 40px 0; 
+}
+
+
+.slide-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 @media(max-width: 568px){
   .nav-bar ul {
     display: none;
@@ -212,6 +236,9 @@ footer ul li a{
   }
 }
 
+.grid1 {                     
+    min-height: 100vh;
+  }
 /****************TABLET SIZE****************/
 @media screen and (min-width: 768px) {
 
