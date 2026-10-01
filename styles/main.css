@@ -166,7 +166,7 @@ nav a:focus-visible {
 }
 
 .hero h1 {
-  color: var(--ink);
+  color: #1f2938;;
   font-family: Montserrat, sans-serif;
   font-size: clamp(4.4rem, 7vw, 8.2rem);
   font-weight: 800;
@@ -198,7 +198,7 @@ nav a:focus-visible {
 }
 
 .hero-description {
-  color: var(--muted-ink);
+  color: #1f2938;
   font-size: clamp(1.8rem, 2vw, 2.1rem);
   line-height: 1.55;
   margin: 0 0 3rem;
@@ -206,7 +206,7 @@ nav a:focus-visible {
 }
 
 .hero-description strong {
-  color: var(--ink);
+  color: #1f2938;
   font-weight: 700;
 }
 
@@ -388,7 +388,6 @@ nav a:focus-visible {
 /**************** PROJECTS ****************/
 
 .projects-intro {
-  margin: 0 auto;
   max-width: 124rem;
   padding: 2rem 5% 3.5rem;
 }
@@ -403,7 +402,7 @@ nav a:focus-visible {
 }
 
 .projects-intro h2 {
-  color: var(--ink);
+  color: #1f2938;
   font-size: clamp(3.2rem, 5vw, 5.2rem);
   letter-spacing: -0.04em;
   margin: 0;
