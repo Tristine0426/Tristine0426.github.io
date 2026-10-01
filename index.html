@@ -3,63 +3,85 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Portfolio | Tristine Nguyen</title>
+
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
 
   <!-- Google Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-  <!-- Font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+  >
 </head>
+
 <body>
   <header>
-    <!-- nav bar -->
-    <nav class="nav-bar"><!-- background -->
+    <!-- Navigation -->
+    <nav class="nav-bar">
       <div>
-        <a href="index.html"><img src="imagesUpdated/personalBrand.png" alt="personal logo"></a>
-            <span class="open-slide">
-              <a href="#" onclick="openSlideMenu()">
-                <svg width="30" height="30">
-                  <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
-                  <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
-                  <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
-                </svg>
-              </a>
-            </span>
+        <a href="index.html" aria-label="Tristine Nguyen homepage">
+          <img
+            class="site-logo"
+            src="imagesUpdated/tn-logo-brand.png"
+            alt="Tristine Nguyen logo"
+          >
+        </a>
 
-            <ul>
-              <li><a href="index.html">Projects</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine_Nguyen_Resume.pdf" target="_blank">Resume</a></li>
-            </ul>
+        <ul>
+          <li>
+            <i class="far fa-file-pdf" aria-hidden="true"></i>
+            <a
+              href="imagesUpdated/Tristine_Nguyen_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
 
-      <div id="side-menu" class="side-nav">
-          <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-          <li><a href="index.html">PROJECTS</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine_Nguyen_Resume.pdf" target="_blank">RESUME</a></li>
-      </div>
-    <!-- hero unit -->
+    <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-shell">
         <div class="introduction">
-          <p class="hero-eyebrow"><span aria-hidden="true"></span>Product designer · Atlanta</p>
-          <h1 id="hero-title">I simplify <em>complex systems</em> into experiences that feel clear.</h1>
+          <p class="hero-eyebrow">
+            <span aria-hidden="true"></span>
+            Product designer · Atlanta
+          </p>
+
+          <h1 id="hero-title">
+            I simplify <em>complex systems</em> into experiences that feel clear.
+          </h1>
+
           <p class="hero-description">
-            I’m Tristine, a product designer creating thoughtful enterprise and developer experiences across
+            I’m Tristine, a product designer creating thoughtful enterprise and
+            developer experiences across
             <strong>payments, onboarding, and API platforms.</strong>
           </p>
+
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View selected work <span aria-hidden="true">↓</span></a>
-            <a class="button button-secondary" href="about.html">A little about me <span aria-hidden="true">→</span></a>
+            <a class="button button-primary" href="#projects">
+              View selected work
+              <span aria-hidden="true">↓</span>
+            </a>
+
+            <a class="button button-secondary" href="about.html">
+              A little about me
+              <span aria-hidden="true">→</span>
+            </a>
           </div>
+
           <ul class="hero-specialties" aria-label="Design specialties">
             <li>Enterprise UX</li>
             <li>Developer experiences</li>
@@ -67,15 +89,35 @@
           </ul>
         </div>
 
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hero-orbit"></div>
+        <div class="hero-visual">
+          <div class="hero-orbit" aria-hidden="true"></div>
+
           <div class="hero-monogram">
-            <img src="imagesUpdated/personalBrand.png" alt="">
+            <img
+              src="imagesUpdated/tristine-portrait.jpg"
+              alt="Portrait of Tristine Nguyen"
+            >
           </div>
-          <div class="hero-chip hero-chip-top"><span>✦</span> Thoughtful details</div>
-          <div class="hero-chip hero-chip-bottom"><span>●</span> Human-centered</div>
-          <div class="hero-shape hero-shape-yellow"></div>
-          <div class="hero-shape hero-shape-mint"></div>
+
+          <div class="hero-chip hero-chip-top">
+            <span aria-hidden="true">✦</span>
+            Thoughtful details
+          </div>
+
+          <div class="hero-chip hero-chip-bottom">
+            <span aria-hidden="true">●</span>
+            Human-centered
+          </div>
+
+          <div
+            class="hero-shape hero-shape-yellow"
+            aria-hidden="true"
+          ></div>
+
+          <div
+            class="hero-shape hero-shape-mint"
+            aria-hidden="true"
+          ></div>
         </div>
       </div>
     </section>
@@ -87,132 +129,203 @@
   </section>
 
   <main class="container" id="projects">
+    <!-- Unified Payments Console -->
+    <a href="upc.html" onclick="return openProject('upc.html');">
+      <section class="project">
+        <img
+          class="photo"
+          src="imagesUpdated/UPC.png"
+          alt="Screenshots of Unified Payments Console dashboard"
+        >
 
-      <!-- Global Payments UPC -->
-      <a href="#" onclick="return openProject('upc.html');">
-        <section class="project">
-          <img class="photo" src="imagesUpdated/UPC.png" alt="Screenshots of Unified Payments Console dashboard">
-    
-          <h3 class="project-title">Unified Payments Console</h3>
-          <p class="project-description">
-            An internal application that helps onboarding Global Payments' merchants and partners onto our API.
-          </p>
-        </section>
-      </a>
-    
-      <!-- Global Payments API Explorer -->
-      <a href="#" onclick="return openProject('api-explorer.html');">
-        <section class="project">
-          <img class="photo" src="imagesUpdated/API Explorer.png" alt="Showcasing different parts of the API Explorer screen">
-    
-          <h3 class="project-title">Global Payments API Explorer</h3>
-          <p class="project-description">
-            An overhaul of Global Payments' API Explorer to make it faster, clearer, and easier for developers to discover, test, and integrate our APIs.
-          </p>
-        </section>
-      </a>
-    
-      <!-- Global Payments CAB -->
-      <a href="#" onclick="return openProject('cab.html');">
-        <section class="project">
-          <img class="photo" src="imagesUpdated/CAB.png" alt="Customer Advisory Website Screenshots">
-    
-          <h3 class="project-title">Customer Advisory Board Site</h3>
-          <p class="project-description">
-            I designed and developed our Customer Advisory Board website and email template from scratch within 5 days.
-          </p>
-        </section>
-      </a>
-    
-      <!-- Global Payments PIVOT -->
-      <a href="#" onclick="return openProject('pivot.html');">
-        <section class="project">
-          <img class="photo" src="imagesUpdated/Pivot.png" alt="Pivot event visuals">
-    
-          <h3 class="project-title">PIVOT Event Branding</h3>
-          <p class="project-description">
-            I helped brainstorm logo ideas for our design team’s EOY event based on the iconic Pivot scene from Friends.
-          </p>
-        </section>
-      </a>
-    
-      <!-- UX Reference Library -->
-      <a href="#" onclick="return openProject('library.html');">
-        <section class="project">
-          <img class="photo" src="imagesUpdated/UX Reference Library.png" alt="UX Reference Library Screenshot">
-    
-          <h3 class="project-title">UX Reference Library</h3>
-          <p class="project-description">
-            A passion project to help reduce duplicated design work and consolidate shared UI patterns.
-          </p>
-        </section>
-      </a>
-    
-  </main>
-  <footer> <!-- background -->
-      <section class="footer-content">
-        <div>Like what you see?</div>
-        <div>Connect with me here!</div>
-        <ul>
-          <li>
-            <a href="http://www.linkedin.com/in/tristine-nguyen" target="_blank">
-              <img src="imagesUpdated/iconsLogos/linkedinlogo.svg" alt="linkedin icon" width="24" height="24">
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/Tristine0426" target="_blank">
-              <img src="imagesUpdated/iconsLogos/githublogo.svg" alt="github icon" width="24" height="24">
-            </a>
-          </li>
-          <li>
-            <a href="mailto:tristinenguyen147@gmail.com" target="_blank">
-              <img src="imagesUpdated/iconsLogos/email.svg" alt="email icon" width="24" height="24">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/gurengazette26/" target="_blank">
-              <img src="imagesUpdated/iconsLogos/instalogo.svg" alt="instagram icon" width="24" height="24">
-            </a>
-          </li>
-        </ul>
-        <p class="credit">Code and Design by Tristine Nguyen</p>
+        <h3 class="project-title">Unified Payments Console</h3>
+
+        <p class="project-description">
+          An internal application that helps onboard Global Payments merchants
+          and partners onto our API.
+        </p>
       </section>
-    </footer>
-  
-    <script src="js/portfolio.js"></script>
-  
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125811108-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-125811108-1');
-    </script>
+    </a>
 
-    <!-- Password handling -->
+    <!-- API Explorer -->
+    <a
+      href="api-explorer.html"
+      onclick="return openProject('api-explorer.html');"
+    >
+      <section class="project">
+        <img
+          class="photo"
+          src="imagesUpdated/API Explorer.png"
+          alt="Different areas of the API Explorer interface"
+        >
+
+        <h3 class="project-title">Global Payments API Explorer</h3>
+
+        <p class="project-description">
+          An overhaul of Global Payments’ API Explorer to make it faster,
+          clearer, and easier for developers to discover, test, and integrate
+          our APIs.
+        </p>
+      </section>
+    </a>
+
+    <!-- Customer Advisory Board -->
+    <a href="cab.html" onclick="return openProject('cab.html');">
+      <section class="project">
+        <img
+          class="photo"
+          src="imagesUpdated/CAB.png"
+          alt="Customer Advisory Board website screens"
+        >
+
+        <h3 class="project-title">Customer Advisory Board Site</h3>
+
+        <p class="project-description">
+          I designed and developed our Customer Advisory Board website and
+          email template from scratch within five days.
+        </p>
+      </section>
+    </a>
+
+    <!-- PIVOT -->
+    <a href="pivot.html" onclick="return openProject('pivot.html');">
+      <section class="project">
+        <img
+          class="photo"
+          src="imagesUpdated/Pivot.png"
+          alt="PIVOT event branding visuals"
+        >
+
+        <h3 class="project-title">PIVOT Event Branding</h3>
+
+        <p class="project-description">
+          I helped brainstorm logo ideas for our design team’s end-of-year
+          event based on the iconic pivot scene from Friends.
+        </p>
+      </section>
+    </a>
+
+    <!-- UX Reference Library -->
+    <a href="library.html" onclick="return openProject('library.html');">
+      <section class="project">
+        <img
+          class="photo"
+          src="imagesUpdated/UX Reference Library.png"
+          alt="UX Reference Library interface"
+        >
+
+        <h3 class="project-title">UX Reference Library</h3>
+
+        <p class="project-description">
+          A passion project to reduce duplicated design work and consolidate
+          shared interface patterns.
+        </p>
+      </section>
+    </a>
+  </main>
+
+  <footer>
+    <section class="footer-content">
+      <div>Like what you see?</div>
+      <div>Connect with me here!</div>
+
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/tristine-nguyen"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="imagesUpdated/iconsLogos/linkedinlogo.svg"
+              alt="LinkedIn"
+              width="24"
+              height="24"
+            >
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://github.com/Tristine0426"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="imagesUpdated/iconsLogos/githublogo.svg"
+              alt="GitHub"
+              width="24"
+              height="24"
+            >
+          </a>
+        </li>
+
+        <li>
+          <a href="mailto:tristinenguyen147@gmail.com">
+            <img
+              src="imagesUpdated/iconsLogos/email.svg"
+              alt="Email"
+              width="24"
+              height="24"
+            >
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.instagram.com/gurengazette26/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="imagesUpdated/iconsLogos/instalogo.svg"
+              alt="Instagram"
+              width="24"
+              height="24"
+            >
+          </a>
+        </li>
+      </ul>
+
+      <p class="credit">Code and design by Tristine Nguyen</p>
+    </section>
+  </footer>
+
+  <script src="js/portfolio.js"></script>
+
+  <!-- Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-125811108-1"
+  ></script>
+
   <script>
-      function openProject(url) {
-        const password = "CaseStudyPass"; // change this
-        const entered = prompt("This project is private. Please enter password:");
-      
-        if (entered === password) {
-          window.location.href = url;
-          return false;
-        } else if (entered !== null) {
-          alert("Incorrect password.");
-        }
-      
-        return false; 
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-125811108-1");
+  </script>
+
+  <!-- Private project password -->
+  <script>
+    function openProject(url) {
+      const password = "CaseStudyPass";
+      const entered = prompt(
+        "This project is private. Please enter password:"
+      );
+
+      if (entered === password) {
+        window.location.href = url;
+      } else if (entered !== null) {
+        alert("Incorrect password.");
       }
-</script>
 
-  </body>
-  </html>
-
-
-
-
-
-
-
+      return false;
+    }
+  </script>
+</body>
+</html>
