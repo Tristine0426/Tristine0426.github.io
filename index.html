@@ -34,6 +34,7 @@
 
             <ul>
               <li><a href="index.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
               <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine_Nguyen_Resume.pdf" target="_blank">Resume</a></li>
             </ul>
       </div>
@@ -41,25 +42,51 @@
 
       <div id="side-menu" class="side-nav">
           <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-          <li><a href="index.html">Projects</a></li>
-          <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine_Nguyen_Resume.pdf" target="_blank">Resume</a></li>
+          <li><a href="index.html">PROJECTS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><i class="far fa-file-pdf"></i><a href="imagesUpdated/Tristine_Nguyen_Resume.pdf" target="_blank">RESUME</a></li>
       </div>
     <!-- hero unit -->
-    <section class="hero"> <!-- background -->
-      <div class="grid1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-shell">
         <div class="introduction">
-          <h1>Hi! I'm <em class="bold">Tristine</em> 👋</h1>
-            <h3>Currently based in <em class="bold">Atlanta, GA.</em></h3>
-            <h3>I simplify complex systems into experiences that feel clear.</h3>
+          <p class="hero-eyebrow"><span aria-hidden="true"></span>Product designer · Atlanta</p>
+          <h1 id="hero-title">I simplify <em>complex systems</em> into experiences that feel clear.</h1>
+          <p class="hero-description">
+            I’m Tristine, a product designer creating thoughtful enterprise and developer experiences across
+            <strong>payments, onboarding, and API platforms.</strong>
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View selected work <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="about.html">A little about me <span aria-hidden="true">→</span></a>
           </div>
+          <ul class="hero-specialties" aria-label="Design specialties">
+            <li>Enterprise UX</li>
+            <li>Developer experiences</li>
+            <li>Systems thinking</li>
+          </ul>
+        </div>
 
-        <div class="down-arrow">
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-orbit"></div>
+          <div class="hero-monogram">
+            <img src="imagesUpdated/personalBrand.png" alt="">
+          </div>
+          <div class="hero-chip hero-chip-top"><span>✦</span> Thoughtful details</div>
+          <div class="hero-chip hero-chip-bottom"><span>●</span> Human-centered</div>
+          <div class="hero-shape hero-shape-yellow"></div>
+          <div class="hero-shape hero-shape-mint"></div>
         </div>
       </div>
     </section>
   </header>
 
-  <main class="container">
+  <section class="projects-intro" aria-labelledby="projects-title">
+    <p>Selected work</p>
+    <h2 id="projects-title">Designing clarity at scale.</h2>
+  </section>
+
+  <main class="container" id="projects">
 
       <!-- Global Payments UPC -->
       <a href="#" onclick="return openProject('upc.html');">
