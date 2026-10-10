@@ -126,6 +126,13 @@ nav a:focus-visible {
 /**************** HERO ****************/
 
 .hero {
+  background-image: radial-gradient(
+    circle,
+    rgba(24, 32, 51, 0.14) 1px,
+    transparent 1px
+  );
+  background-position: 12px 12px;
+  background-size: 24px 24px;
   padding: 4rem 5% 8rem;
 }
 
@@ -548,6 +555,66 @@ footer ul li a:hover img {
 
 .credit {
   font-size: 1.3rem;
+}
+
+.personal-footer {
+  background: var(--ink);
+  padding: 7rem 5%;
+}
+
+.personal-footer-content {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 6rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 124rem;
+}
+
+.personal-footer-copy {
+  flex: 1 1 32rem;
+  max-width: 76rem;
+}
+
+.personal-footer-eyebrow {
+  color: var(--pink);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0 0 1.8rem;
+  text-transform: uppercase;
+}
+
+.personal-footer h2 {
+  font-size: clamp(3rem, 4vw, 4.8rem);
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  margin: 0 0 2rem;
+}
+
+.personal-footer-description {
+  color: #d7dce7;
+  font-family: Cabin, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.65;
+  margin: 0;
+  max-width: 56rem;
+}
+
+.personal-footer-contact {
+  background: var(--pink);
+  color: var(--ink);
+  flex: 0 0 auto;
+}
+
+.personal-footer-contact:hover {
+  background: var(--blush);
+}
+
+.personal-footer-contact:focus-visible {
+  outline: 0.3rem solid var(--white);
+  outline-offset: 0.5rem;
 }
 
 /**************** TABLET AND DESKTOP ****************/
