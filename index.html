@@ -9,113 +9,101 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
   <link
+    href="https://fonts.googleapis.com/css?family=Cabin"
     rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+  >
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:800"
+    rel="stylesheet"
+  >
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway"
+    rel="stylesheet"
+  >
+  <link
+    href="https://fonts.googleapis.com/css?family=Fredoka+One"
+    rel="stylesheet"
+  >
+  <link
+    href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap"
+    rel="stylesheet"
   >
 </head>
 
 <body>
-  <header>
-    <!-- Navigation -->
-    <nav class="nav-bar">
-      <div>
-        <a href="index.html" aria-label="Tristine Nguyen homepage">
-          <img
-            class="site-logo"
-            src="imagesUpdated/tn-logo-brand.png"
-            alt="Tristine Nguyen logo"
-          >
-        </a>
+  <header class="portfolio-header">
+    <nav class="portfolio-nav" aria-label="Main navigation">
+      <a href="index.html" aria-label="Tristine Nguyen homepage">
+        <img
+          class="portfolio-logo"
+          src="imagesUpdated/tn-logo-navy.png"
+          alt="Tristine Nguyen logo"
+        >
+      </a>
 
-        <ul>
-          <li>
-            <i class="far fa-file-pdf" aria-hidden="true"></i>
-            <a
-              href="imagesUpdated/Tristine_Nguyen_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download Resume
-            </a>
-          </li>
-        </ul>
-      </div>
+      <a
+        class="resume-download"
+        href="imagesUpdated/Tristine_Nguyen_Resume.pdf"
+        download
+      >
+        Download resumes
+        <span aria-hidden="true">↗</span>
+      </a>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-shell">
-        <div class="introduction">
-          <p class="hero-eyebrow">
-            <span aria-hidden="true"></span>
-            Product designer · Atlanta
-          </p>
+    <section
+      class="portfolio-hero"
+      aria-labelledby="portfolio-heading"
+    >
+      <div class="portfolio-hero-copy">
+        <p class="portfolio-eyebrow">
+          Tristine Nguyen · Product Designer
+        </p>
 
-          <h1 id="hero-title">
-            I simplify <em>complex systems</em> into experiences that feel clear.
-          </h1>
+        <h1 id="portfolio-heading">
+          Complex systems.<br>
+          <span>Clear experiences.</span>
+        </h1>
 
-          <p class="hero-description">
-            I’m Tristine, a product designer creating thoughtful enterprise and
-            developer experiences across
-            <strong>payments, onboarding, and API platforms.</strong>
-          </p>
+        <p class="portfolio-intro">
+          Designing thoughtful payment platforms, developer tools,
+          and enterprise experiences.
+        </p>
 
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">
-              View selected work
-              <span aria-hidden="true">↓</span>
-            </a>
-          </div>
+        <a class="button portfolio-work-button" href="#projects">
+          View selected work
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
 
-          <ul class="hero-specialties" aria-label="Design specialties">
-            <li>Enterprise UX</li>
-            <li>Developer experiences</li>
-            <li>Systems thinking</li>
-          </ul>
-        </div>
+      <div class="portfolio-portrait">
+        <span
+          class="portrait-accent portrait-accent-pink"
+          aria-hidden="true"
+        ></span>
 
-        <div class="hero-visual">
-          <div class="hero-orbit" aria-hidden="true"></div>
+        <span
+          class="portrait-accent portrait-accent-mint"
+          aria-hidden="true"
+        ></span>
 
-          <div class="hero-monogram">
-            <img
-              src="imagesUpdated/tristine-portrait.jpg"
-              alt="Portrait of Tristine Nguyen"
-            >
-          </div>
-
-          <div class="hero-chip hero-chip-top">
-            <span aria-hidden="true">✦</span>
-            Thoughtful details
-          </div>
-
-          <div class="hero-chip hero-chip-bottom">
-            <span aria-hidden="true">●</span>
-            Human-centered
-          </div>
-
-          <div
-            class="hero-shape hero-shape-yellow"
-            aria-hidden="true"
-          ></div>
-
-          <div
-            class="hero-shape hero-shape-mint"
-            aria-hidden="true"
-          ></div>
+        <div class="portrait-circle">
+          <img
+            src="imagesUpdated/tristine-portrait.jpg"
+            alt="Portrait of Tristine Nguyen"
+            width="668"
+            height="916"
+            fetchpriority="high"
+          >
         </div>
       </div>
     </section>
+
+    <div class="portfolio-work-divider" aria-hidden="true">
+      <span>Selected work</span>
+      <span class="portfolio-divider-line"></span>
+    </div>
   </header>
 
   <section class="projects-intro" aria-labelledby="projects-title">
@@ -131,13 +119,14 @@
           class="photo"
           src="imagesUpdated/UPC.png"
           alt="Screenshots of Unified Payments Console dashboard"
+          loading="lazy"
         >
 
         <h3 class="project-title">Unified Payments Console</h3>
 
         <p class="project-description">
-          An internal application that helps onboard Global Payments merchants
-          and partners onto our API.
+          An internal application that helps onboard Global Payments
+          merchants and partners onto our API.
         </p>
       </section>
     </a>
@@ -152,14 +141,17 @@
           class="photo"
           src="imagesUpdated/API Explorer.png"
           alt="Different areas of the API Explorer interface"
+          loading="lazy"
         >
 
-        <h3 class="project-title">Global Payments API Explorer</h3>
+        <h3 class="project-title">
+          Global Payments API Explorer
+        </h3>
 
         <p class="project-description">
           An overhaul of Global Payments’ API Explorer to make it faster,
-          clearer, and easier for developers to discover, test, and integrate
-          our APIs.
+          clearer, and easier for developers to discover, test, and
+          integrate our APIs.
         </p>
       </section>
     </a>
@@ -171,31 +163,38 @@
           class="photo"
           src="imagesUpdated/CAB.png"
           alt="Customer Advisory Board website screens"
+          loading="lazy"
         >
 
-        <h3 class="project-title">Customer Advisory Board Site</h3>
+        <h3 class="project-title">
+          Customer Advisory Board Site
+        </h3>
 
         <p class="project-description">
-          I designed and developed our Customer Advisory Board website and
-          email template from scratch within five days.
+          I designed and developed our Customer Advisory Board website
+          and email template from scratch within five days.
         </p>
       </section>
     </a>
 
     <!-- UX Reference Library -->
-    <a href="library.html" onclick="return openProject('library.html');">
+    <a
+      href="library.html"
+      onclick="return openProject('library.html');"
+    >
       <section class="project">
         <img
           class="photo"
           src="imagesUpdated/UX Reference Library.png"
           alt="UX Reference Library interface"
+          loading="lazy"
         >
 
         <h3 class="project-title">UX Reference Library</h3>
 
         <p class="project-description">
-          A passion project to reduce duplicated design work and consolidate
-          shared interface patterns.
+          A passion project to reduce duplicated design work and
+          consolidate shared interface patterns.
         </p>
       </section>
     </a>
@@ -205,14 +204,24 @@
     <section class="personal-footer-content">
       <div class="personal-footer-copy">
         <p class="personal-footer-eyebrow">Beyond the screen</p>
-        <h2 id="footer-title">Thoughtful by nature.<br>Curious by design.</h2>
+
+        <h2 id="footer-title">
+          Thoughtful by nature.<br>
+          Curious by design.
+        </h2>
+
         <p class="personal-footer-description">
-          Outside of work, you’ll find me gardening, enjoying a good cup of
-          coffee, and learning Japanese.
+          Outside of work, you’ll find me gardening, enjoying a good
+          cup of coffee, and learning Japanese.
         </p>
       </div>
-      <a class="button personal-footer-contact" href="mailto:tristinenguyen147@gmail.com">
-        Get in touch <span aria-hidden="true">↗</span>
+
+      <a
+        class="button personal-footer-contact"
+        href="mailto:tristinenguyen147@gmail.com"
+      >
+        Get in touch
+        <span aria-hidden="true">↗</span>
       </a>
     </section>
   </footer>
@@ -236,7 +245,7 @@
     gtag("config", "UA-125811108-1");
   </script>
 
-  <!-- Private project password -->
+  <!-- Existing project password prompt -->
   <script>
     function openProject(url) {
       const password = "CaseStudyPass";
