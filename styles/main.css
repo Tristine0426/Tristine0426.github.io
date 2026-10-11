@@ -193,7 +193,7 @@ a:focus-visible {
 }
 
 .portfolio-hero h1 span {
-  color: var(--indigo);
+   color: #10141C;
 }
 
 .portfolio-intro {
@@ -340,7 +340,7 @@ a:focus-visible {
 }
 
 .container p {
-  color: #1f2938;
+  color: #586174;
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -371,7 +371,7 @@ a:focus-visible {
 }
 
 .project-description {
-  color: #1f2938;
+  color: #586174;
   margin-bottom: 4.8rem;
   margin-top: 1.8rem;
 }
@@ -616,7 +616,7 @@ main.container,
 /* Keep the footer readable on the light background */
 .personal-footer,
 .personal-footer h2 {
-  color: #182033;
+  color: #10141C;
 }
 
 .personal-footer-eyebrow {
