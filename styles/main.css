@@ -302,7 +302,6 @@ a:focus-visible {
 /**************** PROJECTS ****************/
 
 .projects-intro {
-  margin: 0 auto;
   max-width: 124rem;
   padding: 6rem 5% 3.5rem;
 }
