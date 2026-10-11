@@ -593,3 +593,46 @@ iframe {
     transform: none;
   }
 }
+
+/* Continuous dotted grid across the page */
+body {
+  background-color: #f7f8ff;
+  background-image: radial-gradient(
+    circle,
+    rgba(75, 80, 217, 0.22) 1px,
+    transparent 1.2px
+  );
+  background-size: 24px 24px;
+}
+
+/* Let the body grid show through */
+.portfolio-header,
+.projects-intro,
+main.container,
+.personal-footer {
+  background: transparent;
+}
+
+/* Keep the footer readable on the light background */
+.personal-footer,
+.personal-footer h2 {
+  color: #182033;
+}
+
+.personal-footer-eyebrow {
+  color: #4b50d9;
+}
+
+.personal-footer-description {
+  color: #586174;
+}
+
+.portfolio-header {
+  background-color: #ffffff;
+  background-image: radial-gradient(
+    circle,
+    rgba(75, 80, 217, 0.22) 1px,
+    transparent 1.2px
+  );
+  background-size: 24px 24px;
+}
