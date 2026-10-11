@@ -31,7 +31,13 @@ body {
 }
 
 body {
-  background: var(--cream);
+  background-color: #f7f8ff;
+  background-image: radial-gradient(
+  circle,
+  rgba(75, 80, 217, 0.22) 1px,
+  transparent 1.2px
+);
+background-size: 24px 24px;
   color: var(--ink);
   display: flex;
   flex-direction: column;
@@ -94,11 +100,7 @@ a:focus-visible {
 /**************** DOTTED-GRID HEADER ****************/
 
 .portfolio-header {
-  background-color: #f7f8ff;
-  background-image: radial-gradient(
-    circle,
-    rgba(75, 80, 217, 0.22) 1px,
-    transparent 1.2px
+ background: transparent;
   );
   background-size: 24px 24px;
   color: var(--ink);
