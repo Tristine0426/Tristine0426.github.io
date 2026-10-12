@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Tristine Nguyen designed and developed an inclusive, accessible Customer Insights Panel website for Global Payments in five days.">
+  <title>Customer Insights Panel | Tristine Nguyen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <style>
+    /* Homepage typography and colors, kept here so this file is self-contained. */
+    :root { --ink: #10141c; --muted-ink: #586174; --indigo: #4b50d9; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #fff; color: var(--ink); font-family: Cabin, Arial, sans-serif; font-size: 16px; line-height: 1.5; }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid var(--indigo); outline-offset: 6px; }
+    .skip-link { position: absolute; top: 12px; left: 12px; padding: 12px 20px; background: #fff; color: var(--ink); transform: translateY(-200%); z-index: 2; }
+    .skip-link:focus { transform: translateY(0); }
+    .portfolio-header { padding: 0 clamp(20px, 5vw, 80px); }
+    .portfolio-nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; width: 100%; max-width: 1360px; margin: 0 auto; padding: 28px 0; }
+    .portfolio-nav > a:first-child { display: inline-flex; align-items: center; flex-shrink: 0; }
+    .portfolio-logo { display: block; height: 62px; width: 112px; object-fit: contain; object-position: left center; }
+    .resume-download { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; font-size: 16px; font-weight: 600; white-space: nowrap; text-decoration: none; }
+    .resume-download:hover { text-decoration: underline; text-underline-offset: 5px; }
+    .case-study { width: min(90%, 1160px); margin: 0 auto; padding: 60px 0 64px; }
+    .case-hero { text-align: center; margin-bottom: 52px; }
+    .case-hero h1 { font-family: Montserrat, Arial, sans-serif; font-weight: 800; color: #1f2938; font-size: clamp(32px, 5vw, 52px); letter-spacing: -0.04em; line-height: 1.15; margin: 0; text-wrap: balance; }
+    p { color: var(--muted-ink); margin: 0 0 18px; }
+    p:last-child { margin-bottom: 0; }
+    .case-summary { margin: 20px auto 30px; max-width: 1160px; }
+    .project-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; max-width: 820px; margin: 28px auto; padding: 24px 0; border-block: 1px solid #e5e1ec; }
+    .project-summary dt { font-size: 14px; color: var(--muted-ink); margin-bottom: 6px; }
+    .project-summary dd { margin: 0; font-weight: 600; color: var(--ink); }
+    .design-highlights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; list-style: none; padding: 0; margin: -40px 0 56px; }
+    .design-highlights li { display: grid; grid-template-columns: 40px minmax(0, 1fr); align-items: start; gap: 14px; }
+    .highlight-icon { width: 40px; height: 40px; padding: 9px; border-radius: 12px; color: var(--indigo); background: #eeeaff; }
+    .design-highlights strong { display: block; font-weight: 600; margin-bottom: 6px; }
+    .design-highlights p { margin: 0; }
+    .snippet-notes { margin-top: 24px; }
+    .snippet-notes ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; }
+    .snippet-notes li { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; }
+    .note-number { display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: #eeeaff; color: var(--indigo); font-weight: 700; font-size: 14px; }
+    .snippet-notes strong { display: block; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+    .snippet-notes p { color: var(--muted-ink); margin: 0; }
+    .button { background: var(--indigo); color: #fff; display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; min-height: 58px; padding: 16px 28px; font-size: 17px; font-weight: 700; text-decoration: none; transition: background-color .2s ease, transform .2s ease; }
+    .button:hover { background: #383db9; transform: translateY(-2px); }
+    figure { margin: 0; }
+    img { display: block; max-width: 100%; height: auto; }
+    .cover { margin-bottom: 52px; }
+    .cover img { width: 100%; border-radius: 32px; }
+    h2 { font-family: Cabin, Arial, sans-serif; font-size: 25px; font-weight: 600; line-height: 1.3; margin: 0 0 12px; color: var(--ink); text-wrap: balance; }
+    .two-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 60px; }
+    .overview { margin-bottom: 112px; }
+    .design-details { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 60px; align-items: start; margin-bottom: 58px; }
+    .design-copy { display: grid; gap: 80px; }
+    .snippets img { width: 100%; border-radius: 32px; }
+    .invitation { margin-bottom: 64px; }
+    /* The empty pieces suggest a larger collection; only their outer edges fade. */
+    .question-pieces { margin: 12px 0 24px; -webkit-mask-image: linear-gradient(to right, transparent, #000 23%, #000 77%, transparent); mask-image: linear-gradient(to right, transparent, #000 23%, #000 77%, transparent); }
+    .question-row { list-style: none; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr) auto auto minmax(0, 1fr); gap: 8px; margin: 0; }
+    .question-row + .question-row { margin-top: 8px; }
+    .question-row li { display: flex; align-items: center; justify-content: center; min-height: 56px; padding: 14px 24px; background: #f8f8f8; border-radius: 8px; text-align: center; color: var(--ink); }
+    .question-row .question-blank { padding: 0; }
+    .delivery { margin-bottom: 80px; }
+    .reflection { background: #f7f7f7; border-radius: 28px; padding: 28px; }
+    .back-link { display: inline-flex; align-items: center; min-height: 44px; margin-top: 28px; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+    @media (max-width: 767px) {
+      .case-study { width: calc(100% - 40px); padding-top: 40px; padding-bottom: 40px; }
+      .case-hero { margin-bottom: 36px; }
+      .case-summary { text-align: left; }
+      .project-summary { gap: 16px; text-align: left; }
+      .design-highlights { grid-template-columns: minmax(0, 1fr); gap: 24px; margin: 0 0 40px; }
+      .cover { margin-bottom: 40px; }
+      .cover img, .snippets img { border-radius: 20px; }
+      .two-columns, .design-details { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+      .overview, .design-details, .invitation, .delivery { margin-bottom: 48px; }
+      .design-copy { gap: 36px; }
+      .snippets { width: min(100%, 520px); margin-inline: auto; }
+      h2 { font-size: 20px; line-height: 1.5; }
+      .button { font-size: 16px; min-height: 54px; padding: 14px 24px; }
+      .reflection { border-radius: 20px; padding: 24px; }
+    }
+    @media (max-width: 600px) {
+      .question-pieces { -webkit-mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent); mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent); }
+      .question-row { grid-template-columns: 8px minmax(0, 1fr) minmax(0, 1.25fr) 8px; gap: 6px; }
+      .question-row + .question-row { grid-template-columns: 8px minmax(0, 1.15fr) minmax(0, 1.1fr) 8px; margin-top: 6px; }
+      .question-row li { padding: 12px 8px; min-height: 64px; overflow-wrap: break-word; }
+    }
+    @media (max-width: 480px) {
+      .project-summary { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+      .portfolio-nav { gap: 16px; padding: 20px 0; }
+      .portfolio-logo { height: 48px; width: 82px; }
+      .resume-download { font-size: 13px; gap: 5px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } .button:hover { transform: none; } }
+    @media (forced-colors: active) { .button, .question-row li, .reflection { border: 1px solid CanvasText; } .question-pieces { -webkit-mask-image: none; mask-image: none; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#case-content">Skip to case study</a>
+  <header class="portfolio-header">
+    <nav class="portfolio-nav" aria-label="Main navigation">
+      <a href="index.html" aria-label="Tristine Nguyen homepage">
+        <img class="portfolio-logo" src="imagesUpdated/tn-logo-brand.png" alt="Tristine Nguyen logo" width="112" height="62">
+      </a>
+      <a class="resume-download" href="imagesUpdated/Tristine_Nguyen_Resume.pdf" download>
+        Download Resume <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+  </header>
+  <main id="case-content" class="case-study" tabindex="-1">
+    <article aria-labelledby="case-title">
+      <header class="case-hero">
+        <h1 id="case-title">Customer Insights Panel</h1>
+        <p class="case-summary">I partnered with Global Payments’ research team to design and develop a website inviting customers to join the Customer Insights Panel. With an urgent five-day timeline, I stepped beyond my product design responsibilities and used my coding knowledge to help deliver an inclusive, mobile-first experience.</p>
+        <dl class="project-summary" aria-label="Project summary">
+          <div><dt>Timeline</dt><dd>5 days</dd></div>
+          <div><dt>My role</dt><dd>Design + development</dd></div>
+          <div><dt>Collaboration</dt><dd>Research team</dd></div>
+        </dl>
+        <a class="button" href="https://research.globalpay.com/cab/">View Live Website</a>
+      </header>
+
+      <figure class="cover">
+        <img src="imagesUpdated/CAB.png" alt="Desktop and mobile designs for the Customer Insights Panel invitation website, presented on an indigo background." fetchpriority="high">
+      </figure>
+
+      <div class="two-columns overview">
+        <section aria-labelledby="challenge-title">
+          <h2 id="challenge-title">The Challenge</h2>
+          <p><strong>The research team needed one destination for recruiting participants.</strong> Invitations were spread across a developer portal banner and merchant-facing opt-in questions. The website needed to explain the panel, its benefits, and what participation involved—then provide a clear path to join, all within five days.</p>
+        </section>
+        <section aria-labelledby="contribution-title">
+          <h2 id="contribution-title">My Contribution</h2>
+          <p><strong>I carried the work from design into development.</strong> I collaborated with the research team, created imagery using company photography, and built the website to help meet the deadline.</p>
+          <p>The team provided the content. I focused on how to present it clearly, make the invitation feel welcoming, and help customers understand what participation would involve.</p>
+          <p>Development was outside my usual role, but I saw an opportunity to contribute beyond the design handoff. Drawing on my existing coding knowledge, I helped turn the design into a working website.</p>
+        </section>
+      </div>
+
+      <ul class="design-highlights" role="list" aria-label="Design priorities">
+        <li>
+          <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 4a3 3 0 0 1 0 6M18 13a5 5 0 0 1 3 5v3"/></svg>
+          <div><strong>Inclusive imagery</strong><p>Different perspectives, represented in the invitation.</p></div>
+        </li>
+        <li>
+          <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 3v18"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor" stroke="none"/></svg>
+          <div><strong>Accessible contrast</strong><p>Readable text across the chosen backgrounds.</p></div>
+        </li>
+        <li>
+          <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 5h4M11 19h2"/></svg>
+          <div><strong>Mobile-first layouts</strong><p>Content prioritized for smaller screens.</p></div>
+        </li>
+      </ul>
+
+      <div class="design-details">
+        <div class="design-copy">
+          <section aria-labelledby="inclusive-title">
+            <h2 id="inclusive-title">Making the Invitation Feel Inclusive</h2>
+            <p>I wanted the imagery to reflect a broad range of people who could contribute to the research. Using photography from the company’s resources, I created a composition representing different races, genders, and people with disabilities. These choices supported the invitation’s message: <strong>different perspectives are welcome.</strong></p>
+            <p>I also considered how the imagery worked with the brand. Global Payments’ vibrant blue provided a strong foundation, while varied shirt colors added visual diversity and kept blue from dominating the page.</p>
+            <p>One image featured a woman hugging her cats. With pet owners on our team—and as a cat owner myself—this detail felt relatable and brought warmth and personality to the invitation.</p>
+          </section>
+          <section aria-labelledby="accessibility-title">
+            <h2 id="accessibility-title">Designing for Accessibility and Smaller Screens</h2>
+            <p><strong>I designed for smaller screens first and checked color contrast throughout.</strong> Starting with mobile helped me prioritize content and preserve a clear reading order as the layout expanded for desktop.</p>
+            <p>White space, distinct sections, and concise step-by-step guidance made the page easier to scan. Icons complemented the written instructions, keeping the meaning available in text.</p>
+          </section>
+        </div>
+        <figure class="snippets">
+          <img src="imagesUpdated/CAB%20Snippets.png" alt="Examples from the website showing diverse participant photography, benefits of joining, numbered participation steps, and frequently asked questions in mobile and desktop layouts." loading="lazy" decoding="async">
+          <figcaption class="snippet-notes">
+            <ol aria-label="Design decisions shown in the snippets">
+              <li><span class="note-number" aria-hidden="true">1</span><p><strong>Photography: a welcoming invitation</strong>A range of people and a personal detail—the woman with her cats—help the panel feel approachable.</p></li>
+              <li><span class="note-number" aria-hidden="true">2</span><p><strong>Numbered steps: clear expectations</strong>The “What’s next?” section breaks participation into a short, scannable sequence.</p></li>
+              <li><span class="note-number" aria-hidden="true">3</span><p><strong>Mobile and desktop: the same story</strong>Stacked content on mobile becomes a wider layout on desktop while preserving the reading order.</p></li>
+            </ol>
+          </figcaption>
+        </figure>
+      </div>
+
+      <section class="invitation" aria-labelledby="invitation-title">
+        <h2 id="invitation-title">Designing the Invitation</h2>
+        <p>The page introduces the panel with a direct invitation: help shape the future of Global Payments and Worldpay products.<br>The content moves through the questions a potential participant might have:</p>
+        <div class="question-pieces" role="group" aria-label="Some of the questions a potential participant might have">
+          <ul class="question-row" role="list">
+            <li class="question-blank" aria-hidden="true"></li>
+            <li>Why should I join?</li>
+            <li>What happens after I sign up?</li>
+            <li class="question-blank" aria-hidden="true"></li>
+          </ul>
+          <ul class="question-row" role="list">
+            <li class="question-blank" aria-hidden="true"></li>
+            <li>What will participation involve?</li>
+            <li>How will my information be used?</li>
+            <li class="question-blank" aria-hidden="true"></li>
+          </ul>
+        </div>
+        <p>Benefits, participation steps, and frequently asked questions support the primary “Join Today” action. Clear headings and generous white space make the page easier to scan, while icons give the participation steps visual structure and reduce the sense of a text-heavy experience.</p>
+      </section>
+
+      <div class="two-columns delivery">
+        <section aria-labelledby="development-title">
+          <h2 id="development-title">Bringing the Design to Life</h2>
+          <p>I developed the page using HTML, CSS, and JavaScript, translating the design into responsive layouts. The implementation included the recruitment content, signup links, and expandable FAQs. Working across design and development allowed me to carry the visual hierarchy, imagery, and responsive decisions through to the live page within the five-day timeline.</p>
+        </section>
+        <section aria-labelledby="outcome-title">
+          <h2 id="outcome-title">Outcome</h2>
+          <p><strong>A single destination for learning about and joining the panel.</strong> Customers can understand participation and access the signup form; the research team has one link to share in its invitations.</p>
+        </section>
+      </div>
+
+      <section class="reflection" aria-labelledby="reflection-title">
+        <h2 id="reflection-title">Reflection</h2>
+        <p>My interest in coding started with customizing MySpace pages. Years later, those foundations helped me contribute when the team had an urgent need. This project showed me how useful it can be to bring skills beyond my formal role. I could collaborate on the design, shape the imagery, and help build the experience, taking responsibility for moving the work toward delivery. It also reinforced that an inviting research experience depends on more than a signup button. Representation, readable content, and thoughtful mobile layouts all contribute to how welcoming and approachable the invitation feels.</p>
+      </section>
+    </article>
+    <a class="back-link" href="index.html#projects">Back to selected work</a>
+  </main>
+</body>
+</html>
