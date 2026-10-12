@@ -635,3 +635,14 @@ main.container,
   );
   background-size: 24px 24px;
 }
+
+.projects-intro .projects-intro-description {
+  color: #1f2938;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.5;
+  margin: 1.8rem 0 0;
+  max-width: 68rem;
+  text-transform: none;
+}
