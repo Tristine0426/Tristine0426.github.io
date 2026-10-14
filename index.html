@@ -31,6 +31,20 @@
   >
 
   <link rel="icon" type="image/png" href="imagesUpdated/tn-logo-brand.png">
+  <style>
+    /* Each card keeps its project link and email link independently accessible. */
+    .homepage-project-card { min-width: 0; }
+    .homepage-project-card > a { display: block; border-radius: 1.2rem; text-decoration: none; }
+    .homepage-project-card > a:hover .photo {
+      box-shadow: 0 1.8rem 4rem rgba(24, 32, 51, 0.12);
+      transform: translateY(-4px);
+    }
+    .container .project-password-note { color: #586174; font-size: 1.6rem; line-height: 1.5; margin: -2.4rem 0 4.8rem; }
+    .project-password-note a { color: #4b50d9; text-decoration: underline; text-underline-offset: 4px; }
+    @media (prefers-reduced-motion: reduce) {
+      .homepage-project-card > a:hover .photo { transform: none; }
+    }
+  </style>
 </head>
 
 <body>
@@ -118,27 +132,9 @@
 </section>
 
   <main class="container" id="projects">
-    <!-- Unified Payments Console -->
-    <a href="upc.html" onclick="return openProject('upc.html');">
-      <section class="project">
-        <img
-          class="photo"
-          src="imagesUpdated/UPC.png"
-          alt="Screenshots of Unified Payments Console dashboard"
-          loading="lazy"
-        >
-
-        <h3 class="project-title">Unified Payments Console</h3>
-
-        <p class="project-description">
-          An internal application that helps onboard Global Payments
-          merchants and partners onto our API.
-        </p>
-      </section>
-    </a>
-
     <!-- API Explorer -->
-    <a
+    <article class="homepage-project-card">
+      <a
       href="api-explorer.html"
       onclick="return openProject('api-explorer.html');"
     >
@@ -162,8 +158,11 @@
       </section>
     </a>
 
+    </article>
+
     <!-- Customer Advisory Board -->
-    <a href="cab.html">
+    <article class="homepage-project-card">
+      <a href="cab.html">
       <section class="project">
         <img
           class="photo"
@@ -182,8 +181,34 @@
       </section>
     </a>
 
+    </article>
+
+    <!-- Unified Payments Console -->
+    <article class="homepage-project-card">
+      <a href="upc.html" onclick="return openProject('upc.html');">
+      <section class="project">
+        <img
+          class="photo"
+          src="imagesUpdated/UPC.png"
+          alt="Screenshots of Unified Payments Console dashboard"
+          loading="lazy"
+        >
+
+        <h3 class="project-title">Unified Payments Console</h3>
+
+        <p class="project-description">
+          An internal application that helps onboard Global Payments
+          merchants and partners onto our API.
+        </p>
+      </section>
+    </a>
+
+      <p class="project-password-note">Want a peek? <a href="mailto:tristinenguyen147@gmail.com?subject=Unified%20Payments%20Console%20password">Email me for the password</a>.</p>
+    </article>
+
     <!-- UX Reference Library -->
-    <a
+    <article class="homepage-project-card">
+      <a
       href="library.html"
       onclick="return openProject('library.html');"
     >
@@ -203,6 +228,9 @@
         </p>
       </section>
     </a>
+
+      <p class="project-password-note">Want a peek? <a href="mailto:tristinenguyen147@gmail.com?subject=UX%20Reference%20Library%20password">Email me for the password</a>.</p>
+    </article>
   </main>
 
   <footer class="personal-footer" aria-labelledby="footer-title">
