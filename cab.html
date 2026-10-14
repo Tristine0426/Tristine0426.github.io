@@ -53,8 +53,10 @@
     h2 { font-family: Cabin, Arial, sans-serif; font-size: 25px; font-weight: 600; line-height: 1.3; margin: 0 0 12px; color: var(--ink); text-wrap: balance; }
     .two-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 60px; }
     .overview { margin-bottom: 112px; }
-    .design-details { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 60px; align-items: start; margin-bottom: 58px; }
-    .design-copy { display: grid; gap: 80px; }
+    .design-details { display: block; margin-bottom: 58px; }
+    .design-copy { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 60px; margin-bottom: 40px; }
+    .design-copy section { min-width: 0; }
+    .snippets { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); align-items: start; gap: 40px; }
     .snippets img { width: 100%; border-radius: 32px; }
     .invitation { margin-bottom: 64px; }
     /* The empty pieces suggest a larger collection; only their outer edges fade. */
@@ -65,7 +67,8 @@
     .question-row .question-blank { padding: 0; }
     .delivery { margin-bottom: 80px; }
     .reflection { background: #f7f7f7; border-radius: 28px; padding: 28px; }
-    .back-link { display: inline-flex; align-items: center; min-height: 44px; margin-top: 28px; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+    .back-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 28px; color: var(--indigo); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+    .back-link-arrow { color: var(--indigo); }
     @media (max-width: 767px) {
       .case-study { width: calc(100% - 40px); padding-top: 40px; padding-bottom: 40px; }
       .case-hero { margin-bottom: 36px; }
@@ -74,10 +77,10 @@
       .design-highlights { grid-template-columns: minmax(0, 1fr); gap: 24px; margin: 0 0 40px; }
       .cover { margin-bottom: 40px; }
       .cover img, .snippets img { border-radius: 20px; }
-      .two-columns, .design-details { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+      .two-columns { grid-template-columns: minmax(0, 1fr); gap: 36px; }
       .overview, .design-details, .invitation, .delivery { margin-bottom: 48px; }
-      .design-copy { gap: 36px; }
-      .snippets { width: min(100%, 520px); margin-inline: auto; }
+      .design-copy { grid-template-columns: minmax(0, 1fr); gap: 36px; margin-bottom: 36px; }
+      .snippets { grid-template-columns: minmax(0, 1fr); gap: 24px; width: 100%; margin-inline: auto; }
       h2 { font-size: 20px; line-height: 1.5; }
       .button { font-size: 16px; min-height: 54px; padding: 14px 24px; }
       .reflection { border-radius: 20px; padding: 24px; }
@@ -96,25 +99,6 @@
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } .button:hover { transform: none; } }
     @media (forced-colors: active) { .button, .question-row li, .reflection { border: 1px solid CanvasText; } .question-pieces { -webkit-mask-image: none; mask-image: none; } }
-
-    .reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-}
   </style>
 </head>
 <body>
@@ -125,7 +109,7 @@
         <img class="portfolio-logo" src="imagesUpdated/tn-logo-brand.png" alt="Tristine Nguyen logo" width="112" height="62">
       </a>
       <a class="resume-download" href="imagesUpdated/Tristine_Nguyen_Resume.pdf" download>
-        Download Resume <span aria-hidden="true">↗</span>
+        Download resume <span aria-hidden="true">↗</span>
       </a>
     </nav>
   </header>
@@ -139,7 +123,7 @@
           <div><dt>My role</dt><dd>Design + development</dd></div>
           <div><dt>Collaboration</dt><dd>Research team</dd></div>
         </dl>
-        <a class="button" href="https://research.globalpay.com/cab/">View Live Website</a>
+        <a class="button" href="https://research.globalpay.com/cab/">View live website</a>
       </header>
 
       <figure class="cover">
@@ -149,7 +133,7 @@
       <div class="two-columns overview">
         <section aria-labelledby="challenge-title">
           <h2 id="challenge-title">The Challenge</h2>
-          <p><strong>The research team needed one destination for recruiting participants.</strong> Invitations were spread across a developer portal banner and merchant-facing opt-in questions. The website needed to explain the panel, its benefits, and what participation involved,then provide a clear path to join, all within five days.</p>
+          <p><strong>The research team needed one destination for recruiting participants.</strong> Invitations were spread across a developer portal banner and merchant-facing opt-in questions. The website needed to explain the panel, its benefits, and what participation involved—then provide a clear path to join, all within five days.</p>
         </section>
         <section aria-labelledby="contribution-title">
           <h2 id="contribution-title">My Contribution</h2>
@@ -180,7 +164,7 @@
             <h2 id="inclusive-title">Making the Invitation Feel Inclusive</h2>
             <p>I wanted the imagery to reflect a broad range of people who could contribute to the research. Using photography from the company’s resources, I created a composition representing different races, genders, and people with disabilities. These choices supported the invitation’s message: <strong>different perspectives are welcome.</strong></p>
             <p>I also considered how the imagery worked with the brand. Global Payments’ vibrant blue provided a strong foundation, while varied shirt colors added visual diversity and kept blue from dominating the page.</p>
-            <p>One image featured a woman hugging her cats. With pet owners on our team and as a cat owner myself, this detail felt relatable and brought warmth and personality to the invitation.</p>
+            <p>One image featured a woman hugging her cats. With pet owners on our team—and as a cat owner myself—this detail felt relatable and brought warmth and personality to the invitation.</p>
           </section>
           <section aria-labelledby="accessibility-title">
             <h2 id="accessibility-title">Designing for Accessibility and Smaller Screens</h2>
@@ -189,10 +173,10 @@
           </section>
         </div>
         <figure class="snippets">
-          <img src="imagesUpdated/CAB Snippets.png" alt="Examples from the website showing diverse participant photography, benefits of joining, numbered participation steps, and frequently asked questions in mobile and desktop layouts." loading="lazy" decoding="async">
+          <img src="imagesUpdated/CAB%20Snippets.png" alt="Examples from the website showing diverse participant photography, benefits of joining, numbered participation steps, and frequently asked questions in mobile and desktop layouts." loading="lazy" decoding="async">
           <figcaption class="snippet-notes">
             <ol aria-label="Design decisions shown in the snippets">
-              <li><span class="note-number" aria-hidden="true">1</span><p><strong>Photography: a welcoming invitation</strong>A range of people and a personal detail, the woman with her cats, help the panel feel approachable.</p></li>
+              <li><span class="note-number" aria-hidden="true">1</span><p><strong>Photography: a welcoming invitation</strong>A range of people and a personal detail—the woman with her cats—help the panel feel approachable.</p></li>
               <li><span class="note-number" aria-hidden="true">2</span><p><strong>Numbered steps: clear expectations</strong>The “What’s next?” section breaks participation into a short, scannable sequence.</p></li>
               <li><span class="note-number" aria-hidden="true">3</span><p><strong>Mobile and desktop: the same story</strong>Stacked content on mobile becomes a wider layout on desktop while preserving the reading order.</p></li>
             </ol>
@@ -202,7 +186,7 @@
 
       <section class="invitation" aria-labelledby="invitation-title">
         <h2 id="invitation-title">Designing the Invitation</h2>
-        <p>The page introduces the panel with a direct invitation: help shape the future of Global Payments and Worldpay products. The content moves through the questions a potential participant might have:</p>
+        <p>The page introduces the panel with a direct invitation: help shape the future of Global Payments and Worldpay products.<br>The content moves through the questions a potential participant might have:</p>
         <div class="question-pieces" role="group" aria-label="Some of the questions a potential participant might have">
           <ul class="question-row" role="list">
             <li class="question-blank" aria-hidden="true"></li>
@@ -217,7 +201,7 @@
             <li class="question-blank" aria-hidden="true"></li>
           </ul>
         </div>
-        <p>Benefits, participation steps, and frequently asked questions support the primary <strong>“Join Today”</strong> action. Clear headings and generous white space make the page easier to scan, while icons give the participation steps visual structure and reduce the sense of a text-heavy experience.</p>
+        <p>Benefits, participation steps, and frequently asked questions support the primary “Join Today” action. Clear headings and generous white space make the page easier to scan, while icons give the participation steps visual structure and reduce the sense of a text-heavy experience.</p>
       </section>
 
       <div class="two-columns delivery">
@@ -236,45 +220,7 @@
         <p>My interest in coding started with customizing MySpace pages. Years later, those foundations helped me contribute when the team had an urgent need. This project showed me how useful it can be to bring skills beyond my formal role. I could collaborate on the design, shape the imagery, and help build the experience, taking responsibility for moving the work toward delivery. It also reinforced that an inviting research experience depends on more than a signup button. Representation, readable content, and thoughtful mobile layouts all contribute to how welcoming and approachable the invitation feels.</p>
       </section>
     </article>
-    <a class="back-link" href="index.html#projects">Back to selected work</a>
+    <a class="back-link" href="index.html#projects"><span class="back-link-arrow" aria-hidden="true">←</span>Back to selected work</a>
   </main>
-  <script>
-  const elements = document.querySelectorAll(
-    '.cover, .overview, .design-highlights, ' +
-    '.design-details, .invitation, .delivery, .reflection'
-  );
-
-  const reducedMotion = window.matchMedia(
-    '(prefers-reduced-motion: reduce)'
-  );
-
-  if ('IntersectionObserver' in window && !reducedMotion.matches) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0,
-      rootMargin: '0px 0px -40px 0px'
-    });
-
-    elements.forEach((element) => {
-      element.classList.add('reveal');
-      observer.observe(element);
-    });
-
-    reducedMotion.addEventListener('change', (event) => {
-      if (event.matches) {
-        elements.forEach((element) => {
-          element.classList.add('is-visible');
-        });
-        observer.disconnect();
-      }
-    });
-  }
-</script>
 </body>
 </html>
