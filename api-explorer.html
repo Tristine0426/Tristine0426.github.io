@@ -67,6 +67,16 @@
       #api-case-preview .api-logo { height:48px; width:82px; }
       #api-case-preview .api-nav-link { font-size:13px; gap:5px; }
     }
+
+    #api-case-preview .api-demo-row { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:40px; align-items:center; }
+    #api-case-preview .api-demo-copy { min-width:0; }
+    #api-case-preview .api-demo-video { display:block; width:100%; height:auto; min-width:0; border-radius:20px; background:#f7f7f7; }
+    #api-case-preview .api-demo-example .api-demo-video { grid-column:1; grid-row:1; }
+    #api-case-preview .api-demo-example .api-demo-copy { grid-column:2; grid-row:1; }
+    @media(max-width:767px) {
+      #api-case-preview .api-demo-row { grid-template-columns:minmax(0,1fr); gap:24px; }
+      #api-case-preview .api-demo-example .api-demo-video, #api-case-preview .api-demo-example .api-demo-copy { grid-column:auto; grid-row:auto; }
+    }
   </style>
   <header class="api-header">
     <nav class="api-nav" aria-label="Main navigation">
@@ -122,19 +132,31 @@
       </ol>
       
     </section>
-    <section class="api-section">
-      <h2>Reveal nested details when developers need them</h2>
-      <blockquote class="api-insight">Show an overview, then reveal the detail.</blockquote>
-      <p>Nested API properties can turn a reference page into a long document that is difficult to scan. I explored collapsed and expanded states to establish how much information should appear at each level.</p>
-      <p><strong>The initial view stays scannable; technical detail remains available.</strong> Developers can expand the properties they need to investigate, with definitions and examples alongside one another to connect a field’s meaning with its use.</p>
-      
-    </section>
-    <section class="api-section">
-      <h2>Make the connection between examples and properties visible</h2>
+    <section class="api-section api-demo-row api-demo-example" aria-labelledby="example-demo-title">
+      <div class="api-demo-copy">
+      <h2 id="example-demo-title">Make the connection between examples and properties visible</h2>
       <p>During a feedback session, a fellow designer suggested a way to make examples more useful: after selecting an example, a developer could turn on a toggle to highlight the properties used in that specific example.</p>
       <blockquote class="api-insight">Select an example. Highlight the properties it uses.</blockquote>
       <p><strong>The feature connects a practical example to the full reference.</strong> Developers can see which fields are relevant to the selected example while keeping the rest of the documentation available.</p>
       
+    </div>
+      <video class="api-demo-video" controls playsinline preload="metadata" aria-label="Demonstration of highlighting properties used by a selected API example">
+        <source src="updatedImages/API%20Explorer%20Example%20Highlights.mp4" type="video/mp4">
+        Your browser does not support embedded video. <a href="updatedImages/API%20Explorer%20Example%20Highlights.mp4">Watch the demonstration</a>.
+      </video>
+    </section>
+    <section class="api-section api-demo-row" aria-labelledby="nested-demo-title">
+      <div class="api-demo-copy">
+      <h2 id="nested-demo-title">Reveal nested details when developers need them</h2>
+      <blockquote class="api-insight">Show an overview, then reveal the detail.</blockquote>
+      <p>Nested API properties can turn a reference page into a long document that is difficult to scan. I explored collapsed and expanded states to establish how much information should appear at each level.</p>
+      <p><strong>The initial view stays scannable; technical detail remains available.</strong> Developers can expand the properties they need to investigate, with definitions and examples alongside one another to connect a field’s meaning with its use.</p>
+      
+    </div>
+      <video class="api-demo-video" controls playsinline preload="metadata" aria-label="Demonstration of expanding nested API properties">
+        <source src="updatedImages/API%20Explorer%20Nested.mp4" type="video/mp4">
+        Your browser does not support embedded video. <a href="updatedImages/API%20Explorer%20Nested.mp4">Watch the demonstration</a>.
+      </video>
     </section>
     <section class="api-section">
       <h2>Tradeoffs: validate understanding first, measure efficiency next</h2>
