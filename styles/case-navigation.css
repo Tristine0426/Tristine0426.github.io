@@ -1,0 +1,105 @@
+.case-layout {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(1rem, 3vw, 3rem);
+}
+
+.case-story {
+  min-width: 0;
+}
+
+.case-story :is(h1, h2)[id] {
+  scroll-margin-top: 4.75rem;
+}
+
+.case-contents {
+  position: sticky;
+  top: 1rem;
+  z-index: 3;
+  font: 600 0.95rem/1.3 Cabin, Arial, sans-serif;
+  color: #283449;
+  color-scheme: light;
+}
+
+.case-contents details {
+  border: 1px solid #dedaf1;
+  border-radius: 12px;
+  background: #faf9ff;
+}
+
+.case-contents summary {
+  padding: .8rem;
+  cursor: pointer;
+}
+
+.case-contents ul {
+  margin: 0;
+  padding: .25rem;
+  list-style: none;
+  max-height: min(65vh, 30rem);
+  overflow: auto;
+}
+
+.case-contents nav a {
+  display: block;
+  padding: .6rem .55rem;
+  border-inline-start: 3px solid transparent;
+  border-radius: 6px;
+  color: #283449;
+  text-decoration: none;
+}
+
+.case-contents nav a:is(:hover, [aria-current]) {
+  color: #40288a;
+  background: #ede8ff;
+}
+
+.case-contents nav a[aria-current] {
+  border-inline-start-color: #6546bd;
+  font-weight: 700;
+}
+
+.case-contents :is(a, summary):focus-visible {
+  outline: 2px solid #6546bd;
+  outline-offset: -2px;
+}
+
+@media (min-width: 961px) {
+  .case-contents details[open] summary {
+    display: none;
+  }
+
+  .case-contents nav::before {
+    content: "In this case study";
+    display: block;
+    padding: .8rem .8rem .35rem;
+  }
+
+}
+
+@media (max-width: 960px) {
+  .case-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .case-contents {
+    top: .5rem;
+  }
+
+  .case-contents nav {
+    position: absolute;
+    inset-inline: 0;
+    top: calc(100% + .2rem);
+    border: 1px solid #dedaf1;
+    border-radius: 12px;
+    background: #faf9ff;
+    box-shadow: 0 .5rem 1.5rem #23174824;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:has(.case-layout) {
+    scroll-behavior: auto;
+  }
+}
