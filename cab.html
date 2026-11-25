@@ -52,7 +52,7 @@
     .cover { margin-bottom: 52px; }
     .cover img { width: 100%; border-radius: 32px; }
     h2 { font-family: Cabin, Arial, sans-serif; font-size: 25px; font-weight: 600; line-height: 1.3; margin: 0 0 12px; color: var(--ink); text-wrap: balance; }
-    .two-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 60px; }
+    .two-columns { display: grid; grid-template-columns: minmax(0, 1fr); gap: 36px; }
     .overview { margin-bottom: 112px; }
     .design-details { display: block; margin-bottom: 58px; }
     .design-copy { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 60px; margin-bottom: 40px; }
@@ -101,6 +101,8 @@
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } .button:hover { transform: none; } }
     @media (forced-colors: active) { .button, .question-row li, .reflection { border: 1px solid CanvasText; } .question-pieces { -webkit-mask-image: none; mask-image: none; } }
   </style>
+<link rel="stylesheet" href="styles/case-navigation.css">
+  <script src="js/case-navigation.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#case-content">Skip to case study</a>
@@ -115,10 +117,30 @@
     </nav>
   </header>
   <main id="case-content" class="case-study" tabindex="-1">
+  <div class="case-layout">
+    <aside class="case-contents">
+      <details>
+        <summary>Jump to section</summary>
+        <nav aria-label="Case study sections">
+          <ul>
+            <li><a href="#case-title">Overview</a></li>
+            <li><a href="#challenge-title">The brief</a></li>
+            <li><a href="#contribution-title">My role</a></li>
+            <li><a href="#inclusive-title">Photography</a></li>
+            <li><a href="#accessibility-title">Mobile and accessibility</a></li>
+            <li><a href="#invitation-title">The invitation</a></li>
+            <li><a href="#development-title">Development</a></li>
+            <li><a href="#outcome-title">What shipped</a></li>
+            <li><a href="#reflection-title">Reflection</a></li>
+          </ul>
+        </nav>
+      </details>
+    </aside>
+    <div class="case-story">
     <article aria-labelledby="case-title">
       <header class="case-hero">
-        <h1 id="case-title">Customer Insights Panel</h1>
-        <p class="case-summary">I partnered with Global Payments’ research team to design and develop a website inviting customers to join the Customer Insights Panel. With an urgent five-day timeline, I stepped beyond my product design responsibilities and used my coding knowledge to help deliver an inclusive, mobile-first experience.</p>
+        <h1 id="case-title" tabindex="-1">We had five days to build a research recruiting site</h1>
+        <p class="case-summary">The research team needed a place to send customers who were curious about joining the Customer Insights Panel. I designed and built the site with them. This is where the HTML and CSS I learned customizing MySpace pages came in handy.</p>
         <dl class="project-summary" aria-label="Project summary">
           <div><dt>Timeline</dt><dd>5 days</dd></div>
           <div><dt>My role</dt><dd>Design + development</dd></div>
@@ -133,11 +155,11 @@
 
       <div class="two-columns overview">
         <section aria-labelledby="challenge-title">
-          <h2 id="challenge-title">The Challenge</h2>
+          <h2 id="challenge-title" tabindex="-1">One place to send customers</h2>
           <p><strong>The research team needed one destination for recruiting participants.</strong> Invitations were spread across a developer portal banner and merchant-facing opt-in questions. The website needed to explain the panel, its benefits, and what participation involved, then provide a clear path to join, all within five days.</p>
         </section>
         <section aria-labelledby="contribution-title">
-          <h2 id="contribution-title">My Contribution</h2>
+          <h2 id="contribution-title" tabindex="-1">How I split the work with research</h2>
           <p><strong>I carried the work from design into development.</strong> I collaborated with the research team, created imagery using company photography, and built the website to help meet the deadline.</p>
           <p>The team provided the content. I focused on how to present it clearly, make the invitation feel welcoming, and help customers understand what participation would involve.</p>
           <p>Development was outside my usual role, but I saw an opportunity to contribute beyond the design handoff. Drawing on my existing coding knowledge, I helped turn the design into a working website.</p>
@@ -162,13 +184,13 @@
       <div class="design-details">
         <div class="design-copy">
           <section aria-labelledby="inclusive-title">
-            <h2 id="inclusive-title">Making the Invitation Feel Inclusive</h2>
-            <p>I wanted the imagery to reflect a broad range of people who could contribute to the research. Using photography from the company’s resources, I created a composition representing different races, genders, and people with disabilities. These choices supported the invitation’s message: <strong>different perspectives are welcome.</strong></p>
+            <h2 id="inclusive-title" tabindex="-1">I kept the photo with the cat</h2>
+            <p>I wanted customers to see a range of people in the invitation, so I pulled together company photos that represented different races, genders, and people with disabilities.</p>
             <p>I also considered how the imagery worked with the brand. Global Payments’ vibrant blue provided a strong foundation, while varied shirt colors added visual diversity and kept blue from dominating the page.</p>
-            <p>One image featured a woman hugging her cat. As a cat owner working with a team of pet owners, I felt this detail brought warmth and personality to the invitation.</p>
+            <p>One photo showed a woman hugging her cat. As a cat person on a team of pet owners, I liked how much warmth that little detail brought to a company website.</p>
           </section>
           <section aria-labelledby="accessibility-title">
-            <h2 id="accessibility-title">Designing for Accessibility and Smaller Screens</h2>
+            <h2 id="accessibility-title" tabindex="-1">I started with the smallest screen</h2>
             <p><strong>I designed for smaller screens first and checked color contrast throughout.</strong> Starting with mobile helped me prioritize content and preserve a clear reading order as the layout expanded for desktop.</p>
             <p>White space, distinct sections, and concise step-by-step guidance made the page easier to scan. Icons complemented the written instructions, keeping the meaning available in text.</p>
           </section>
@@ -186,8 +208,8 @@
       </div>
 
       <section class="invitation" aria-labelledby="invitation-title">
-        <h2 id="invitation-title">Designing the Invitation</h2>
-        <p>The page introduces the panel with a direct invitation: help shape the future of Global Payments and Worldpay products.The content moves through the questions a potential participant might have:</p>
+        <h2 id="invitation-title" tabindex="-1">What would I want to know before signing up?</h2>
+        <p>The page introduces the panel with a direct invitation: help shape the future of Global Payments and Worldpay products. I organized the page around the questions I’d ask before signing up.</p>
         <div class="question-pieces" role="group" aria-label="Some of the questions a potential participant might have">
           <ul class="question-row" role="list">
             <li class="question-blank" aria-hidden="true"></li>
@@ -207,21 +229,23 @@
 
       <div class="two-columns delivery">
         <section aria-labelledby="development-title">
-          <h2 id="development-title">Bringing the Design to Life</h2>
+          <h2 id="development-title" tabindex="-1">I took the design into code</h2>
           <p>I developed the page using HTML, CSS, and JavaScript, translating the design into responsive layouts. The implementation included the recruitment content, signup links, and expandable FAQs. Working across design and development allowed me to carry the visual hierarchy, imagery, and responsive decisions through to the live page within the five-day timeline.</p>
         </section>
         <section aria-labelledby="outcome-title">
-          <h2 id="outcome-title">Outcome</h2>
+          <h2 id="outcome-title" tabindex="-1">What we shipped in five days</h2>
           <p><strong>A single destination for learning about and joining the panel.</strong> Customers can understand participation and access the signup form; the research team has one link to share in its invitations.</p>
         </section>
       </div>
 
       <section class="reflection" aria-labelledby="reflection-title">
-        <h2 id="reflection-title">Reflection</h2>
-        <p>My interest in coding started with customizing MySpace pages. Years later, those foundations helped me contribute when the team had an urgent need. This project showed me how useful it can be to bring skills beyond my formal role. I could collaborate on the design, shape the imagery, and help build the experience, taking responsibility for moving the work toward delivery. It also reinforced that an inviting research experience depends on more than a signup button. Representation, readable content, and thoughtful mobile layouts all contribute to how welcoming and approachable the invitation feels.</p>
+        <h2 id="reflection-title" tabindex="-1">What I took from the build</h2>
+        <p>Building the page myself meant I could carry the details I cared about into the live site, from the order of the content on mobile to how the FAQs opened. I also got to use a skill I’d picked up for fun to help the team get something out the door.</p>
       </section>
     </article>
     <a class="back-link" href="index.html#projects"><span class="back-link-arrow" aria-hidden="true">←</span>Back to selected work</a>
+      </div>
+  </div>
   </main>
 </body>
 </html>

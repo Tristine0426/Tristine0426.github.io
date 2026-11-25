@@ -8,6 +8,8 @@
   <link rel="icon" type="image/png" href="imagesUpdated/tn-logo-brand.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles/case-navigation.css">
+  <script src="js/case-navigation.js" defer></script>
 </head>
 <body>
   <a class="api-skip" href="#case-content">Skip to case study</a>
@@ -85,9 +87,28 @@
     </nav>
   </header>
   <main class="api-page" id="case-content" tabindex="-1">
+  <div class="case-layout">
+    <aside class="case-contents">
+      <details>
+        <summary>Jump to section</summary>
+        <nav aria-label="Case study sections">
+          <ul>
+            <li><a href="#case-title">Overview</a></li>
+            <li><a href="#problem">The problem</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#patterns">Reusable fields</a></li>
+            <li><a href="#example-demo-title">Example highlights</a></li>
+            <li><a href="#nested-demo-title">Nested fields</a></li>
+            <li><a href="#next-steps">What I’d test next</a></li>
+            <li><a href="#reflection">Reflection</a></li>
+          </ul>
+        </nav>
+      </details>
+    </aside>
+    <div class="case-story">
     <header class="api-hero">
-      <h1 id="case-title" tabindex="-1">Helping developers find the meaning in complex APIs</h1>
-      <p class="api-intro">API Explorer gave developers a detailed reference for building payment integrations. My challenge was to help them connect that information to what they were trying to do.</p>
+      <h1 id="case-title" tabindex="-1">Which fields do I actually need?</h1>
+      <p class="api-intro">I worked on Global Payments’ API Explorer to help developers go from reading the reference to building a payment request.</p>
       <dl class="api-meta">
         <div><dt>My role</dt><dd>Product designer</dd></div>
         <div><dt>Team</dt><dd>I partnered with a fellow designer, a product manager, a researcher, and a developer</dd></div>
@@ -96,38 +117,40 @@
       <a class="api-button" style="text-decoration:none" href="https://developer.globalpayments.com/api/accounts#/Get%20Merchant's%20Account%20info/getMerchantAccounts" target="_blank" rel="noopener noreferrer">View live website</a>
     </header>
     <img class="api-cover" src="imagesUpdated/API%20Explorer.png" alt="API Explorer interface showing navigation, parameter definitions, and request and response examples." fetchpriority="high">
-    <section class="api-section"><h2>The information was there. The context took work.</h2>
-<p>Before a developer could build a request, they had to understand which properties applied to their use case and how those properties fit together. API Explorer presented a large volume of technical detail, leaving developers to make those connections themselves.</p>
-<p><strong>I wanted to make that interpretation easier.</strong> The full reference still needed to be available, but the interface could do more to help developers find their starting point.</p></section>
-    <div class="api-two"><section><h2>I started by taking the experience apart.</h2>
+    <section class="api-section"><h2 id="problem" tabindex="-1">The answer was somewhere in the reference</h2>
+<p>Before developers could build a request, they had to piece together which fields applied to their use case and how those fields fit together. I wanted the reference to help them make those connections.</p>
+</section>
+    <div class="api-two"><section><h2 id="research" tabindex="-1">I started by taking the reference apart</h2>
 <p>The project included user testing to understand how developers found information, interpreted properties, and moved between documentation and examples. Alongside that research, I reviewed Square, Stripe, and Adyen, comparing how they organized navigation, definitions, and code examples.</p>
-<p>I mapped our existing experience in the same way. Breaking it into smaller parts helped me see where the relationships between information could be clearer.</p>
+<p>I made a map of our reference next. Once I could see the definitions and examples side by side, it was easier to spot where I expected them to connect.</p>
 <p><strong>The direction became clear: keep the reference complete and give developers more context as they explore it.</strong></p></section><img class="api-study-image api-research-image" src="imagesUpdated/API%20Explorer%20Research.png" alt="Research supporting the API Explorer documentation redesign." loading="lazy" decoding="async"></div>
     <section class="api-section" aria-label="Research comparison"><img class="api-study-image" src="imagesUpdated/API%20Explorer%20Research%20Insights.png" alt="Research insights and structural comparison informing the API Explorer redesign." loading="lazy" decoding="async"></section>
-    <section class="api-section"><h2>Five parameter groups. One adaptable structure.</h2>
-<p><strong>I found five recurring parameter groups and translated their shared elements into one reusable component.</strong> The template accommodated nested properties, example values, and required or optional status, with elements shown or hidden to fit each group. Finding that pattern gave me a way to organize unfamiliar technical content into a consistent experience.</p><img class="api-study-image" src="imagesUpdated/Finding%20a%20Patterns.png" alt="Analysis of recurring parameter structures for a reusable parameter component." loading="lazy" decoding="async"></section>
-    <section class="api-section api-demo-row api-demo-example" aria-labelledby="example-demo-title"><div class="api-demo-copy"><h2 id="example-demo-title">A useful idea emerged through feedback.</h2>
+    <section class="api-section"><h2 id="patterns" tabindex="-1">I found the same pieces in five places</h2>
+<p><strong>I found five recurring parameter groups and translated their shared elements into one reusable component.</strong> The template accommodated nested properties, example values, and required or optional status, with elements shown or hidden to fit each group. From there, each new group became a question of which pieces to show.</p><img class="api-study-image" src="imagesUpdated/Finding%20a%20Patterns.png" alt="Analysis of recurring parameter structures for a reusable parameter component." loading="lazy" decoding="async"></section>
+    <section class="api-section api-demo-row api-demo-example" aria-labelledby="example-demo-title"><div class="api-demo-copy"><h2 id="example-demo-title" tabindex="-1">What if the example pointed to the fields it used?</h2>
 <p>During a feedback session, a fellow designer suggested connecting the selected example to the properties it used. A developer could choose an example and turn on a toggle to highlight those properties in the reference.</p>
 <p><strong>This gave the example a role beyond showing code.</strong> It became a guide to understanding which fields mattered, while the rest of the documentation stayed available.</p></div><video class="api-demo-video" controls playsinline preload="metadata" aria-label="Demonstration of highlighting properties used by a selected API example">
-        <source src="imagesUpdated/API%20Explorer%20Example%20Hightlights.mp4" type="video/mp4">
-        Your browser does not support embedded video. <a href="imagesUpdated/API%20Explorer%20Example%20Hightlights.mp4">Watch the demonstration</a>.
+        <source src="imagesUpdated/API%20Explorer%20Example%20Hightlights.MP4" type="video/mp4">
+        Your browser does not support embedded video. <a href="imagesUpdated/API%20Explorer%20Example%20Hightlights.MP4">Watch the demonstration</a>.
       </video></section>
-    <section class="api-section api-demo-row" aria-labelledby="nested-demo-title"><div class="api-demo-copy"><h2 id="nested-demo-title">The next challenge was how much detail to show.</h2>
+    <section class="api-section api-demo-row" aria-labelledby="nested-demo-title"><div class="api-demo-copy"><h2 id="nested-demo-title" tabindex="-1">Nested fields needed room to breathe</h2>
 <p>Nested properties could turn a reference page into a long document. I explored collapsed and expanded states so developers could begin with an overview and open the details they needed.</p>
 <p><strong>That choice came with a tradeoff.</strong> Collapsing information made the initial view easier to scan, but added a step to reach deeper properties. Keeping definitions and examples alongside one another helped preserve context as developers explored.</p></div><video class="api-demo-video" controls playsinline preload="metadata" aria-label="Demonstration of expanding nested API properties">
-        <source src="imagesUpdated/API%20Explorer%20Nested.mp4" type="video/mp4">
-        Your browser does not support embedded video. <a href="imagesUpdated/API%20Explorer%20Nested.mp4">Watch the demonstration</a>.
+        <source src="imagesUpdated/API%20Explorer%20Nested.MP4" type="video/mp4">
+        Your browser does not support embedded video. <a href="imagesUpdated/API%20Explorer%20Nested.MP4">Watch the demonstration</a>.
       </video></section>
-    <section class="api-section"><h2>We prioritized understanding before measuring efficiency.</h2>
+    <section class="api-section"><h2 id="next-steps" tabindex="-1">What we learned and what I’d test next</h2>
 <p>Within the project timeline, the research team recommended qualitative research for the proof of concept. That helped inform the design direction, but we did not establish a quantitative comparison of task time or errors.</p>
 <p><strong>My next step would be to test the journey from finding fields to building a request.</strong> Comparing completion, incorrect field selections, and backtracking would help assess the redesign. I would also check whether developers discover the highlighting toggle and understand its relationship to the selected example.</p></section>
-    <section class="api-reflection"><h2>I found my way through complexity by looking for patterns.</h2>
-<p>I did not need to understand every technical detail at once to begin. Comparing recurring structures helped me ask more focused questions and build a component that accommodated both shared elements and differences.</p>
-<p><strong>Collaboration made the design stronger.</strong> A fellow designer’s suggestion connected examples to the reference in a way that the structure alone could not. This project reinforced how much a clear foundation and timely context can do together.</p></section>
+    <section class="api-reflection"><h2 id="reflection" tabindex="-1">Finding a pattern gave me a place to start</h2>
+<p>I started with what I could see repeating. That gave me something concrete to ask the team about and helped me understand the API a little at a time.</p>
+<p>My teammate’s suggestion about highlighting fields changed how I thought about the examples. Once a developer picks one, we already know which fields they’ll need to look at. The reference can use that context to meet them where they are.</p></section>
     <div class="api-bottom-nav">
       <a class="api-back" href="index.html#projects"><span aria-hidden="true">←</span>Back to selected work</a>
       <a class="api-button api-top" href="#api-case-preview" hidden><span aria-hidden="true">↑</span>Back to top</a>
     </div>
+      </div>
+  </div>
   </main>
 </div>
   <style>
